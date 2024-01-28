@@ -172,6 +172,8 @@ public class Customer extends  Person{
         c3.setAddress("UPDATED_ADDRESS");
         c3.updateDB();
 
+        c3.deleteDB();
+
 
     }
 
