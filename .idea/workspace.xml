@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Part.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
     "TomEE Server.Tomcat.executor": "Run",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "Tomcat Server.Tomcat.executor": "Run",
+    "Tomcat Server.login.jsp.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib",
@@ -78,7 +79,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Customer">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
     <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Business.Customer" />
       <module name="AutoPartsWebApplication" />
@@ -123,6 +124,7 @@
       <workItem from="1706451082228" duration="3530000" />
       <workItem from="1706498764436" duration="234000" />
       <workItem from="1706534608217" duration="1622000" />
+      <workItem from="1706538661090" duration="1406000" />
     </task>
     <servers />
   </component>
