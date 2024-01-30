@@ -36,3 +36,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+.idea/runConfigurations/Tomcat_10_1_18.xml
+.idea/workspace.xml
