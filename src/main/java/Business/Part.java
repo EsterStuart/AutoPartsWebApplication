@@ -57,7 +57,7 @@ public class Part {
         return stockQuantity;
     }
 
-    public void setStockQuantity(int stockQuantity) {
+    public void setStockQu  antity(int stockQuantity) {
         this.stockQuantity = stockQuantity;
     }
 
