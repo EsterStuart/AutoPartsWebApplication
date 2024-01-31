@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/eCommerceDB.laccdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Business/OrderSerializationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Business/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Part.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,6 +61,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Customer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Part.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TomEE Server.Tomcat.executor&quot;: &quot;Run&quot;,
@@ -81,7 +83,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
+  <component name="RunManager" selected="Application.Part">
     <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Business.Customer" />
       <module name="AutoPartsWebApplication" />
@@ -95,12 +97,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.Part" />
+      <module name="AutoPartsWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Part" />
       <item itemvalue="Application.Customer" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Part" />
         <item itemvalue="Application.Customer" />
       </list>
     </recent_temporary>
@@ -128,7 +145,8 @@
       <workItem from="1706534608217" duration="1622000" />
       <workItem from="1706538661090" duration="1406000" />
       <workItem from="1706572960464" duration="603000" />
-      <workItem from="1706653372806" duration="1812000" />
+      <workItem from="1706653372806" duration="6521000" />
+      <workItem from="1706720614487" duration="5335000" />
     </task>
     <servers />
   </component>
