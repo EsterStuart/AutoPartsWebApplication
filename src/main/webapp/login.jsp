@@ -1,7 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+  <link rel="stylesheet" href="Login.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
 <nav class="navbar">
@@ -33,7 +35,9 @@
   </ul>
 </nav>
 
-<h1> Employee Login</h1>
+<div class ="Split"><h1> Customer Login</h1>
+  <h2><a href="createAccount.jsp"> Sign Up</a></h2>
+</div>
 <div class="container">
   <label for=""><b>Username</b></label>
   <input type="text" placeholder="Enter Username" name="uname" required>
