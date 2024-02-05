@@ -62,6 +62,37 @@ public class Order {
         }
         catch (Exception ex){System.out.println(ex);}
     }
+
+    /***
+     Retrieves order information from the database based on customerID
+     */
+    public void selectDBB(int customerID){
+        try {
+            this.CustomerID = customerID;
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+
+            String sql = "SELECT * FROM Orders WHERE OrderID =?";
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1,getCustomerID());
+            ResultSet rs;
+            rs = ps.executeQuery();
+            System.out.println("Searching for Order...");
+            if (rs.next()){
+                setOrderID(rs.getInt("OrderID"));
+                setOrderTotalCost(rs.getDouble(3));
+                setCustomerAddress(rs.getString(4));
+                setOrderDate(rs.getString(5));
+                setOrderStatus(rs.getString(6));
+                setOrderFulfilled(Boolean.valueOf(rs.getString(7)));
+                System.out.println("Order Found");
+
+
+            }else{System.out.println("Order not found");}
+            c.close();
+        }
+        catch (Exception ex){System.out.println(ex);}
+    }
     /**
      Creates new Orders and inserts them into the database
      **/

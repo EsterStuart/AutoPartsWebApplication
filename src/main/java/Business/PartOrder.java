@@ -10,7 +10,7 @@ public class PartOrder {
     public int getQuantity() {return quantity;}
     public void setQuantity(int quantity) {this.quantity = quantity;}
 
-    /**
+    /***
      Calculates the total price of a product and its quantity
      **/
     public double getTotalPrice() {
