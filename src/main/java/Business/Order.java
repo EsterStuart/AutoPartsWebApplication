@@ -65,7 +65,7 @@ public class Order {
 
     /***
      Retrieves order information from the database based on customerID
-     */
+     **/
     public void selectDBB(int customerID){
         try {
             this.CustomerID = customerID;

@@ -12,7 +12,7 @@ public class PartOrder {
 
     /***
      Calculates the total price of a product and its quantity
-     **/
+     ***/
     public double getTotalPrice() {
         totalPrice = part.getPrice() * quantity;
         return totalPrice;
