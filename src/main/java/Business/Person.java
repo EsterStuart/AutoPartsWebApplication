@@ -5,7 +5,6 @@ public class Person {
     private String lastName;
     private String email;
     private String password;
-
     public Person() {
         this.firstName = "";
         this.lastName = "";

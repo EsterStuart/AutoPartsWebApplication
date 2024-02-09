@@ -1,6 +1,11 @@
 package Business;
 
+import jakarta.servlet.http.Part;
+
+import java.io.*;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.stream.StreamSupport;
 
 public class Order {
     private int orderID;
@@ -9,9 +14,8 @@ public class Order {
     public Cart c;
     private String customerAddress;
     private String orderDate;
-
     private String orderStatus;
-    private Boolean isOrderFulfilled;
+    private ArrayList<PartOrder>orderedPartsArrayList;
 
     public Order(){
         orderID =0;
@@ -20,9 +24,9 @@ public class Order {
         customerAddress = "";
         orderDate ="";
         orderStatus = "";
-        isOrderFulfilled = null;
+        orderedPartsArrayList = new ArrayList<PartOrder>();
     }
-    public Order(int orderID, int CustomerID,double orderTotalCost, String customerAddress, String orderDate,String orderStatus,Boolean isOrderFulfilled)
+    public Order(int orderID, int CustomerID,double orderTotalCost, String customerAddress, String orderDate,String orderStatus,Boolean isOrderFulfilled, ArrayList<PartOrder> orderedPartsArrayList)
     {
         this.orderID = orderID;
         this.CustomerID = CustomerID;
@@ -30,35 +34,83 @@ public class Order {
         this.customerAddress = customerAddress;
         this.orderDate = orderDate;
         this.orderStatus = orderStatus;
-        this.isOrderFulfilled = isOrderFulfilled;
+        this.orderedPartsArrayList = orderedPartsArrayList;
     }
+
+
+    private void addPartOrder(PartOrder partOrder) {
+        orderedPartsArrayList.add(partOrder);
+    }
+
+    private double calculateTotalPrice(){
+        double totalPrice = 0.0;
+
+        for (PartOrder partOrder : orderedPartsArrayList){
+            totalPrice += partOrder.getTotalOrderPrice();
+        }
+        return totalPrice;
+    }
+
+    private static ArrayList<PartOrder> deserializeOrderedParts(byte[] serialString){
+        ArrayList<PartOrder> outputArrayList = new ArrayList<PartOrder>();
+
+        try{
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(serialString);
+            ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
+
+
+            outputArrayList = (ArrayList<PartOrder>) objectInputStream.readObject();
+            objectInputStream.close();
+
+        } catch (Exception ex) {ex.printStackTrace();}
+        return outputArrayList;
+    }
+
+    private static byte[] serializeOrderedParts(ArrayList<PartOrder> OrderedPartsArrayList){
+        byte[] outputByteArray = new byte[0];
+        try{
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+            objectOutputStream.writeObject(OrderedPartsArrayList);
+            objectOutputStream.flush();
+
+            outputByteArray = byteArrayOutputStream.toByteArray();
+
+            objectOutputStream.close();
+
+        } catch (Exception ex) {ex.printStackTrace();}
+        return outputByteArray;
+    }
+
+
     /**
      Retrieves order information from the database based on Order ID
      **/
     public void selectDB(int orderID){
         try {
             this.orderID = orderID;
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             String sql = "SELECT * FROM Orders WHERE OrderID =?";
-            PreparedStatement ps = c.prepareStatement(sql);
+            PreparedStatement ps = connection.prepareStatement(sql);
             ps.setInt(1,getOrderID());
             ResultSet rs;
             rs = ps.executeQuery();
             System.out.println("Searching for Order...");
             if (rs.next()){
-                setCustomerID(rs.getInt(2));
-                setOrderTotalCost(rs.getDouble(3));
-                setCustomerAddress(rs.getString(4));
-                setOrderDate(rs.getString(5));
-                setOrderStatus(rs.getString(6));
-                setOrderFulfilled(Boolean.valueOf(rs.getString(7)));
+                setOrderID(rs.getInt("OrderID"));
+                setOrderTotalCost(rs.getDouble("TotalCost"));
+                setCustomerAddress(rs.getString("Address"));
+                setOrderDate(rs.getString("OrderDate"));
+                setOrderStatus(rs.getString("Status"));
+
+                setOrderedPartsArrayList(Order.deserializeOrderedParts(rs.getBytes("OrderedParts")));
+
                 System.out.println("Order Found");
 
 
             }else{System.out.println("Order not found");}
-            c.close();
+            connection.close();
         }
         catch (Exception ex){System.out.println(ex);}
     }
@@ -69,27 +121,27 @@ public class Order {
     public void selectDBB(int customerID){
         try {
             this.CustomerID = customerID;
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             String sql = "SELECT * FROM Orders WHERE OrderID =?";
-            PreparedStatement ps = c.prepareStatement(sql);
+            PreparedStatement ps = connection.prepareStatement(sql);
             ps.setInt(1,getCustomerID());
             ResultSet rs;
             rs = ps.executeQuery();
             System.out.println("Searching for Order...");
             if (rs.next()){
                 setOrderID(rs.getInt("OrderID"));
-                setOrderTotalCost(rs.getDouble(3));
-                setCustomerAddress(rs.getString(4));
-                setOrderDate(rs.getString(5));
-                setOrderStatus(rs.getString(6));
-                setOrderFulfilled(Boolean.valueOf(rs.getString(7)));
+                setOrderTotalCost(rs.getDouble("TotalCost"));
+                setCustomerAddress(rs.getString("Address"));
+                setOrderDate(rs.getString("OrderDate"));
+                setOrderStatus(rs.getString("Status"));
+                setOrderedPartsArrayList(Order.deserializeOrderedParts(rs.getBytes("OrderedParts")));
+
                 System.out.println("Order Found");
 
 
             }else{System.out.println("Order not found");}
-            c.close();
+            connection.close();
         }
         catch (Exception ex){System.out.println(ex);}
     }
@@ -98,22 +150,25 @@ public class Order {
      **/
     public void insertDB(){
         try {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+
             System.out.println("Order Inserting...");
-            String sql = "INSERT into Orders(OrderID,CustomerID,TotalCost,Address,OrderDate,Status,OrderParts) Values(?,?,?,?,?,?,?)";
-            PreparedStatement s = c.prepareStatement(sql);
-            s.setInt(1,getOrderID());
-            s.setString(2, String.valueOf(getCustomerID()));
-            s.setDouble(3,getOrderTotalCost());
-            s.setString(4,getCustomerAddress());
-            s.setString(5,getOrderDate());
-            s.setString(6,getOrderStatus());
-            s.setString(7,"Yes");
+
+            String sql = "INSERT into Orders(CustomerID,TotalCost,Address,OrderDate,Status, OrderedParts) Values(?,?,?,?,?,?)";
+
+            PreparedStatement s = connection.prepareStatement(sql);
+
+            s.setString(1, String.valueOf(getCustomerID()));
+            s.setDouble(2,getOrderTotalCost());
+            s.setString(3,getCustomerAddress());
+            s.setString(4,getOrderDate());
+            s.setString(5,getOrderStatus());
+            s.setBytes(6, Order.serializeOrderedParts(orderedPartsArrayList) );
+
             int h = s.executeUpdate();
             if(h==1){ System.out.println("Order Inserted");}
             else{System.out.println("Order could not be inserted");}
-            c.close();
+            connection.close();
         }
 
         catch (Exception ex){System.out.println(ex);}
@@ -123,25 +178,23 @@ public class Order {
      **/
     public void updateDB(){
         try{
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
-            String sql = "UPDATE Orders set CustomerID=?,TotalCost=?,Address=?,OrderDate=?,Status=?,OrderParts=? WHERE OrderID= ?";
-            PreparedStatement s = c.prepareStatement(sql);
+            String sql = "UPDATE Orders SET CustomerID=?,TotalCost=?,Address=?,OrderDate=?,Status=?, OrderedParts=? WHERE OrderID = ?";
+            PreparedStatement s = connection.prepareStatement(sql);
 
-            System.out.println("Updating Order");
             s.setString(1, String.valueOf(getCustomerID()));
             s.setDouble(2,getOrderTotalCost());
             s.setString(3,getCustomerAddress());
             s.setString(4,getOrderDate());
             s.setString(5,getOrderStatus());
-            s.setString(6,"Yes");
+            s.setBytes(6, Order.serializeOrderedParts(orderedPartsArrayList) );
             s.setInt(7,getOrderID());
 
             int h = s.executeUpdate();
             if(h==1){System.out.println("Order Updated");}
             else{System.out.println("Order unable to be updated");}
-            c.close();
+            connection.close();
 
         }
         catch(Exception ex){System.out.println(ex);}
@@ -152,32 +205,65 @@ public class Order {
      **/
     public void deleteDB(){
         try{
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection c = DriverManager.getConnection("jdbc:ucanaccess://C://Users//alexgxz//Downloads//AutoPartsWebApplication-master//AutoPartsWebApplication-master//database//eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
             System.out.println("Deleting Order...");
             String sql = "Delete from Orders WHERE OrderID=?";
-            PreparedStatement s = c.prepareStatement(sql);
+            PreparedStatement s = connection.prepareStatement(sql);
             s.setInt(1,getOrderID());
 
             int j = s.executeUpdate();
             if(j==1){System.out.println("Order Deleted");}
             else{System.out.println("Order unable to be Deleted");}
-            c.close();
+            connection.close();
 
         }
         catch(Exception ex){System.out.println(ex);}
     }
+
     public static void main(String[] args) {
 
-        Order o2 = new Order(14,4,56.54,"Georgia","2/1/2024","Shipped",true);
-        o2.insertDB();
-   /*   Order o3 = new Order();
-    o3.selectDB(2);
-    o3.setOrderStatus("Delivered");
-    o3.updateDB();
-    Order o4 = new Order();
-    o4.selectDB(3);
-    o4.deleteDB();*/
+        Product p1 = new Product();
+        p1.selectDB("AF101");
+        Product p2 = new Product();
+        p2.selectDB("AFC103");
+
+        PartOrder po1 = new PartOrder();
+        po1.setPart(p1);
+        po1.setQuantity(3);
+        po1.setTotalOrderPrice(po1.getTotalPrice());
+
+        PartOrder po2 = new PartOrder();
+        po2.setPart(p2);
+        po2.setQuantity(5);
+        po2.setTotalOrderPrice(po2.getTotalPrice());
+
+        Order order = new Order();
+        order.addPartOrder(po1);
+        order.addPartOrder(po2);
+
+        order.setCustomerID(2);
+        order.setOrderTotalCost(order.calculateTotalPrice());
+        order.setOrderDate("TEST-DATE");
+        order.setCustomerAddress("Street");
+        order.setOrderStatus("Placed");
+
+
+        byte[] serialNumber = Order.serializeOrderedParts(order.orderedPartsArrayList);
+        ArrayList<PartOrder> partOrderArrayList = new ArrayList<PartOrder>();
+        partOrderArrayList = Order.deserializeOrderedParts(serialNumber);
+
+
+        //order.insertDB();
+
+        Order newOrder = new Order();
+        newOrder.selectDB(5);
+
+        for (PartOrder partOrder : newOrder.getOrderedPartsArrayList()){
+            System.out.println("Part Name : " + partOrder.getPart().getName() + " " + partOrder.getPart().getProductType());
+            System.out.println("Amount Ordered : " + partOrder.getQuantity());
+            System.out.println("Cost of parts ordered : " + partOrder.getTotalOrderPrice());
+        }
+
     }
 
 
@@ -200,6 +286,11 @@ public class Order {
     public String getOrderStatus(){return orderStatus;}
     public void setOrderStatus(String orderStatus) {this.orderStatus = orderStatus;}
 
-    public Boolean getOrderFulfilled() {return isOrderFulfilled;}
-    public void setOrderFulfilled(Boolean orderFulfilled) {isOrderFulfilled = orderFulfilled;}
+    public ArrayList<PartOrder> getOrderedPartsArrayList() {
+        return orderedPartsArrayList;
+    }
+
+    public void setOrderedPartsArrayList(ArrayList<PartOrder> orderedPartsArrayList) {
+        this.orderedPartsArrayList = orderedPartsArrayList;
+    }
 }

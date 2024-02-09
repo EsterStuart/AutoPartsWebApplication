@@ -1,10 +1,12 @@
 package Business;
 
-import javax.swing.text.html.HTMLDocument;
+import java.io.File;
+import java.io.Serializable;
+import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class Part {
+public class Product implements Serializable {
     private String productID;
     private String productType;
     private String brand;
@@ -132,8 +134,7 @@ public class Part {
      ***********************************************************************************/
     public boolean selectDB(String productID) {
         try {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM Products WHERE ProductID=?");
             statement.setString(1, productID);
@@ -167,8 +168,8 @@ public class Part {
      ***********************************************************************************/
     public boolean insertDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("INSERT INTO Products ([ProductID], [ProductType], [Brand], [ProductName], [Description], [Price], [Stock], [FitsSUV], [FitsSedan], [FitsTruck], [FitsCoupe], [FitsSport]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
             statement.setString(1, getProductID());
@@ -198,8 +199,7 @@ public class Part {
      ***********************************************************************************/
     public boolean updateDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("UPDATE Products SET [ProductType] = ?, [Brand] = ?, [ProductName] = ?, [Description] = ?, [Price] = ?, [Stock] = ?, [FitsSUV] = ?,[FitsSedan] = ?,[FitsTruck] = ?,[FitsCoupe] = ?,[FitsSport] = ? WHERE ProductID = ?");
 
@@ -228,8 +228,7 @@ public class Part {
      ***********************************************************************************/
     public boolean deleteDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("DELETE FROM Products WHERE ProductID = ?");
             statement.setString(1, getProductID());
@@ -246,15 +245,15 @@ public class Part {
 
     //<editor-fold desc="Get Product By Filter Methods">
 
-    /************************************************************************************************************************
-     *   The following method takes in only the productType and returns a ArrayList<Part> ArrayList filtered by product type
-     ***********************************************************************************************************************/
-    public static ArrayList<Part> getAllProductsFilterBy(String productType){
-        ArrayList<Part> productsArrayList = new ArrayList<Part>();
 
+    /************************************************************************************************************************
+     *   The following method takes in only the productType and returns a ArrayList<Product> ArrayList filtered by product type
+     ***********************************************************************************************************************/
+    public static ArrayList<Product> getAllProductsFilterBy(String productType){
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
         try {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT ProductID FROM Products WHERE ProductType = ?");
             statement.setString(1, productType);
@@ -262,23 +261,24 @@ public class Part {
             ResultSet resultSet;
             resultSet = statement.executeQuery();
 
+
             while (resultSet.next()){
-                Part part = new Part();
-                part.selectDB(resultSet.getString("ProductID"));
-                productsArrayList.add(part);
+                Product product = new Product();
+                product.selectDB(resultSet.getString("ProductID"));
+                productsArrayList.add(product);
             }
 
-        } catch (Exception ex) {System.out.println(ex);}
+        } catch (Exception ex) {ex.printStackTrace();}
 
 
         return productsArrayList;
     }
 
     /************************************************************************************************************************
-     *   The following method takes in only the CarType and returns a ArrayList<Part> ArrayList filtered by Car type
+     *   The following method takes in only the CarType and returns a ArrayList<Product> ArrayList filtered by Car type
      ***********************************************************************************************************************/
-    public static ArrayList<Part> getAllProductsFilterBy(CarType carType){
-        ArrayList<Part> productsArrayList = new ArrayList<Part>();
+    public static ArrayList<Product> getAllProductsFilterBy(CarType carType){
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
 
         String carTypeColumnName = "";
 
@@ -303,8 +303,7 @@ public class Part {
         }
 
         try {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT ProductID FROM Products WHERE " + carTypeColumnName + " = 1");
 
@@ -312,9 +311,9 @@ public class Part {
             resultSet = statement.executeQuery();
 
             while (resultSet.next()){
-                Part part = new Part();
-                part.selectDB(resultSet.getString("ProductID"));
-                productsArrayList.add(part);
+                Product product = new Product();
+                product.selectDB(resultSet.getString("ProductID"));
+                productsArrayList.add(product);
             }
 
         } catch (Exception ex) {System.out.println(ex);}
@@ -325,10 +324,10 @@ public class Part {
 
 
     /************************************************************************************************************************
-     *   The following method takes in the ProductType and CarType returns a ArrayList<Part> ArrayList filtered by product type and CarType
+     *   The following method takes in the ProductType and CarType returns a ArrayList<Product> ArrayList filtered by product type and CarType
      ***********************************************************************************************************************/
-    public static ArrayList<Part> getAllProductsFilterBy(String productType, CarType carType){
-        ArrayList<Part> productsArrayList = new ArrayList<Part>();
+    public static ArrayList<Product> getAllProductsFilterBy(String productType, CarType carType){
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
 
         String carTypeColumnName = "";
 
@@ -353,8 +352,7 @@ public class Part {
         }
 
         try {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT ProductID FROM Products WHERE " + carTypeColumnName + " = 1 AND ProductType = ?");
             statement.setString(1, productType);
@@ -363,9 +361,9 @@ public class Part {
             resultSet = statement.executeQuery();
 
             while (resultSet.next()){
-                Part part = new Part();
-                part.selectDB(resultSet.getString("ProductID"));
-                productsArrayList.add(part);
+                Product product = new Product();
+                product.selectDB(resultSet.getString("ProductID"));
+                productsArrayList.add(product);
             }
 
         } catch (Exception ex) {System.out.println(ex);}
@@ -382,8 +380,7 @@ public class Part {
      ***********************************************************************************************************************/
     public static boolean updateProductStock(String productID, int newProductStock) {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("UPDATE Products SET [Stock] = ? WHERE ProductID = ?");
 
@@ -403,8 +400,7 @@ public class Part {
 
     public static boolean decreaseProductStock(String productID, int decreaseAmount) {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT Stock FROM Products WHERE ProductID = ?");
             statement.setString(1, productID);
@@ -427,6 +423,36 @@ public class Part {
     //</editor-fold>
 
 
+    public static CarType getCarType(String carTypeName) {
+        String lowerCaseCarTypeName = carTypeName.toLowerCase();
+
+        CarType carType;
+
+        switch (lowerCaseCarTypeName) {
+            case "suv":
+                carType = CarType.SUV;
+                break;
+
+            case "sedan":
+                carType = CarType.Sedan;
+                break;
+
+            case "truck":
+                carType = CarType.Truck;
+                break;
+
+            case "coupe":
+                carType = CarType.Coupe;
+                break;
+
+            default:
+                carType = CarType.Sport;
+                break;
+        }
+
+        return  carType;
+    }
+
     public void display(){
         System.out.println("ProductID : " + getProductID());
         System.out.println("Product Type : " + getProductType());
@@ -445,21 +471,23 @@ public class Part {
     public static void main(String[] args){
 
 
-        Part p1 = new Part();
+        Product p1 = new Product();
         p1.selectDB("AF108");
         p1.display();
 
-        Part.decreaseProductStock("AF108", 2);
+        p1.decreaseProductStock("AF108", 2);
 
         p1.selectDB("AF108");
         p1.display();
 
 
 
-        //ArrayList<Part> productsArraylist = getAllProductsOfType("Battery");
-        //ArrayList<Part> productsArraylist = getAllProductsFilterBy(CarType.Truck);
-        //ArrayList<Part> productsArraylist = getAllProductsFilterBy("Battery", CarType.Truck);
-
+        ArrayList<Product> productsArraylist = p1.getAllProductsFilterBy("Spark Plug");
+        //ArrayList<Product> productsArraylist = getAllProductsFilterBy(CarType.Truck);
+        //ArrayList<Product> productsArraylist = getAllProductsFilterBy("Battery", CarType.Truck);
+        for (Product product : productsArraylist){
+            System.out.println(product.name);
+        }
 
 
     }
