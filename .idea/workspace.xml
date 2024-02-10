@@ -10,42 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apache-tomcat-10.1.18/bin/database/eCommerceDB.accdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/eCommerceDB.laccdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_10_1_18.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/PartOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/PartOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/help.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/help.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +28,9 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -109,7 +80,7 @@
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "Tomcat Server.Tomcat.executor": "Run",
     "Tomcat Server.login.jsp.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "html",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication",
