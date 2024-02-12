@@ -13,13 +13,10 @@ public class OrderSerializationTest {
     ArrayList<String> partOrderArrayList = new ArrayList<>(Arrays.asList("test_1", "test_2", "test_3", "test_4"));
 
 
-
-
     public boolean selectDB(int orderID) {
         try {
 
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM Orders WHERE OrderID=?");
             statement.setInt(1, orderID);
@@ -27,9 +24,6 @@ public class OrderSerializationTest {
             ResultSet resultSet;
             resultSet = statement.executeQuery();
             resultSet.next();
-
-
-
 
             connection.close();
             return true;
@@ -44,9 +38,7 @@ public class OrderSerializationTest {
     public boolean insertDB() {
         try  {
 
-
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("INSERT INTO Orders ([CustomerID], [TotalCost], [Address], [OrderDate], [Status], [OrderParts]) VALUES (?,?,?,?,?,?)");
 
