@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.order-summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.order-summary a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 50px 30px 0 auto;
+    display: block;
+    text-align: center;
+    width: 55px;
+    height: 15px;
+}
+
+
+.thank-you-message {
+    font-size: 24px;
+    color: #008000;
+}

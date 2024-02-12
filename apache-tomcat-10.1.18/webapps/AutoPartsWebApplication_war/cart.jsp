@@ -44,7 +44,7 @@
     }
 </script>
 
-<%--
+
 <div class="small-container">
 
 <table>
@@ -125,6 +125,6 @@
         <td>85.0</td>
       </tr>
     </table>
---%>
+
 </body>
 </html>
