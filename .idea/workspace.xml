@@ -10,16 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/AddProductToCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/RemoveProductFromCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CustomerLoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/UpdateCustomerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "Tomcat Server.Tomcat.executor": "Run",
     "Tomcat Server.login.jsp.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication",
@@ -306,6 +302,7 @@
       <workItem from="1707740522212" duration="3848000" />
       <workItem from="1707744394302" duration="249000" />
       <workItem from="1707744654949" duration="776000" />
+      <workItem from="1707746036373" duration="438000" />
     </task>
     <servers />
   </component>
