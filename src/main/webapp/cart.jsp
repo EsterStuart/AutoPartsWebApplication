@@ -45,6 +45,86 @@
 </script>
 
 
+<div class="small-container">
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Subtotal</th>
+  </tr>
+  <tr>
+    <td>
+
+      <div class="cart-info">
+
+        <div>
+          <p>Oil</p>
+          <small>Price</small>
+          <a href="">Remove</a>
+        </div>
+
+      </div>
+
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$50.00</td>
+  </tr>
+
+  <tr>
+    <td>
+
+      <div class="cart-info">
+
+        <div>
+          <p>Oil</p>
+          <small>Price</small>
+          <a href="">Remove</a>
+        </div>
+
+      </div>
+
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$50.00</td>
+  </tr>
+
+  <tr>
+    <td>
+
+      <div class="cart-info">
+
+        <div>
+          <p>Oil</p>
+          <small>Price</small>
+          <a href="">Remove</a>
+        </div>
+
+      </div>
+
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$50.00</td>
+  </tr>
+
+</table>
+
+  <div class="total-price">
+
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>50.0</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>35.0</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>85.0</td>
+      </tr>
+    </table>
 
 </body>
 </html>
