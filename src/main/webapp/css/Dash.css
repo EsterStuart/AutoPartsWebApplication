@@ -1,0 +1,58 @@
+body{
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+  "side header "
+  "side main    ";
+
+}
+.header{
+  background-color: white;
+  grid-area: header;
+  font-size: larger;
+  font-weight: bold;
+
+
+}
+
+.sidebar{
+  background-color: #cccccc;
+  grid-area: side;
+
+}
+
+.main{
+  background-color: #222222;
+  grid-area: main;
+  display: grid;
+  padding: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr ;
+  grid-template-areas: "c1 c2 c3";
+
+  gap: 20px;
+
+
+}
+.card{
+  background-color: #ffb884;
+  border-radius: 10px;
+
+}
+
+
+h1{
+  background-color: burlywood;
+}
+
+@media (max-width: 925px) {
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,200px);
+  }
+
+}
+
