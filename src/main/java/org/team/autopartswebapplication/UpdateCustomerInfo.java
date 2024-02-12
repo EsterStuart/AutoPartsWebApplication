@@ -15,12 +15,8 @@ import jakarta.servlet.annotation.*;
 
 public class UpdateCustomerInfo extends HttpServlet {
     private String message;
-private String fname;
-private String lname;
-private String email;
-private String Address;
+private String fname,lname,email,Address;
     public void init() {
-        message = "Hello World!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
