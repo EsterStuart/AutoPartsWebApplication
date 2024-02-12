@@ -67,7 +67,7 @@ public class Customer extends  Person{
             connection.close();
             return true;
 
-        } catch (Exception ex) {System.out.println(ex); return false;}
+        } catch (Exception ex) {ex.printStackTrace(); return false;}
     }
 
     /***********************************************************************************
@@ -94,7 +94,7 @@ public class Customer extends  Person{
             connection.close();
 
             return true;
-        } catch (Exception ex) {System.out.println(ex); return false;}
+        } catch (Exception ex) {ex.printStackTrace(); return false;}
     }
 
 
@@ -117,7 +117,7 @@ public class Customer extends  Person{
             connection.close();
             return true;
 
-        } catch (Exception ex) {System.out.println(ex); return false;}
+        } catch (Exception ex) {ex.printStackTrace(); return false;}
     }
 
     /***********************************************************************************
@@ -134,7 +134,7 @@ public class Customer extends  Person{
             connection.close();
             return true;
 
-        } catch (Exception ex) {System.out.println(ex); return false;}
+        } catch (Exception ex) {ex.printStackTrace(); return false;}
     }
 
     //</editor-fold>
