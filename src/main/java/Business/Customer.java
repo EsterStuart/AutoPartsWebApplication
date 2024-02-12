@@ -48,8 +48,7 @@ public class Customer extends  Person{
     public boolean selectDB(int customerID) {
         try {
 
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM Customers WHERE CustomerID=?");
             statement.setInt(1, customerID);
@@ -77,8 +76,7 @@ public class Customer extends  Person{
      ***********************************************************************************/
     public boolean insertDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("INSERT INTO Customers ([FirstName], [LastName], [email], [Address], [Password]) VALUES (?,?,?,?,?)");
             statement.setString(1, getFirstName());
@@ -105,8 +103,7 @@ public class Customer extends  Person{
      ***********************************************************************************/
     public boolean updateDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("UPDATE Customers SET [FirstName] = ?, [LastName] = ?, [email] = ?, [Address] = ?, [Password] = ? WHERE CustomerID = ?");
             statement.setString(1, getFirstName());
@@ -128,8 +125,7 @@ public class Customer extends  Person{
      ***********************************************************************************/
     public boolean deleteDB() {
         try  {
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://Database/eCommerceDB.accdb");
+            Connection connection = DatabaseConnection.getDatabaseConnection();
 
             PreparedStatement statement = connection.prepareStatement("DELETE FROM Customers WHERE CustomerID = ?");
             statement.setInt(1, getCustomerID());

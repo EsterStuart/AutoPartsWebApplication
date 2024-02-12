@@ -1,10 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="css/global.css">
     <title>Title</title>
 </head>
 <body>
+
 <form action =UpdateCustomerInfo method="get">
+=======
+<script id="replace_with_navbar" src="nav.js"></script>
+
 
     <% String message = (String) request.getAttribute("message");
         if(message != null){

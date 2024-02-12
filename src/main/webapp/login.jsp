@@ -1,10 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <link rel="stylesheet" href="Login.css">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/login.css">
+
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
+
+<script id="replace_with_navbar" src="nav.js"></script>
 <Form action="CustomerLoginServlet" method="get"><body>
 <nav class="navbar">
   <ul>
@@ -35,6 +40,7 @@
   </ul>
 </nav>
 
+
 <div class ="Split"><h1> Customer Login</h1>
   <h2><a href="createAccount.jsp"> Sign Up</a></h2>
 </div>
@@ -53,5 +59,10 @@ if(message != null){
   <button type="submit">Login</button>
 </div>
 
+
 </body></Form>
+=======
+
+
+
 </html>
