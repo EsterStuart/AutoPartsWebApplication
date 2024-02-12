@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
-<body>
+<Form action="CustomerLoginServlet" method="get"><body>
 <nav class="navbar">
   <ul>
     <li><a href="Home.html">Home</a></li>
@@ -38,15 +38,20 @@
 <div class ="Split"><h1> Customer Login</h1>
   <h2><a href="createAccount.jsp"> Sign Up</a></h2>
 </div>
+
 <div class="container">
   <label for=""><b>Username</b></label>
   <input type="text" placeholder="Enter Username" name="uname" required>
 
   <label for=""><b>Password</b></label>
   <input type="password" placeholder="Enter Password" name="psw" required>
+<% String message = (String) request.getAttribute("message");
+if(message != null){
+%><p>Incorrect Username or Password. Please Try Again.</p>
+<%}%>
 
   <button type="submit">Login</button>
 </div>
 
-</body>
+</body></Form>
 </html>
