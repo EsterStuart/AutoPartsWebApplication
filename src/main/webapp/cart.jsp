@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
+
+  
     <title>Title</title>
 </head>
 <body>
