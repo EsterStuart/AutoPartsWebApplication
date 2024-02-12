@@ -11,6 +11,7 @@
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
+<h1> TEST CHANGE </h1>
 <Form action="CustomerLoginServlet" method="get">
 
 
