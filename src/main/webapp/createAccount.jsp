@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-
+  <link rel="stylesheet" href="css/Signup.css">
     <title>SignUp</title>
 <body>
 

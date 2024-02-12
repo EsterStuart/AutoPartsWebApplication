@@ -7,38 +7,12 @@
 
   <meta charset="UTF-8">
   <title>Title</title>
+
 </head>
-
+<body>
 <script id="replace_with_navbar" src="nav.js"></script>
-<Form action="CustomerLoginServlet" method="get"><body>
-<nav class="navbar">
-  <ul>
-    <li><a href="Home.html">Home</a></li>
+<Form action="CustomerLoginServlet" method="get">
 
-    <li>
-      <a href="">Vehicle</a>
-      <ul>
-        <li><a href="#">Sedan</a></li>
-        <li><a href="#">SUV</a></li>
-        <li><a href="#">Truck</a></li>
-        <li><a href="#">Coupe</a></li>
-        <li><a href="#">Sport</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Products</a></li>
-
-    <li>
-      <a href="#">Login/Account</a>
-      <ul>
-        <li><a href="Cust%20Login.html">Customer</a> </li>
-        <li><a href="Login.html"> Employee</a> </li>
-      </ul>
-    </li>
-
-    <li><a href="#">Cart</a> </li>
-    <li><a href="#">Help</a></li>
-  </ul>
-</nav>
 
 
 <div class ="Split"><h1> Customer Login</h1>
@@ -60,8 +34,9 @@ if(message != null){
 </div>
 
 
-</body></Form>
-=======
+</Form>
+</body>
+
 
 
 

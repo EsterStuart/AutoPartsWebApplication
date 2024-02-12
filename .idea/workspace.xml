@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CustomerLoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/UpdateCustomerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,10 +74,11 @@
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "Tomcat Server.Tomcat.executor": "Run",
     "Tomcat Server.login.jsp.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication",
+    "last_opened_file_path": "C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -112,7 +106,7 @@
       <recent name="org.team.autopartswebapplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
+  <component name="RunManager" selected="Tomcat Server.cart.jsp">
     <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Business.Customer" />
       <module name="AutoPartsWebApplication" />
@@ -126,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Order" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Order" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Business.Order" />
       <module name="AutoPartsWebApplication" />
       <extension name="coverage">
@@ -159,7 +153,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="AutoPartsWebApplication:war exploded">
@@ -169,7 +162,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="44a76d1f-5805-40c5-b744-be580818697d" />
+        <option name="BASE_DIRECTORY_NAME" value="c3b36ab1-f238-44ce-830f-5bde0abc0447" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -177,7 +170,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58586" />
+        <option name="DEBUG_PORT" value="56594" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -246,6 +239,45 @@
         </option>
       </method>
     </configuration>
+    <configuration name="cart.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cart.jsp" />
+      <deployment>
+        <artifact name="AutoPartsWebApplication:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/AutoPartsWebApplication_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="2ba77531-2356-4621-bd7e-96e102aae2cd" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="AutoPartsWebApplication:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Order" />
       <item itemvalue="Application.Product" />
@@ -253,12 +285,13 @@
       <item itemvalue="JavaScript Debug.nav.html" />
       <item itemvalue="JavaScript Debug.nav.html (1)" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
+      <item itemvalue="Tomcat Server.cart.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.cart.jsp" />
         <item itemvalue="JavaScript Debug.nav.html (1)" />
         <item itemvalue="JavaScript Debug.nav.html" />
-        <item itemvalue="Application.Order" />
         <item itemvalue="Application.Product" />
         <item itemvalue="Application.Customer" />
       </list>
@@ -303,6 +336,7 @@
       <workItem from="1707744394302" duration="249000" />
       <workItem from="1707744654949" duration="776000" />
       <workItem from="1707746036373" duration="438000" />
+      <workItem from="1707747855011" duration="972000" />
     </task>
     <servers />
   </component>
