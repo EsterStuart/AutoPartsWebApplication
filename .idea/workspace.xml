@@ -78,7 +78,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
+    "last_opened_file_path": "C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/css",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,6 +94,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\css" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\bin" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\database" />
@@ -364,7 +365,8 @@
       <workItem from="1707746036373" duration="438000" />
       <workItem from="1707747855011" duration="972000" />
       <workItem from="1707749116811" duration="130000" />
-      <workItem from="1707749350750" duration="1186000" />
+      <workItem from="1707749350750" duration="2031000" />
+      <workItem from="1707751456764" duration="2773000" />
     </task>
     <servers />
   </component>
