@@ -6,22 +6,7 @@
     <title>SignUp</title>
 <body>
 
-
-<nav class="navbar">
-  <ul>
-    <li><a href="index.jsp">Home</a></li>
-    <li><a href="productCategories.jsp">Products</a></li>
-    <li><a href="#">Help</a></li>
-    <li>
-      <a href="login.jsp">Login/Account</a>
-      <ul>
-        <li><a href="login.jsp">Customer</a> </li>
-        <li><a href="employeeLogin.jsp"> Employee</a> </li>
-      </ul>
-    </li>
-    <li><a href="#">Cart</a> </li>
-  </ul>
-</nav>
+<script id="replace_with_navbar" src="nav.js"></script>
 
 <form action="/action_page.php" style="border: 1px solid #ccc">
   <div class="container">

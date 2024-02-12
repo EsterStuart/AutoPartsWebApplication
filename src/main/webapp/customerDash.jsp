@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<script id="replace_with_navbar" src="nav.js"></script>
 
 </body>
 </html>

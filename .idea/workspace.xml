@@ -10,13 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/AddProductToCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/RemoveProductFromCartServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +29,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -73,6 +76,8 @@
     "Application.Part.executor": "Run",
     "Application.Product.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.nav.html (1).executor": "Run",
+    "JavaScript Debug.nav.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,7 +85,7 @@
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "Tomcat Server.Tomcat.executor": "Run",
     "Tomcat Server.login.jsp.executor": "Run",
-    "git-widget-placeholder": "html",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication",
@@ -93,7 +98,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15155359",
     "project.structure.side.proportion": "0.23274337",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.build",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,8 +109,11 @@
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\css" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp" />
+      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.team.autopartswebapplication" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
@@ -147,6 +155,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="nav.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AutoPartsWebApplication/src/main/webapp/nav.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="nav.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/AutoPartsWebApplication_war_exploded/nav.html">
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
@@ -240,10 +254,14 @@
       <item itemvalue="Application.Order" />
       <item itemvalue="Application.Product" />
       <item itemvalue="Application.Customer" />
+      <item itemvalue="JavaScript Debug.nav.html" />
+      <item itemvalue="JavaScript Debug.nav.html (1)" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.nav.html (1)" />
+        <item itemvalue="JavaScript Debug.nav.html" />
         <item itemvalue="Application.Order" />
         <item itemvalue="Application.Product" />
         <item itemvalue="Application.Customer" />
@@ -282,6 +300,12 @@
       <workItem from="1707247720482" duration="4386000" />
       <workItem from="1707398309491" duration="3193000" />
       <workItem from="1707483592792" duration="18118000" />
+      <workItem from="1707601755157" duration="3602000" />
+      <workItem from="1707699723479" duration="3265000" />
+      <workItem from="1707703028209" duration="3479000" />
+      <workItem from="1707740522212" duration="3848000" />
+      <workItem from="1707744394302" duration="249000" />
+      <workItem from="1707744654949" duration="776000" />
     </task>
     <servers />
   </component>
@@ -301,5 +325,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
