@@ -10,6 +10,8 @@
 
 
 <main class="main">
+  
+
     <div class="card">
         <h>Customer Information <a href="updateInformation.jsp"> Edit</a> </h>
         <ul>
