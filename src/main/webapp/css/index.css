@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),*/ url("../Photos/carPic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* style for login and search button */
+.button--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 30%;
+}
+
+.button--container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #ffffff;
+}

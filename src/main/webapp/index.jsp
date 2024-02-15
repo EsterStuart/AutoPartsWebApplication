@@ -4,39 +4,10 @@
 <head>
 
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
 
 
   <title>Home</title>
-
-  <style>
-    body {
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    /* style for login and search button */
-    .button--container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      position: relative;
-      top: 25%;
-    }
-
-    .button--container a {
-      text-decoration: none;
-      padding: 10px 20px;
-      background-color: #000;
-      border-radius: 10px;
-      color: #ffffff;
-    }
-
-  </style>
 </head>
 <body>
 

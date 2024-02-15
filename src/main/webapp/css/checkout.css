@@ -4,63 +4,88 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 h1 {
     text-align: center;
-    margin: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
 }
 
 form {
     width: 50%;
-    margin: 0 auto;
-}
-
-fieldset {
+    padding: 20px;
+    background-color: #f9f9f9;
     border-radius: 10px;
-}
-
-legend {
-    display: block;
-    text-align: left;
-    font-size: 1.5em;
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.text--input {
-    display: block;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #000000;
-    height: 20px;
-}
-
-
-
-#submit  {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #000;
-    border-radius: 10px;
-    color: #ffffff;
-    margin: 15px auto;
-    display: block;
-    text-align: center;
+    margin-left: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .total-section {
-    margin-top: 20px;
-    border-top: 2px solid #ccc;
-    padding-top: 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 50%;
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 .total-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .total-label {
