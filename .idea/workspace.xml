@@ -10,27 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/airFilters.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/alternator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/antifreeze.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/battery.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/brakePads.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/carPic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/engineOil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/headlightBulb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/miniBulbs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/parts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/rearBrakes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/sparkPlugs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/wiper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/productCategories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +93,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15155359",
     "project.structure.side.proportion": "0.23274337",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -415,7 +398,9 @@
       <workItem from="1707747855011" duration="972000" />
       <workItem from="1707749116811" duration="130000" />
       <workItem from="1707749350750" duration="1186000" />
-      <workItem from="1708010600520" duration="14552000" />
+      <workItem from="1708010600520" duration="15074000" />
+      <workItem from="1708027692060" duration="173000" />
+      <workItem from="1708098166097" duration="5827000" />
     </task>
     <servers />
   </component>
