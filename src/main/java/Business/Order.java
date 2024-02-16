@@ -83,6 +83,34 @@ public class Order {
     }
 
 
+    public static ArrayList<Order> getAllOrders(){
+
+        ArrayList<Order> allOrdersArrayList =  new ArrayList<Order>();
+
+        try{
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+            String sql = "SELECT OrderID FROM Orders";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            ResultSet resultSet;
+            resultSet = preparedStatement.executeQuery();
+
+
+            while (resultSet.next()){
+                Order order = new Order();
+                int orderID = resultSet.getInt("OrderID");
+
+                order.selectDB(orderID);
+                System.out.println(order.getOrderID());
+                allOrdersArrayList.add(order);
+            }
+
+        }catch (Exception ex) {ex.printStackTrace();}
+
+        return allOrdersArrayList;
+    }
+
+
     /**
      Retrieves order information from the database based on Order ID
      **/
@@ -99,6 +127,8 @@ public class Order {
             System.out.println("Searching for Order...");
             if (rs.next()){
                 setOrderID(rs.getInt("OrderID"));
+                setCustomerID(0);
+                setCustomerID(rs.getInt("CustomerID"));
                 setOrderTotalCost(rs.getDouble("TotalCost"));
                 setCustomerAddress(rs.getString("Address"));
                 setOrderDate(rs.getString("OrderDate"));
@@ -222,6 +252,10 @@ public class Order {
 
     public static void main(String[] args) {
 
+
+
+        /*
+
         Product p1 = new Product();
         p1.selectDB("AF101");
         Product p2 = new Product();
@@ -252,11 +286,13 @@ public class Order {
         ArrayList<PartOrder> partOrderArrayList = new ArrayList<PartOrder>();
         partOrderArrayList = Order.deserializeOrderedParts(serialNumber);
 
+         */
+
 
         //order.insertDB();
 
         Order newOrder = new Order();
-        newOrder.selectDB(5);
+        newOrder.selectDB(3);
 
         for (PartOrder partOrder : newOrder.getOrderedPartsArrayList()){
             System.out.println("Part Name : " + partOrder.getPart().getName() + " " + partOrder.getPart().getProductType());
