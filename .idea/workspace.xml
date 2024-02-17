@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +78,7 @@
     "git-widget-placeholder": "html",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Tygeo/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/Photos",
+    "last_opened_file_path": "C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/css",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,12 +94,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\css" />
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\bin" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\css" />
@@ -401,6 +398,7 @@
       <workItem from="1708010600520" duration="15074000" />
       <workItem from="1708027692060" duration="173000" />
       <workItem from="1708098166097" duration="5827000" />
+      <workItem from="1708129801754" duration="1314000" />
     </task>
     <servers />
   </component>

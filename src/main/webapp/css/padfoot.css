@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+#xontain{
+  min-height: 100%;
+}
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
+
+}
+footer{
+  background-image:url("/Photos/gears.jpg");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-top: -100px;
+
+
+
+}
+.footnav{
+  margin: 30px 0;
+}
+.footnav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footnav ul li a{
+  color: antiquewhite;
+  margin: 20px;
+  font-size: 1.3em;
+}
+.footbottom{
+  background-color: #222222;
+  padding: 20px;
+  text-align: center;
+}
+.footbottom p{
+  color: white;
+}
+body{
+  background-image: url("/Photos/engineer.jpg");
+  background-size: cover;
+
+}
