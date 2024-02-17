@@ -9,7 +9,7 @@
 <head>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="EmpDash.css">
+    <link rel="stylesheet" href="css/EmpDash.css">
 
     <title>Title</title>
 </head>

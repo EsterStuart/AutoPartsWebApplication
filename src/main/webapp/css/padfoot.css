@@ -15,8 +15,8 @@ html, body {
 
 }
 footer{
-  background-image:url("/Photos/gears.jpg");
-  background-size: cover;
+  background-image: url("/Photos/gears.jpg");
+
   position: absolute;
   bottom: 0;
   width: 100%;
