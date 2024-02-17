@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
+
+  
     <title>Title</title>
 </head>
 <body>
@@ -21,20 +23,11 @@
         Cart cart = (Cart) session.getAttribute("UserCart");
 
         int index = 0;
-        for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()){
-            Product product = partOrder.getPart();
+        double totalCost = 0.0;
+        double tax = 0.0;
+        double taxRate = .04;
 
-            out.print("<div>");
-            out.print("<h3>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
-            out.print("<form id='addToCartForm' onSubmit='return removeFromCart()' action='remove-product-from-cart-servlet'>");
-
-            out.print("<input type='hidden' id='IndexValue' name='IndexValue' value='" + index + "'>");
-            out.print("<input type='submit' value = 'Remove'>");
-            out.print("</form>");
-
-            out.print("</div>");
-            index += 1;
-        }
+        double totalCostPlusTax = 0.0;
     %>
 
 </div>
@@ -54,60 +47,45 @@
     <th>Quantity</th>
     <th>Subtotal</th>
   </tr>
-  <tr>
-    <td>
 
-      <div class="cart-info">
+    <%
+        if (cart.getPartOrdersInCartArrayList().isEmpty()){
+            out.print("<h1> CART IS EMPTY </h1>");
 
-        <div>
-          <p>Oil</p>
-          <small>Price</small>
-          <a href="">Remove</a>
-        </div>
+        } else {
 
-      </div>
+            for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()) {
+                Product product = partOrder.getPart();
 
-    </td>
-    <td><input type="number" value="1"></td>
-    <td>$50.00</td>
-  </tr>
+                out.print("<tr>");
+                out.print("<td>");
+                out.print("<div class='cart-info'>");
+                out.print("<div>");
+                out.print("<p>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</p>");
+                out.print("<small> Price: " + "$" + product.getPrice() + "</small>");
 
-  <tr>
-    <td>
+                out.print("<form id='addToCartForm' onSubmit='return removeFromCart()' action='remove-product-from-cart-servlet'>");
+                out.print("<input type='hidden' id='IndexValue' name='IndexValue' value='" + index + "'>");
+                out.print("<input type='submit' value = 'Remove'>");
+                out.print("</form>");
 
-      <div class="cart-info">
+                out.print("</div>");
+                out.print("</div>");
+                out.print("</td>");
+                out.print("<td>" + partOrder.getQuantity() + "</td>");
 
-        <div>
-          <p>Oil</p>
-          <small>Price</small>
-          <a href="">Remove</a>
-        </div>
+                out.print("<td>" + "$" + partOrder.getTotalOrderPrice() + "</td>");
+                out.print("</tr>");
 
-      </div>
 
-    </td>
-    <td><input type="number" value="1"></td>
-    <td>$50.00</td>
-  </tr>
+                totalCost += partOrder.getTotalOrderPrice();
+                index += 1;
+            }
 
-  <tr>
-    <td>
-
-      <div class="cart-info">
-
-        <div>
-          <p>Oil</p>
-          <small>Price</small>
-          <a href="">Remove</a>
-        </div>
-
-      </div>
-
-    </td>
-    <td><input type="number" value="1"></td>
-    <td>$50.00</td>
-  </tr>
-
+            tax = totalCost * taxRate;
+            totalCostPlusTax = totalCost + tax;
+        }
+    %>
 </table>
 
   <div class="total-price">
@@ -115,15 +93,15 @@
     <table>
       <tr>
         <td>Subtotal</td>
-        <td>50.0</td>
+        <td> $<%=String.format("%,.2f", totalCost)%> </td>
       </tr>
       <tr>
         <td>Tax</td>
-        <td>35.0</td>
+        <td>$<%=String.format("%,.2f", tax)%></td>
       </tr>
       <tr>
         <td>Total</td>
-        <td>85.0</td>
+        <td>$<%=String.format("%,.2f", totalCostPlusTax)%></td>
       </tr>
     </table>
   </div>

@@ -3,16 +3,27 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
 }
+
+.container h1 {
+    text-align: center;
+}
+
 .order-details {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .order-status {
     font-weight: bold;
@@ -23,16 +34,28 @@ input[type="submit"] {
     padding: 10px 20px;
     background-color: #000;
     border-radius: 10px;
+    border: none;
     color: #ffffff;
     margin-top: 15px;
     text-align: center;
+    transition: background-color 0.3s;
 }
 .return-link a {
     text-decoration: none;
     padding: 10px 20px;
     background-color: #000;
+    border: none;
     border-radius: 10px;
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;;
+}
+
+.return-link a:hover {
+    background-color: #0056b3;
 }
