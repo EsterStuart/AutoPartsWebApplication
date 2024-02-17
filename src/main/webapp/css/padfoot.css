@@ -15,17 +15,27 @@ html, body {
 
 }
 footer{
-  background-image: url("/Photos/gears.jpg");
-
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+  background-image: url("../Photos/gears.jpg");
+  background-size: cover;
+  position: relative;
+  height: 110px;
   margin-top: -100px;
 
-
-
 }
+
+.Split{
+  display: flex;
+  justify-content: space-between;
+  color: antiquewhite;
+  background-color: black;
+  border-radius: 4px;
+  font-family: Monaco;
+}
+.Split a{
+  color: antiquewhite;
+}
+
+
 .footnav{
   margin: 30px 0;
 }
@@ -46,9 +56,4 @@ footer{
 }
 .footbottom p{
   color: white;
-}
-body{
-  background-image: url("/Photos/engineer.jpg");
-  background-size: cover;
-
 }

@@ -9,12 +9,19 @@
   <meta charset="UTF-8">
   <title>Title</title>
 
+  <style>
+    body{
+      background-image: url("./Photos/engineer.jpg");
+      background-size: cover ;
+      background-repeat:no-repeat ;
+    }
+  </style>
+
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
-<h1> TEST CHANGE </h1>
-<Form action="CustomerLoginServlet" method="get">
 
+<Form action="CustomerLoginServlet" method="get">
 
 
 <div class ="Split"><h1> Customer Login</h1>
@@ -39,7 +46,6 @@ if(message != null){
 </Form>
 <script id="add_the_feet" src="Padfeet.js"> </script>
 </body>
-
 
 
 
