@@ -1,4 +1,4 @@
-fetch('nav.html')
+fetch('nav.jsp')
 
     .then(res => res.text())
     .then(text => {

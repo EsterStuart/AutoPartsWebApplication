@@ -26,12 +26,8 @@ public class CustomerLoginServlet extends HttpServlet {
    Leads to Customer Dashboard and saves Customer Information if password is correct or displays error message if incorrect
  */
         if (pass.equals(c1.getPassword())){
-            hs.setAttribute("CustomerID",id);
-            hs.setAttribute("Fname",c1.getFirstName());
-            hs.setAttribute("Lname",c1.getLastName());
-            hs.setAttribute("Address",c1.getAddress());
-            hs.setAttribute("Email",c1.getEmail());
 
+            hs.setAttribute("customer", c1);
             rd = request.getRequestDispatcher("/customerDash.jsp");
             rd.forward(request,response);
     }
