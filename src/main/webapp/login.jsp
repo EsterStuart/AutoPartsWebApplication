@@ -9,13 +9,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
 
-  <style>
-    body{
-      background-image: url("./Photos/engineer.jpg");
-      background-size: cover ;
-      background-repeat:no-repeat ;
-    }
-  </style>
+
 
 </head>
 <body>
