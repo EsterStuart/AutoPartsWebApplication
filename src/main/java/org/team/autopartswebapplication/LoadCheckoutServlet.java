@@ -2,8 +2,7 @@ package org.team.autopartswebapplication;
 
 
 import Business.Cart;
-import Business.PartOrder;
-import Business.Product;
+import Business.Customer;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -14,8 +13,8 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "RemoveProductFromCartServlet", value = "/remove-product-from-cart-servlet")
-public class RemoveProductFromCartServlet extends HttpServlet {
+@WebServlet(name = "LoadCheckoutServlet", value = "/load-checkout-servlet")
+public class LoadCheckoutServlet extends HttpServlet {
     public void init(){}
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,25 +22,23 @@ public class RemoveProductFromCartServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        int indexValue = Integer.parseInt(request.getParameter("IndexValue"));
-
         Cart cart;
-        if(null != session.getAttribute("userCart")){
-            cart = (Cart) session.getAttribute("userCart");
-            System.out.println("CART ALREADY IN SESSION");
-        } else {
-            cart = new Cart();
-            System.out.println("CART NOT IN SESSION ==========");
+        cart = (Cart) session.getAttribute("userCart");
+
+
+        Customer customer;
+        customer = (Customer) session.getAttribute("customer");
+
+        if (customer != null){
+            session.setAttribute("customer", customer);
         }
-
-        cart.removePartOrderFromCart(indexValue);
-
 
 
         session.setAttribute("userCart", cart);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/cart.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/checkout.jsp");
         requestDispatcher.forward(request, response);
+
     }
 
     public void destroy() {

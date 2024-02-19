@@ -18,19 +18,17 @@
 
 <script id="replace_with_navbar" src="nav.js"></script>
 
-<div>
-    <%
-        Cart cart = (Cart) session.getAttribute("UserCart");
+<%
+    Cart cart = (Cart) session.getAttribute("userCart");
 
-        int index = 0;
-        double totalCost = 0.0;
-        double tax = 0.0;
-        double taxRate = .04;
+    int index = 0;
+    double totalCost = 0.0;
+    double tax = 0.0;
+    double taxRate = .04;
 
-        double totalCostPlusTax = 0.0;
-    %>
+    double totalCostPlusTax = 0.0;
+%>
 
-</div>
 
 <script type="text/javascript">
     function removeFromCart(){
@@ -106,6 +104,8 @@
     </table>
   </div>
 </div>
+
+<a href="checkout.jsp"> CHECKOUT </a>
 
 </body>
 </html>

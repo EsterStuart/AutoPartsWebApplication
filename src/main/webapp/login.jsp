@@ -2,9 +2,11 @@
 <html>
 <head>
 
+
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/padfoot.css">
+<%--  <link rel="stylesheet" href="css/padfoot.css">--%>
+
 
   <meta charset="UTF-8">
   <title>Title</title>
