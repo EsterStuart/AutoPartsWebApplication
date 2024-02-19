@@ -5,7 +5,7 @@
 
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/login.css">
-<%--  <link rel="stylesheet" href="css/padfoot.css">--%>
+
 
 
   <meta charset="UTF-8">
@@ -40,7 +40,7 @@ if(message != null){
 
 
 </Form>
-<script id="add_the_feet" src="Padfeet.js"> </script>
+
 </body>
 
 

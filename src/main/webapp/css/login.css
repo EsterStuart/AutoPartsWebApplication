@@ -32,10 +32,3 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
-body{
-background-image: url("../Photos/engineer.jpg");
-  background-size: cover;
-  position: relative;
-  height: 110px;
-  margin-top: -100px;
-}
