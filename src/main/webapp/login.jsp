@@ -25,11 +25,12 @@
 </div>
 
 <div class="container">
-  <label for=""><b>Username</b></label>
-  <input type="text" placeholder="Enter Username" name="uname" required>
+  <label for=""><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" required>
 
   <label for=""><b>Password</b></label>
   <input type="password" placeholder="Enter Password" name="psw" required>
+
 <% String message = (String) request.getAttribute("message");
 if(message != null){
 %><p>Incorrect Username or Password. Please Try Again.</p>

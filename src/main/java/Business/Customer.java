@@ -8,17 +8,23 @@ import java.sql.ResultSet;
 
 public class Customer extends  Person{
     private int customerID;
-    private String address;
+
+    public Address completeAddress;
 
     public Customer() {
         super();
         this.customerID = 0;
-        this.address = "";
+        this.completeAddress = new Address();
     }
-    public Customer(String firstName, String lastName, String email, String password, String address) {
+    public Customer(String firstName, String lastName, String email, String password) {
         super(firstName, lastName, email, password);
         this.customerID = 0;
-        this.address = address;
+    }
+
+    public Customer(String firstName, String lastName, String email, String password, int customerID, Address completeAddress) {
+        super(firstName, lastName, email, password);
+        this.customerID = customerID;
+        this.completeAddress = completeAddress;
     }
 
     //<editor-fold desc="Get/Set functions">
@@ -30,17 +36,47 @@ public class Customer extends  Person{
         this.customerID = customerID;
     }
 
-    public String getAddress() {
-        return address;
+    public Address getCompleteAddress() {
+        return completeAddress;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setCompleteAddress(Address completeAddress) {
+        this.completeAddress = completeAddress;
     }
 
     //</editor-fold>
 
     //<editor-fold desc="Database Functions">
+
+
+    public boolean selectDB(String email) {
+        try {
+
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Customers WHERE email=?");
+            statement.setString(1, email);
+
+            ResultSet resultSet;
+            resultSet = statement.executeQuery();
+            resultSet.next();
+
+            setCustomerID(resultSet.getInt("CustomerID"));
+            setFirstName(resultSet.getString("FirstName"));
+            setLastName(resultSet.getString("LastName"));
+            setPassword(resultSet.getString("password"));
+            setEmail(resultSet.getString("email"));
+
+            this.completeAddress.setStreet(resultSet.getString("Street"));
+            this.completeAddress.setCity(resultSet.getString("City"));
+            this.completeAddress.setState(resultSet.getString("State"));
+            this.completeAddress.setZip(resultSet.getString("Zip"));
+
+            connection.close();
+            return true;
+
+        } catch (Exception ex) {ex.printStackTrace(); return false;}
+    }
 
     /***********************************************************************************
      *  selectDB() assigns the associated Customer information from the database to the object
@@ -60,9 +96,13 @@ public class Customer extends  Person{
             setCustomerID(resultSet.getInt("CustomerID"));
             setFirstName(resultSet.getString("FirstName"));
             setLastName(resultSet.getString("LastName"));
-            setAddress(resultSet.getString("Address"));
             setPassword(resultSet.getString("password"));
             setEmail(resultSet.getString("email"));
+
+            this.completeAddress.setStreet(resultSet.getString("Street"));
+            this.completeAddress.setCity(resultSet.getString("City"));
+            this.completeAddress.setState(resultSet.getString("State"));
+            this.completeAddress.setZip(resultSet.getString("Zip"));
 
             connection.close();
             return true;
@@ -78,12 +118,15 @@ public class Customer extends  Person{
         try  {
             Connection connection = DatabaseConnection.getDatabaseConnection();
 
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO Customers ([FirstName], [LastName], [email], [Address], [Password]) VALUES (?,?,?,?,?)");
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO Customers ([FirstName], [LastName], [email], [Password], [Street], [City], [State], [Zip]) VALUES (?,?,?,?,?,?,?,?)");
             statement.setString(1, getFirstName());
             statement.setString(2, getLastName());
             statement.setString(3, getEmail());
-            statement.setString(4, getAddress());
-            statement.setString(5, getPassword());
+            statement.setString(4, getPassword());
+            statement.setString(5, completeAddress.getStreet());
+            statement.setString(6,completeAddress.getCity());
+            statement.setString(7, completeAddress.getState());
+            statement.setString(8, completeAddress.getZip());
 
             statement.executeUpdate();
 
@@ -105,13 +148,16 @@ public class Customer extends  Person{
         try  {
             Connection connection = DatabaseConnection.getDatabaseConnection();
 
-            PreparedStatement statement = connection.prepareStatement("UPDATE Customers SET [FirstName] = ?, [LastName] = ?, [email] = ?, [Address] = ?, [Password] = ? WHERE CustomerID = ?");
+            PreparedStatement statement = connection.prepareStatement("UPDATE Customers SET [FirstName] = ?, [LastName] = ?, [email] = ?, [Password] = ? , [Street] = ?, [City] = ?, [State] = ?, [Zip] = ? WHxERE CustomerID = ?");
             statement.setString(1, getFirstName());
             statement.setString(2, getLastName());
             statement.setString(3, getEmail());
-            statement.setString(4, getAddress());
-            statement.setString(5, getPassword());
-            statement.setInt(6, getCustomerID());
+            statement.setString(4, getPassword());
+            statement.setString(5, completeAddress.getStreet());
+            statement.setString(6,completeAddress.getCity());
+            statement.setString(7, completeAddress.getState());
+            statement.setString(8, completeAddress.getZip());
+            statement.setInt(9, getCustomerID());
 
             statement.executeUpdate();
             connection.close();
@@ -143,32 +189,17 @@ public class Customer extends  Person{
         System.out.println("Customer ID : " + Integer.toString(getCustomerID()));
         System.out.println("First Name : " + getFirstName());
         System.out.println("Last Name : " + getLastName());
-        System.out.println("Address : " + getAddress());
         System.out.println("Password : " + getPassword());
         System.out.println("Email : " + getEmail());
+        System.out.println("Street : " + completeAddress.getStreet());
+        System.out.println("City : " + completeAddress.getCity());
+        System.out.println("State : " + completeAddress.getState());
+        System.out.println("Zip : " + completeAddress.getZip());
     }
 
     public static void main(String[] args){
-        Customer c1 = new Customer();
-        c1.selectDB(1);
-        c1.display();
 
-        Customer c2 = new Customer("Larry", "Smith", "larrySmith@email.com", "password123", "5290 Marget Dr, Powder Springs GA");
-        c2.insertDB();
-        c2.display();
 
-        Customer c3 = new Customer();
-        c3.selectDB(c2.getCustomerID());
-
-        c3.setPassword("UPDATED_PASSWORD");
-        c3.setFirstName("UPDATED_FNAME");
-        c3.setLastName("UPDATED_LNAME");
-
-        c3.setEmail("UPDATED_EMAIL");
-        c3.setAddress("UPDATED_ADDRESS");
-        c3.updateDB();
-
-        c3.deleteDB();
 
 
     }

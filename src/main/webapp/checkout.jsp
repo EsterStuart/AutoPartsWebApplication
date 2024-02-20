@@ -25,11 +25,20 @@
     String customerFName = "";
     String customerLName = "";
     String customerEmail = "";
+    String customerStreet = "";
+    String customerCity = "";
+    String customerState = "";
+    String customerZip = "";
+
 
     if (customer != null){
         customerFName = customer.getFirstName();
         customerLName = customer.getLastName();
         customerEmail = customer.getEmail();
+        customerStreet = customer.completeAddress.getStreet();
+        customerCity = customer.completeAddress.getCity();
+        customerState = customer.completeAddress.getState();
+        customerZip = customer.completeAddress.getZip();
     }
 
     int index = 0;
@@ -78,9 +87,10 @@
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address"><br>
             <label for="Street">Street:</label><br>
-            <input type="text" id="Street" name="Street" class="text--input" placeholder="Enter Street Address"/><br>
+            <input type="text" id="Street" name="Street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
             <label for="city">City:</label><br>
-            <input type="text" id="city" name="city" class="text--input"  placeholder="Enter City"><br>
+            <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City"><br>
+
             <label for="state">State:</label><br>
             <select name="state" id="state">
                 <option disabled="" selected="">Select a State</option>
@@ -135,8 +145,9 @@
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
             </select><br><br>
+
             <label for="zip">Zip:</label><br>
-            <input type="text" id="zip" name="zip" class="text--input"  placeholder="Enter Zip Code"><br>
+            <input type="text" id="zip" name="zip" class="text--input" value="<%= customerZip%>" placeholder="Enter Zip Code"><br>
             <input type="submit" id="submit" value="Submit">
         </fieldset>
     </form>

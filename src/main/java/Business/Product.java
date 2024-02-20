@@ -246,6 +246,35 @@ public class Product implements Serializable {
     //<editor-fold desc="Get Product By Filter Methods">
 
 
+
+    /************************************************************************************************************************
+     *   The following method takes in only the productType and returns a ArrayList<Product> ArrayList filtered by product type
+     ***********************************************************************************************************************/
+    public static ArrayList<Product> getProductsBySearch(String searchQuery){
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        try {
+
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+
+            PreparedStatement statement = connection.prepareStatement("SELECT ProductID FROM Products WHERE CONTAINS((ProductType, Brand, ProductName, Description), ?)");
+            statement.setString(1, searchQuery);
+
+            ResultSet resultSet;
+            resultSet = statement.executeQuery();
+
+
+            while (resultSet.next()){
+                Product product = new Product();
+                product.selectDB(resultSet.getString("ProductID"));
+                productsArrayList.add(product);
+            }
+
+        } catch (Exception ex) {ex.printStackTrace();}
+
+
+        return productsArrayList;
+    }
+
     /************************************************************************************************************************
      *   The following method takes in only the productType and returns a ArrayList<Product> ArrayList filtered by product type
      ***********************************************************************************************************************/

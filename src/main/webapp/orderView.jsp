@@ -50,7 +50,7 @@
             for (PartOrder partOrder : partsOrderedArrayList){
                 product = partOrder.getPart();
 
-                out.print("<div class='container'>");
+                out.print("<div>");
                 out.print("<p> ID: " + product.getProductID() + "</p>");
                 out.print("<p> Name: " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</p>");
                 out.print("<p> Quantity : " + partOrder.getQuantity() + "</p>");

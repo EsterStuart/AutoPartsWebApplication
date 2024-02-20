@@ -1,30 +1,27 @@
 package org.team.autopartswebapplication;
 
-
-
-import java.io.*;
-
 import Business.Customer;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet(name = "UpdateCustomerInfo", value = "/update-customer-info-servlet")
+@WebServlet(name = "CreateCustomerServlet", value = "/create-customer-servlet")
+public class CreateCustomerServlet extends HttpServlet {
 
-public class UpdateCustomerInfo extends HttpServlet {
-    private String message;
-    private String fname,lname,email,password, street, city, state, zip;
-    public void init() {
-    }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
         RequestDispatcher requestDispatcher;
+        HttpSession session = request.getSession();
 
-        HttpSession hs = request.getSession();
-        Customer customer = (Customer) hs.getAttribute("customer");
+        Customer customer = new Customer();
 
         String fname = request.getParameter("Fname");
         String lname = request.getParameter("Lname");
@@ -44,19 +41,13 @@ public class UpdateCustomerInfo extends HttpServlet {
         customer.completeAddress.setState(state);
         customer.completeAddress.setZip(zip);
 
+        customer.insertDB();
 
-        if (customer.updateDB()) {
-            requestDispatcher = request.getRequestDispatcher("customerDash.jsp");
-            requestDispatcher.forward(request, response);
-        } else {
-            request.setAttribute("message", "Missing Value");
-            requestDispatcher = request.getRequestDispatcher("/updateInformation.jsp");
-            requestDispatcher.forward(request, response);
-        }
+        session.setAttribute("customer", customer);
+        requestDispatcher = request.getRequestDispatcher("/login.jsp");
+        requestDispatcher.forward(request, response);
     }
 
     public void destroy() {
     }
 }
-
-	

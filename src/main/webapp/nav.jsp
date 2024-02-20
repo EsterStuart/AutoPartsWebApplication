@@ -14,6 +14,13 @@
         <li><a href="productCategories.jsp">Products</a></li>
         <li><a href="help.jsp">FAQ</a></li>
 
+        <li>
+            <form action="searchbar-servlet">
+                <input type="text" id="searchbarText" placeholder="Product">
+                <input type="submit" value="Search">
+            </form>
+        </li>
+
         <%
             if (customer == null) {
                 out.print("<li>");
