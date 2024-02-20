@@ -22,12 +22,12 @@ public class CustomerLoginServlet extends HttpServlet {
 
         Customer c1 = new Customer();
         c1.selectDB(id);
-/**
+/*
    Leads to Customer Dashboard and saves Customer Information if password is correct or displays error message if incorrect
  */
         if (pass.equals(c1.getPassword())){
 
-            hs.setAttribute("customer", c1);
+            hs.setAttribute("c1", c1);
             rd = request.getRequestDispatcher("/customerDash.jsp");
             rd.forward(request,response);
     }
