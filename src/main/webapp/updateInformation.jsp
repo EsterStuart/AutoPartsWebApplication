@@ -10,40 +10,50 @@
 
 <script id="replace_with_navbar" src="nav.js"></script>
 
+<%   String email = (String) request.getAttribute("email"); String emails = (String) request.getAttribute("emails");
+     String pass = (String) request.getAttribute("psw"); String psw = (String) request.getAttribute("pass");
+    String address = (String) request.getAttribute("address");String message = (String) request.getAttribute("Null");
+    String name = (String) request.getAttribute("name");
+%>
 
-    <% String message = (String) request.getAttribute("message");
-        if(message != null){
-    %>       <p> You must provide a value to at least one of the fields.</p>
-        <%}
-        else{%>
-             <p> Information Updated.</p>
-        <%}%>
 
-    <form action="update-customer-info-servlet" style="border: 1px solid #ccc">
+    <form action="update-customer-info-servlet" method="get" style="border: 1px solid #ccc">
         <div class="container">
-            <h>Create Your Account </h>
-            <p>Please fill out this form to complete account creation</p>
+            <h>Update Your Account </h>
+            <p>Fill out the Fields that need to be Updated.</p>
 
             <label for="Fname"><b>First Name</b></label>
-            <input type="text" placeholder="Enter First Name" name="Fname" id="Fname" required>
+            <input type="text" placeholder="Enter First Name" name="Fname" id="Fname" >
 
             <label for ="Lname"><b> Last Name</b></label>
-            <input type="text" placeholder="Enter Last Name" name="Lname" id="Lname" required>
+            <input type="text" placeholder="Enter Last Name" name="Lname" id="Lname" >
+
+            <% if(name != null && email == "name"){
+            %>       <p> You are already using this name.</p><%}%>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <input type="text" placeholder="Enter Email" name="email" id="email" >
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <% if(email != null && email == "email"){
+            %>       <p> You are already using this email.</p><%}%>
+            <% if(emails != null && emails == "emails"){
+            %>       <p> You must enter a valid email.</p><%}%>
+
+            <label for="psw"><b>Password (Must Include at least 6 characters with 1 Uppercase and Lowercase character, and 1 number)</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" >
+
+
+            <% if(pass != null && pass.equals("psw")){%><p> You are already using this password.</p><%}%>
+            <% if(psw != null && psw.equals("pass")){%><p> Invalid Password.</p><%}%>
 
             <label for="street"><b>Street</b></label>
-            <input type="text" placeholder="Enter Street" name="street" id="street" required>
+            <input type="text" placeholder="Enter Street" name="street" id="street" >
 
             <label for="city"><b>City</b></label>
-            <input type="text" placeholder="Enter city" name="city" id="city" required>
+            <input type="text" placeholder="Enter city" name="city" id="city" >
 
             <label for="zip"><b>Zip</b></label>
-            <input type="text" placeholder="Enter Zip" name="zip" id="zip" required>
+            <input type="text" placeholder="Enter Zip" name="zip" id="zip" >
 
             <label for="state"><b>State</b></label>
             <select name="state" id="state">
@@ -99,10 +109,15 @@
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
             </select>
+
+            <%if(address != null && address == "address"){%><p> You must provide a value to at least one of the fields.</p><%}%>
+
             <br>
             <br>
             <br>
             <br>
+
+            <% if(message != null && message == "Null"){ %><p> You must provide a value to at least one of the fields.</p><%}%>
 
             <div class="clearfix">
                 <button type="reset" >Clear</button>
