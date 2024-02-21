@@ -148,7 +148,7 @@ public class Customer extends  Person{
         try  {
             Connection connection = DatabaseConnection.getDatabaseConnection();
 
-            PreparedStatement statement = connection.prepareStatement("UPDATE Customers SET [FirstName] = ?, [LastName] = ?, [email] = ?, [Password] = ? , [Street] = ?, [City] = ?, [State] = ?, [Zip] = ? WHxERE CustomerID = ?");
+            PreparedStatement statement = connection.prepareStatement("UPDATE Customers SET [FirstName] = ?, [LastName] = ?, [email] = ?, [Password] = ? , [Street] = ?, [City] = ?, [State] = ?, [Zip] = ? WHERE CustomerID = ?");
             statement.setString(1, getFirstName());
             statement.setString(2, getLastName());
             statement.setString(3, getEmail());
