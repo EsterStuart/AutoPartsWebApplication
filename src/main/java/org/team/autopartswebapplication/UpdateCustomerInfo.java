@@ -64,8 +64,20 @@ public class UpdateCustomerInfo extends HttpServlet {
             request.setAttribute("name", "name");
             b = false;
         }
-        if(street.matches(c1.completeAddress.getStreet()) ||city.matches(c1.completeAddress.getCity()) ||state ==(c1.completeAddress.getState()) ||zip.matches(c1.completeAddress.getZip())) {
-            request.setAttribute("address", "address");
+        if(street.matches(c1.completeAddress.getStreet())){
+            request.setAttribute("street", "street");
+            b = false;
+        }
+        if(city.matches(c1.completeAddress.getCity())){
+            request.setAttribute("city","city");
+            b = false;
+        }
+        if(state.matches(c1.completeAddress.getState())){
+            request.setAttribute("state","state");
+            b = false;
+        }
+        if(zip.matches(c1.completeAddress.getZip())){
+            request.setAttribute("zip","zip");
             b = false;
         }
         if(email.matches(c1.getEmail())){

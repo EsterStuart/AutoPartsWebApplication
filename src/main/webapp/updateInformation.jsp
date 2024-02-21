@@ -13,7 +13,8 @@
 <%   String email = (String) request.getAttribute("email"); String emails = (String) request.getAttribute("emails");
      String pass = (String) request.getAttribute("psw"); String psw = (String) request.getAttribute("pass");
     String address = (String) request.getAttribute("address");String message = (String) request.getAttribute("Null");
-    String name = (String) request.getAttribute("name");
+    String name = (String) request.getAttribute("name"); String street = (String) request.getAttribute("street"); String city = (String) request.getAttribute("city");
+    String state = (String) request.getAttribute("state"); String zip = (String) request.getAttribute("zip");
 %>
 
 
@@ -110,7 +111,13 @@
                 <option value="Wyoming">Wyoming</option>
             </select>
 
-            <%if(address != null && address == "address"){%><p> You must provide a value to at least one of the fields.</p><%}%>
+            <%if(street != null && street == "street"){%><p> You are already using this street address.</p><%}%>
+            <%if(city != null && city == "city"){%><p> You are already using this city address.</p><%}%>
+            <%if(state != null && state == "state"){%><p> You are already using this state address.</p><%}%>
+            <%if(zip != null && zip == "zip"){%><p> You are already using this zip address.</p><%}%>
+
+
+
 
             <br>
             <br>
