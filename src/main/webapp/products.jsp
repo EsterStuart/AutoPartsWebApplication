@@ -80,9 +80,6 @@
         popup.click();
         return true;
     }
-
 </script>
-
-
 </body>
 </html>
