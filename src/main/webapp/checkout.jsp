@@ -77,17 +77,19 @@
 
 <h1>Checkout</h1>
 <div class="container">
-    <form action="chec.jsp" method="get">
+    <form action="checkout-servlet" method="get">
         <h2>Contact Information</h2>
         <fieldset>
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" class="text--input" value="<%= customerFName %>"  placeholder="Enter First Name"><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name"><br>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number"><br>
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address"><br>
             <label for="Street">Street:</label><br>
-            <input type="text" id="Street" name="Street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
+            <input type="text" id="street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
             <label for="city">City:</label><br>
             <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City"><br>
 

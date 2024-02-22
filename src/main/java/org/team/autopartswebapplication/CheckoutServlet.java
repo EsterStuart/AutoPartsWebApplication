@@ -15,7 +15,7 @@ import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-@WebServlet(name = "LoadCheckoutServlet", value = "/load-checkout-servlet")
+@WebServlet(name = "LoadCheckoutServlet", value = "/checkout-servlet")
 public class CheckoutServlet extends HttpServlet {
     public void init(){}
 
@@ -39,6 +39,7 @@ public class CheckoutServlet extends HttpServlet {
         String addressCity = request.getParameter("city");
         String addressState = request.getParameter("state");
         String addressZip = request.getParameter("zip");
+        String phoneNumber  = request.getParameter("phoneNumber");
 
 
 
@@ -82,18 +83,18 @@ public class CheckoutServlet extends HttpServlet {
         order.setOrderDate(timeStamp);
         order.setOrderStatus("Placed");
         order.setOrderedPartsArrayList(cart.getPartOrdersInCartArrayList());
-        order.address.setState(addressStreet);
+        order.address.setStreet(addressStreet);
         order.address.setCity(addressCity);
         order.address.setState(addressState);
         order.address.setZip(addressZip);
         order.setCustomerFname(customerFname);
         order.setCustomerLname(customerLname);
+        order.setPhoneNumber(phoneNumber);
+        order.setEmail(customerEmail);
 
         order.insertDB();
 
-
-
-
+        session.setAttribute("customerOrder", order);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/orderReview.jsp");
         requestDispatcher.forward(request, response);
 
