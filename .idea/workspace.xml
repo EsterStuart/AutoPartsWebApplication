@@ -12,10 +12,18 @@
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CheckoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CheckoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +73,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -98,19 +107,57 @@
     "project.structure.side.proportion": "0.23274337",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Customer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Order.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Part.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Product.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.nav.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.nav.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TomEE Server.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.login.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/css&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15155359&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\css" />
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\bin" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\apache-tomcat-10.1.18\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp" />
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\web" />
+      <recent name="C:\Users\drago\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.team.autopartswebapplication" />
@@ -130,10 +177,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AutoPartsWebApplication/src/main/webapp/nav.html" useBuiltInWebServerPort="true">
-      <method v="2" />
+    <configuration name="Product" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.Product" />
+      <module name="AutoPartsWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="nav.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/AutoPartsWebApplication_war_exploded/nav.html">
+    <configuration name="nav.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AutoPartsWebApplication/src/main/webapp/nav.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -342,7 +399,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Order" />
-      <item itemvalue="JavaScript Debug.nav.html" />
+      <item itemvalue="Application.Product" />
       <item itemvalue="JavaScript Debug.nav.html (1)" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
       <item itemvalue="Tomcat Server.checkout.jsp" />
@@ -351,11 +408,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Product" />
         <item itemvalue="Tomcat Server.checkout.jsp" />
         <item itemvalue="Tomcat Server.employeeDash.jsp" />
         <item itemvalue="Tomcat Server.cart.jsp" />
         <item itemvalue="JavaScript Debug.nav.html (1)" />
-        <item itemvalue="JavaScript Debug.nav.html" />
       </list>
     </recent_temporary>
   </component>
@@ -403,9 +460,20 @@
       <workItem from="1707749350750" duration="1186000" />
       <workItem from="1708010600520" duration="15074000" />
       <workItem from="1708027692060" duration="173000" />
+
       <workItem from="1708098166097" duration="6156000" />
       <workItem from="1708358261420" duration="55000" />
       <workItem from="1708639288243" duration="1303000" />
+
+      <workItem from="1708098166097" duration="5827000" />
+      <workItem from="1708129801754" duration="3152000" />
+      <workItem from="1708134056214" duration="6370000" />
+      <workItem from="1708192134168" duration="939000" />
+      <workItem from="1708336884413" duration="482000" />
+      <workItem from="1708337400502" duration="87000" />
+      <workItem from="1708538669368" duration="10858000" />
+      <workItem from="1708606075847" duration="3637000" />
+
     </task>
     <servers />
   </component>

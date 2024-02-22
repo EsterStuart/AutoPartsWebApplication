@@ -2,8 +2,7 @@ package org.team.autopartswebapplication;
 
 
 import Business.Cart;
-import Business.PartOrder;
-import Business.Product;
+import Business.Order;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -13,9 +12,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
-@WebServlet(name = "LoadCartServlet", value = "/load-cart-servlet")
-public class LoadCartServlet extends HttpServlet {
+@WebServlet(name = "LoadAllOrdersServlet", value = "/load-all-orders-servlet")
+public class LoadAllOrdersServlet extends HttpServlet {
     public void init(){}
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,18 +23,11 @@ public class LoadCartServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        Cart cart;
-        if(null != session.getAttribute("userCart")){
-            cart = (Cart) session.getAttribute("userCart");
-            System.out.println("CART ALREADY IN SESSION");
-        } else {
-            cart = new Cart();
-            System.out.println("CART NOT IN SESSION ==========");
-        }
+        ArrayList<Order> allOrdersArrayList = Order.getAllOrders();
 
-        session.setAttribute("userCart", cart);
+        session.setAttribute("allOrdersArrayList", allOrdersArrayList);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/cart.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/employeeDash.jsp");
         requestDispatcher.forward(request, response);
 
     }

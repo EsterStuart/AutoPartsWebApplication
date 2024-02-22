@@ -25,8 +25,8 @@ public class AddProductToCartServlet extends HttpServlet {
         int quantity = Integer.parseInt(request.getParameter("OrderQuantity"));
 
         Cart cart;
-        if(null != session.getAttribute("UserCart")){
-            cart = (Cart) session.getAttribute("UserCart");
+        if(null != session.getAttribute("userCart")){
+            cart = (Cart) session.getAttribute("userCart");
             System.out.println("CART ALREADY IN SESSION");
         } else {
             cart = new Cart();
@@ -62,7 +62,7 @@ public class AddProductToCartServlet extends HttpServlet {
         */
 
         //session.setAttribute("ArrayOfFilteredProducts", productsArrayList);
-        session.setAttribute("UserCart", cart);
+        session.setAttribute("userCart", cart);
 
         //RequestDispatcher requestDispatcher = request.getRequestDispatcher("/products.jsp");
         //requestDispatcher.forward(request, response);

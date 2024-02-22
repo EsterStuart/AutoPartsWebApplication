@@ -57,12 +57,19 @@
             out.print("<div class='grid-item'>");
             out.print("<h3>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
             out.print("<h4>" + product.getDescription() + "</h4>");
+            out.print("<h4>$" + product.getPrice() + "</h4>");
+
+
             out.print("<form id='addToCartForm' onSubmit='return addItemToCart()' action='add-product-to-cart-servlet'>");
 
             out.print("<input type='hidden' id='ProductID' name='ProductID' value='" + product.getProductID() + "'>");
+
             out.print("<hr>");
             out.print("<label for='orderQuantity' id='orderQuantity'>Quantity</label>");
             out.print("<input type='number' id='OrderQuantity' name='OrderQuantity' min='1' max='100' />");
+
+            out.print("<input type='number' id='OrderQuantity' name='OrderQuantity' value='1' min='1' max='100' />");
+
 
             out.print("<input type='submit'/>");
 
@@ -73,6 +80,9 @@
     %>
 
 </div>
+
+
+<% session.removeAttribute("ArrayOfFilteredProducts");%>
 
 <script type="text/javascript">
     function addItemToCart(){
