@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderReview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -83,7 +86,7 @@
     "git-widget-placeholder": "html",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Tygeo/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/Photos",
+    "last_opened_file_path": "C:/Users/Tygeo/Desktop/CapStone/AutoPartsWebApplication",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -93,7 +96,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15155359",
     "project.structure.side.proportion": "0.23274337",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -400,7 +403,9 @@
       <workItem from="1707749350750" duration="1186000" />
       <workItem from="1708010600520" duration="15074000" />
       <workItem from="1708027692060" duration="173000" />
-      <workItem from="1708098166097" duration="5827000" />
+      <workItem from="1708098166097" duration="6156000" />
+      <workItem from="1708358261420" duration="55000" />
+      <workItem from="1708639288243" duration="1303000" />
     </task>
     <servers />
   </component>

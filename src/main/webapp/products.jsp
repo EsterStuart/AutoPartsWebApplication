@@ -2,7 +2,7 @@
 
 <%@page import = "java.util.ArrayList"%>
 <%@page import = "Business.Product"%>
-
+<%@ page import="org.hsqldb.Session" %>
 <%@ page import="com.sun.source.tree.WhileLoopTree" %>
 
 
