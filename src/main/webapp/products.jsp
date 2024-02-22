@@ -140,6 +140,9 @@
 
 </div>
 
+
+<% session.removeAttribute("ArrayOfFilteredProducts");%>
+
 <script type="text/javascript">
 function addItemToCart(){
     var popup = document.getElementById("openPopup");

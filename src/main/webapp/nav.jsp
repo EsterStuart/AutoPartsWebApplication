@@ -15,8 +15,8 @@
         <li><a href="help.jsp">FAQ</a></li>
 
         <li>
-            <form action="searchbar-servlet">
-                <input type="text" id="searchbarText" placeholder="Product">
+            <form action="searchbar-servlet" method="get">
+                <input type="text" name="searchbarText" id="searchbarText" placeholder="Product">
                 <input type="submit" value="Search">
             </form>
         </li>

@@ -1,8 +1,7 @@
 package org.team.autopartswebapplication;
 
 
-import Business.Cart;
-import Business.Customer;
+import Business.*;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,6 +11,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 @WebServlet(name = "LoadCheckoutServlet", value = "/load-checkout-servlet")
 public class CheckoutServlet extends HttpServlet {
@@ -22,21 +24,77 @@ public class CheckoutServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        Cart cart;
-        cart = (Cart) session.getAttribute("userCart");
+        Order order = new Order();
+        Customer customer = (Customer) session.getAttribute("customer");
+        Cart cart = (Cart) session.getAttribute("userCart");
+
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 
 
-        Customer customer;
-        customer = (Customer) session.getAttribute("customer");
+        int customerID = 0;
+        String customerFname = request.getParameter("fname");
+        String customerLname = request.getParameter("lname");
+        String customerEmail = request.getParameter("email");
+        String addressStreet = request.getParameter("street");
+        String addressCity = request.getParameter("city");
+        String addressState = request.getParameter("state");
+        String addressZip = request.getParameter("zip");
 
-        if (customer != null){
-            session.setAttribute("customer", customer);
+
+
+
+
+        if(customer != null){
+            customerID = customer.getCustomerID();
+        }
+
+        int index = 0;
+        double totalCost = 0.0;
+        double tax = 0.0;
+        double taxRate = .04;
+
+        double shipping = 9.99;
+
+        double totalCalculatedCost = 0.0;
+
+        if (cart.getPartOrdersInCartArrayList().isEmpty()){
+
+        } else {
+
+            for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()) {
+                Product product = partOrder.getPart();
+
+                totalCost += partOrder.getTotalOrderPrice();
+                index += 1;
+            }
+
+            tax = totalCost * taxRate;
+            totalCalculatedCost = totalCost + tax + shipping;
+
+
         }
 
 
-        session.setAttribute("userCart", cart);
+        order.setCustomerID(customerID);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/checkout.jsp");
+
+        order.setOrderTotalCost(totalCalculatedCost);
+        order.setOrderDate(timeStamp);
+        order.setOrderStatus("Placed");
+        order.setOrderedPartsArrayList(cart.getPartOrdersInCartArrayList());
+        order.address.setState(addressStreet);
+        order.address.setCity(addressCity);
+        order.address.setState(addressState);
+        order.address.setZip(addressZip);
+        order.setCustomerFname(customerFname);
+        order.setCustomerLname(customerLname);
+
+        order.insertDB();
+
+
+
+
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/orderReview.jsp");
         requestDispatcher.forward(request, response);
 
     }

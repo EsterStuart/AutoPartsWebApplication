@@ -77,7 +77,7 @@
 
 <h1>Checkout</h1>
 <div class="container">
-    <form action="orderReview.jsp">
+    <form action="chec.jsp" method="get">
         <h2>Contact Information</h2>
         <fieldset>
             <label for="fname">First name:</label><br>

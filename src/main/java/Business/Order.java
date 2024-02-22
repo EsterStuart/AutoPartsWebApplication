@@ -12,7 +12,12 @@ public class Order {
     private int CustomerID;
     private double orderTotalCost;
     public Cart c;
+
+    private String customerFname;
+    private String customerLname;
     private String customerAddress;
+    public Address address;
+
     private String orderDate;
     private String orderStatus;
     private ArrayList<PartOrder>orderedPartsArrayList;
@@ -25,8 +30,11 @@ public class Order {
         orderDate ="";
         orderStatus = "";
         orderedPartsArrayList = new ArrayList<PartOrder>();
+        address = new Address();
+        customerFname = "";
+        customerLname = "";
     }
-    public Order(int orderID, int CustomerID,double orderTotalCost, String customerAddress, String orderDate,String orderStatus,Boolean isOrderFulfilled, ArrayList<PartOrder> orderedPartsArrayList)
+    public Order(int orderID, int CustomerID,double orderTotalCost, String customerAddress, String orderDate,String orderStatus,Boolean isOrderFulfilled, ArrayList<PartOrder> orderedPartsArrayList, Address address)
     {
         this.orderID = orderID;
         this.CustomerID = CustomerID;
@@ -35,6 +43,10 @@ public class Order {
         this.orderDate = orderDate;
         this.orderStatus = orderStatus;
         this.orderedPartsArrayList = orderedPartsArrayList;
+        this.address = address;
+        customerFname = "";
+        customerLname = "";
+
     }
 
 
@@ -101,7 +113,6 @@ public class Order {
                 int orderID = resultSet.getInt("OrderID");
 
                 order.selectDB(orderID);
-                System.out.println(order.getOrderID());
                 allOrdersArrayList.add(order);
             }
 
@@ -124,15 +135,23 @@ public class Order {
             ps.setInt(1,getOrderID());
             ResultSet rs;
             rs = ps.executeQuery();
+
             System.out.println("Searching for Order...");
             if (rs.next()){
                 setOrderID(rs.getInt("OrderID"));
                 setCustomerID(0);
+
+
                 setCustomerID(rs.getInt("CustomerID"));
                 setOrderTotalCost(rs.getDouble("TotalCost"));
-                setCustomerAddress(rs.getString("Address"));
                 setOrderDate(rs.getString("OrderDate"));
                 setOrderStatus(rs.getString("Status"));
+                this.address.setState(rs.getString("Street"));
+                this.address.setCity(rs.getString("City"));
+                this.address.setState(rs.getString("State"));
+                this.address.setZip(rs.getString("Zip"));
+                setCustomerFname(rs.getString("FirstName"));
+                setCustomerLname(rs.getString("LastName"));
 
                 setOrderedPartsArrayList(Order.deserializeOrderedParts(rs.getBytes("OrderedParts")));
 
@@ -162,9 +181,15 @@ public class Order {
             if (rs.next()){
                 setOrderID(rs.getInt("OrderID"));
                 setOrderTotalCost(rs.getDouble("TotalCost"));
-                setCustomerAddress(rs.getString("Address"));
                 setOrderDate(rs.getString("OrderDate"));
                 setOrderStatus(rs.getString("Status"));
+                this.address.setStreet(rs.getString("Street"));
+                this.address.setCity(rs.getString("City"));
+                this.address.setState(rs.getString("State"));
+                this.address.setZip(rs.getString("Zip"));
+                setCustomerFname(rs.getString("FirstName"));
+                setCustomerLname(rs.getString("LastName"));
+
                 setOrderedPartsArrayList(Order.deserializeOrderedParts(rs.getBytes("OrderedParts")));
 
                 System.out.println("Order Found");
@@ -184,16 +209,21 @@ public class Order {
 
             System.out.println("Order Inserting...");
 
-            String sql = "INSERT into Orders(CustomerID,TotalCost,Address,OrderDate,Status, OrderedParts) Values(?,?,?,?,?,?)";
+            String sql = "INSERT into Orders(CustomerID,TotalCost,OrderDate,Status, OrderedParts, Street, City, State, Zip, FirstName, LastName) Values(?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement s = connection.prepareStatement(sql);
 
             s.setString(1, String.valueOf(getCustomerID()));
             s.setDouble(2,getOrderTotalCost());
-            s.setString(3,getCustomerAddress());
-            s.setString(4,getOrderDate());
-            s.setString(5,getOrderStatus());
-            s.setBytes(6, Order.serializeOrderedParts(orderedPartsArrayList) );
+            s.setString(3,getOrderDate());
+            s.setString(4,getOrderStatus());
+            s.setBytes(5, Order.serializeOrderedParts(orderedPartsArrayList) );
+            s.setString(6,this.address.getStreet());
+            s.setString(7, this.address.getCity());
+            s.setString(8, this.address.getState());
+            s.setString(9, this.address.getZip());
+            s.setString(10, this.getCustomerFname());
+            s.setString(11,this.getCustomerLname());
 
             int h = s.executeUpdate();
             if(h==1){ System.out.println("Order Inserted");}
@@ -210,16 +240,23 @@ public class Order {
         try{
             Connection connection = DatabaseConnection.getDatabaseConnection();
 
-            String sql = "UPDATE Orders SET CustomerID=?,TotalCost=?,Address=?,OrderDate=?,Status=?, OrderedParts=? WHERE OrderID = ?";
+            String sql = "UPDATE Orders SET CustomerID=?,TotalCost=?,OrderDate=?,Status=?, OrderedParts=?, Street=?, City=?, State=?, Zip=?, FirstName=?, LastName=? WHERE OrderID = ?";
             PreparedStatement s = connection.prepareStatement(sql);
+
 
             s.setString(1, String.valueOf(getCustomerID()));
             s.setDouble(2,getOrderTotalCost());
-            s.setString(3,getCustomerAddress());
-            s.setString(4,getOrderDate());
-            s.setString(5,getOrderStatus());
-            s.setBytes(6, Order.serializeOrderedParts(orderedPartsArrayList) );
-            s.setInt(7,getOrderID());
+            s.setString(3,getOrderDate());
+            s.setString(4,getOrderStatus());
+            s.setBytes(5, Order.serializeOrderedParts(orderedPartsArrayList) );
+            s.setString(6,this.address.getStreet());
+            s.setString(7, this.address.getCity());
+            s.setString(8, this.address.getState());
+            s.setString(9, this.address.getZip());
+            s.setString(10, this.getCustomerFname());
+            s.setString(11,this.getCustomerLname());
+            s.setInt(12,getOrderID());
+
 
             int h = s.executeUpdate();
             if(h==1){System.out.println("Order Updated");}
@@ -312,10 +349,6 @@ public class Order {
     public double getOrderTotalCost() {return orderTotalCost;}
     public void setOrderTotalCost(double orderTotalCost) {this.orderTotalCost = orderTotalCost;}
 
-    public String getCustomerAddress() {return customerAddress;}
-
-    public void setCustomerAddress(String customerAddress) {this.customerAddress = customerAddress;}
-
     public String getOrderDate(){return orderDate;}
     public void setOrderDate(String orderDate){this.orderDate =orderDate;}
 
@@ -328,5 +361,31 @@ public class Order {
 
     public void setOrderedPartsArrayList(ArrayList<PartOrder> orderedPartsArrayList) {
         this.orderedPartsArrayList = orderedPartsArrayList;
+    }
+
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+
+    public String getCustomerFname() {
+        return customerFname;
+    }
+
+    public void setCustomerFname(String customerFname) {
+        this.customerFname = customerFname;
+    }
+
+    public String getCustomerLname() {
+        return customerLname;
+    }
+
+    public void setCustomerLname(String customerLname) {
+        this.customerLname = customerLname;
     }
 }

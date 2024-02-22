@@ -20,16 +20,23 @@ public class SearchbarServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
+
         HttpSession session = request.getSession();
 
         String searchQuery = request.getParameter("searchbarText");
 
-        ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        ArrayList<Product> productsArrayList = Product.getProductsBySearch(searchQuery);
 
-        productsArrayList = Product.getProductsBySearch(searchQuery);
+        for (Product product : productsArrayList){
+            System.out.println(product.getName());
+
+        }
+
+
 
 
         session.setAttribute("ArrayOfFilteredProducts", productsArrayList);
+
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/products.jsp");
         requestDispatcher.forward(request, response);
     }
