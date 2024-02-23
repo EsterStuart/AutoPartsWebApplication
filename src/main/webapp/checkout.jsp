@@ -89,7 +89,7 @@
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address"><br>
             <label for="Street">Street:</label><br>
-            <input type="text" id="street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
+            <input type="text" id="Street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
             <label for="city">City:</label><br>
             <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City"><br>
 
