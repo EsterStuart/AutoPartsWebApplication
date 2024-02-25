@@ -37,21 +37,23 @@
 </script>
 
 
-<div class="small-container">
-
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Quantity</th>
-    <th>Subtotal</th>
-  </tr>
-
     <%
+        boolean isCartEmtpy = true;
+
         if (cart.getPartOrdersInCartArrayList().isEmpty()){
             out.print("<h1> CART IS EMPTY </h1>");
 
         } else {
 
+            out.print("<div class='small-container'>");
+                out.print("<table>");
+                out.print("<tr>");
+                    out.print("<th>Product</th>");
+                    out.print("<th>Quantity</th>");
+                    out.print("<th>Subtotal</th>");
+                out.print("</tr>");
+
+            isCartEmtpy = false;
             for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()) {
                 Product product = partOrder.getPart();
 
@@ -83,29 +85,38 @@
             tax = totalCost * taxRate;
             totalCostPlusTax = totalCost + tax;
         }
+
+
+        out.print("</table>");
+            out.print("<div class='total-price'>");
+            out.print("<table>");
+                out.print("<tr>");
+                    out.print("<td>Subtotal</td>");
+                    out.print("<td>" + String.format("%,.2f", totalCost) + "</td>");
+                out.print("</tr>");
+                out.print("<tr>");
+                    out.print("<td>Tax</td>");
+                    out.print("<td>" + String.format("%,.2f",tax) + "</td>");
+                out.print("</tr>");
+                out.print("<tr>");
+                    out.print("<td>Total</td>");
+                    out.print("<td>" + String.format("%,.2f",totalCostPlusTax) + "</td>");
+                out.print("</tr>");
+            out.print("</table>");
+        out.print("</div>");
+    out.print("</div>");
+
+
     %>
-</table>
 
-  <div class="total-price">
 
-    <table>
-      <tr>
-        <td>Subtotal</td>
-        <td> $<%=String.format("%,.2f", totalCost)%> </td>
-      </tr>
-      <tr>
-        <td>Tax</td>
-        <td>$<%=String.format("%,.2f", tax)%></td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td>$<%=String.format("%,.2f", totalCostPlusTax)%></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<a href="checkout.jsp"> CHECKOUT </a>
+<%
+    if(isCartEmtpy == true){
+        out.print("<h1> Please Add Items To Your Cart </h1>");
+    } else {
+        out.print("<a href='checkout.jsp'> Checkout </a>");
+    }
+%>
 
 </body>
 </html>

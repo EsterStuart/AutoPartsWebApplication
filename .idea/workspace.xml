@@ -9,11 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="35644e35-affd-4231-813e-92befa217f20" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/webapp/checkoutPayment.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/css/checkoutPayment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+=======
+    <list default="true" id="74a38e86-85d6-4434-889f-266ed73a05d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +54,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2cmPCIicFHVlOI1vYGI3d8f7kGb" />
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2bZDupPMZrSn6SP8gT9T4g3w09Q" />
+>>>>>>> Stashed changes
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -52,6 +79,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -66,6 +94,41 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Customer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Order.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Part.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Product.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.nav.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.nav.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TomEE Server.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.login.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/drago/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/css&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15155359&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="RecentsManager">
@@ -172,8 +235,51 @@
       <created>1708713652131</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1708713652131</updated>
       <workItem from="1708713653186" duration="3659000" />
+=======
+      <updated>1706413936178</updated>
+      <workItem from="1706413937207" duration="1331000" />
+      <workItem from="1706415725178" duration="437000" />
+      <workItem from="1706450248752" duration="82000" />
+      <workItem from="1706451082228" duration="3530000" />
+      <workItem from="1706498764436" duration="234000" />
+      <workItem from="1706534608217" duration="1622000" />
+      <workItem from="1706538661090" duration="1406000" />
+      <workItem from="1706572960464" duration="603000" />
+      <workItem from="1706653372806" duration="6521000" />
+      <workItem from="1706720614487" duration="5335000" />
+      <workItem from="1707155679564" duration="7000" />
+      <workItem from="1707155703538" duration="12791000" />
+      <workItem from="1707232806975" duration="2988000" />
+      <workItem from="1707235867277" duration="127000" />
+      <workItem from="1707247720482" duration="4386000" />
+      <workItem from="1707398309491" duration="3193000" />
+      <workItem from="1707483592792" duration="18118000" />
+      <workItem from="1707601755157" duration="3602000" />
+      <workItem from="1707699723479" duration="3265000" />
+      <workItem from="1707703028209" duration="3479000" />
+      <workItem from="1707740522212" duration="3848000" />
+      <workItem from="1707744394302" duration="249000" />
+      <workItem from="1707744654949" duration="776000" />
+      <workItem from="1707746036373" duration="438000" />
+      <workItem from="1707747855011" duration="972000" />
+      <workItem from="1707749116811" duration="130000" />
+      <workItem from="1707749350750" duration="1186000" />
+      <workItem from="1708010600520" duration="15074000" />
+      <workItem from="1708027692060" duration="173000" />
+      <workItem from="1708098166097" duration="5827000" />
+      <workItem from="1708129801754" duration="3152000" />
+      <workItem from="1708134056214" duration="6370000" />
+      <workItem from="1708192134168" duration="939000" />
+      <workItem from="1708336884413" duration="482000" />
+      <workItem from="1708337400502" duration="87000" />
+      <workItem from="1708538669368" duration="10858000" />
+      <workItem from="1708606075847" duration="3637000" />
+      <workItem from="1708698034579" duration="677000" />
+      <workItem from="1708701080603" duration="8082000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

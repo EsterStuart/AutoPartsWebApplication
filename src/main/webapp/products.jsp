@@ -2,8 +2,7 @@
 
 <%@page import = "java.util.ArrayList"%>
 <%@page import = "Business.Product"%>
-<%@ page import="org.hsqldb.Session" %>
-<%@ page import="com.sun.source.tree.WhileLoopTree" %>
+
 
 
 <html>
@@ -16,6 +15,50 @@
 
     <title>Products</title>
 
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -24,27 +67,9 @@
 
 <h1 class="title">Products</h1>
 
-<!-- Start Modal -->
-<div class="ft-modal" id="ft-demo-modal">
-    <a href="#ft-demo-modal" id="openPopup" style="visibility: hidden"></a>
-    <div class="ft-modal-content">
-        <div class="ft-modal-header">
-            <div class="header">
-                <h3>Item Added To Cart</h3>
-            </div>
-        </div>
-        <div class="ft-modal-body">
-            <h3>Thank you! Your item has been added to cart</h3>
-        </div>
-        <div class="ft-modal-footer">
-            <a class="ft-modal-close" href="productCategories.jsp">Keep Shopping</a>
-            <a href="load-cart-servlet">Go to Cart</a>
-        </div>
-    </div>
-</div>
-<!-- End Modal -->
 
-<!-- Link in page to show modal on click-->
+
+
 
 
 
@@ -66,12 +91,11 @@
 
             out.print("<hr>");
             out.print("<label for='orderQuantity' id='orderQuantity'>Quantity</label>");
-            out.print("<input type='number' id='OrderQuantity' name='OrderQuantity' min='1' max='100' />");
 
             out.print("<input type='number' id='OrderQuantity' name='OrderQuantity' value='1' min='1' max='100' />");
 
 
-            out.print("<input type='submit'/>");
+            out.print("<input type='submit' value ='Add' />");
 
             out.print("</form>");
 
@@ -82,14 +106,49 @@
 </div>
 
 
-<% session.removeAttribute("ArrayOfFilteredProducts");%>
 
-<script type="text/javascript">
+
+<button id="myBtn" style="display: none">Open Modal</button>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <h1>Item Added to Cart!</h1>
+        <span class="close">&times;</span>
+        <a href="load-cart-servlet"> Got To Checkout </a>
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+    var modal = document.getElementById("myModal");
+    var showModalBtn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+
     function addItemToCart(){
-        var popup = document.getElementById("openPopup");
-        popup.click();
+        showModalBtn.click();
         return true;
     }
+
+    showModalBtn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
+
+
+<% session.removeAttribute("ArrayOfFilteredProducts");%>
 </body>
 </html>

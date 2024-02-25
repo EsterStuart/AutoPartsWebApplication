@@ -1,5 +1,6 @@
 
 <%@ page import="Business.Customer" %>
+
 <link rel="stylesheet" href="css/navbar.css">
 
 <%
