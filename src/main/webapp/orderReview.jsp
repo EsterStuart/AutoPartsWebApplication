@@ -20,7 +20,9 @@
     String city = order.address.getCity();
     String state = order.address.getState();
     String zip = order.address.getZip();
-    int orderNumber = order.getOrderID();
+
+    int orderNumber = order.getOrderID(); //FIX does not retrieve OrderID
+
     double orderTotal = order.getOrderTotalCost();
 
 %>
@@ -36,15 +38,15 @@
             <li>Product Name 2  </li>
             <li>Product Name 3  </li>
         </ul>
-        <p>Total: <%=orderTotal%></p>
+        <p>Total: <%=String.format("%,.2f", orderTotal)%></p>
         <a href="index.jsp">Continue Shopping</a>
     </div>
     <div class="customer-info">
         <!--Data example-->
         <h3>Customer Information:</h3>
         <p>Name: <%=customerFname%> <%=customerLname%></p>
-        <p>Email: <%=email%>></p>
-        <p>Phone: <%=phoneNumber%>></p>
+        <p>Email: <%=email%></p>
+        <p>Phone: <%=phoneNumber%></p>
         <p>Shipping Address: <%=street%>, <%=city%>, <%=state%>, <%=zip%></p>
         <p>Billing Address: Same as Shipping Address</p>
     </div>

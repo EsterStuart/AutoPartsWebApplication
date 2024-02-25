@@ -157,19 +157,19 @@
     <div class="total-section">
         <div class="total-item">
             <span class="total-label">Subtotal: </span>
-            <span class="subtotal-price"> $<%= totalCost %> </span>
+            <span class="subtotal-price"> $<%=String.format("%,.2f", totalCost) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Taxes:</span>
-            <span class="taxes"> $<%= tax %> </span>
+            <span class="taxes"> $<%= String.format("%,.2f", tax) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Shipping:</span>
-            <span class="shipping"> $<%= shipping %> </span>
+            <span class="shipping"> $<%= String.format("%,.2f", shipping) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Total:</span>
-            <span class="total-price"> $<%= totalCalculatedCost %> </span>
+            <span class="total-price"> $<%= String.format("%,.2f", totalCalculatedCost) %> </span>
         </div>
     </div>
 </div>
