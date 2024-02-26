@@ -44,16 +44,16 @@
             out.print("<h1> CART IS EMPTY </h1>");
 
         } else {
-
             out.print("<div class='small-container'>");
-                out.print("<table>");
-                out.print("<tr>");
-                    out.print("<th>Product</th>");
-                    out.print("<th>Quantity</th>");
-                    out.print("<th>Subtotal</th>");
-                out.print("</tr>");
-
+            out.print("<table>");
+            out.print("<tr>");
+            out.print("<th>Product</th>");
+            out.print("<th>Quantity</th>");
+            out.print("<th>Subtotal</th>");
+            out.print("</tr>");
             isCartEmtpy = false;
+
+
             for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()) {
                 Product product = partOrder.getPart();
 
@@ -84,27 +84,28 @@
 
             tax = totalCost * taxRate;
             totalCostPlusTax = totalCost + tax;
-        }
 
 
-        out.print("</table>");
+            out.print("</table>");
             out.print("<div class='total-price'>");
             out.print("<table>");
-                out.print("<tr>");
-                    out.print("<td>Subtotal</td>");
-                    out.print("<td>" + String.format("%,.2f", totalCost) + "</td>");
-                out.print("</tr>");
-                out.print("<tr>");
-                    out.print("<td>Tax</td>");
-                    out.print("<td>" + String.format("%,.2f",tax) + "</td>");
-                out.print("</tr>");
-                out.print("<tr>");
-                    out.print("<td>Total</td>");
-                    out.print("<td>" + String.format("%,.2f",totalCostPlusTax) + "</td>");
-                out.print("</tr>");
+            out.print("<tr>");
+            out.print("<td>Subtotal</td>");
+            out.print("<td>" + String.format("%,.2f", totalCost) + "</td>");
+            out.print("</tr>");
+            out.print("<tr>");
+            out.print("<td>Tax</td>");
+            out.print("<td>" + String.format("%,.2f", tax) + "</td>");
+            out.print("</tr>");
+            out.print("<tr>");
+            out.print("<td>Total</td>");
+            out.print("<td>" + String.format("%,.2f", totalCostPlusTax) + "</td>");
+            out.print("</tr>");
             out.print("</table>");
-        out.print("</div>");
-    out.print("</div>");
+            out.print("</div>");
+            out.print("</div>");
+
+        }
 
 
     %>

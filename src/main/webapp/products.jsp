@@ -19,43 +19,7 @@
         body {font-family: Arial, Helvetica, sans-serif;}
 
         /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
 
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
     </style>
 
 
@@ -67,11 +31,6 @@
 
 <h1 class="title">Products</h1>
 
-
-
-
-
-
 <div class="grid-container">
     <%
         ArrayList<Product> ProductsFilteredList = (ArrayList) session.getAttribute("ArrayOfFilteredProducts");
@@ -79,12 +38,15 @@
         for (Product product : ProductsFilteredList){
             out.print("<div class='grid-item'>");
             out.print("<h3>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
+            out.print("<img src='Photos/placeHolder.png' alt='place holder icon' class='productImage'>");
+
+
             out.print("<h4>" + product.getDescription() + "</h4>");
             out.print("<h4>$" + product.getPrice() + "</h4>");
 
 
             out.print("<form id='addToCartForm' onSubmit='return addItemToCart()' action='add-product-to-cart-servlet'>");
-            out.print("<img src='Photos/placeHolder.png' alt='place holder icon' class='productImage'>");
+
 
             out.print("<input type='hidden' id='ProductID' name='ProductID' value='" + product.getProductID() + "'>");
 
@@ -107,8 +69,7 @@
 
 
 
-<button id="myBtn" style="display: none">Open Modal</button>
-
+<button id="showBtn" style="display: none">Open Modal</button>
 
 <div id="myModal" class="modal">
     <div class="modal-content">
@@ -122,10 +83,8 @@
 
 
 <script>
-
-
     var modal = document.getElementById("myModal");
-    var showModalBtn = document.getElementById("myBtn");
+    var showModalBtn = document.getElementById("showBtn");
     var span = document.getElementsByClassName("close")[0];
 
 

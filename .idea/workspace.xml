@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="501d66ba-f0fb-4a44-a640-2cb9fc4ad0c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/placeHolder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
     </list>
@@ -169,6 +170,7 @@
       <workItem from="1708866783598" duration="29000" />
       <workItem from="1708869059993" duration="310000" />
       <workItem from="1708952940755" duration="1752000" />
+      <workItem from="1708955578455" duration="742000" />
     </task>
     <servers />
   </component>
