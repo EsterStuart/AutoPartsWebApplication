@@ -95,7 +95,7 @@ public class CheckoutServlet extends HttpServlet {
         order.insertDB();
 
         session.setAttribute("customerOrder", order);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/orderReview.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/checkoutPayment.jsp");
         requestDispatcher.forward(request, response);
 
     }

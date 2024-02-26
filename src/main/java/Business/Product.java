@@ -6,6 +6,7 @@ import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
 
 public class Product implements Serializable {
     private String productID;
@@ -247,6 +248,41 @@ public class Product implements Serializable {
     //<editor-fold desc="Get Product By Filter Methods">
 
 
+    public static ArrayList<Product> filterArrayListByCarType(ArrayList<Product> arrayList, String carType) {
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        carType = carType.toLowerCase();
+        for (Product product : arrayList) {
+            switch (carType) {
+                case "suv":
+                    if (product.fitsSUV) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "sedan":
+                    if (product.fitsSedan) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "truck":
+                    if (product.fitsTruck) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "coupe":
+                    if (product.fitsCoupe) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "sport":
+                    if (product.fitsSport) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+
+            }
+        }
+        return productsArrayList;
+    }
 
     /************************************************************************************************************************
      *   The following method takes in only the searchQuery and returns a ArrayList<Product> ArrayList filtered by all database columns

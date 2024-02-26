@@ -34,11 +34,19 @@ public class LoadProductServlet extends HttpServlet {
 
         String partType = request.getParameter("ProductType");
 
-        String carType = request.getParameter("CarType");
+        String carType = request.getParameter("type");
+
+        session.removeAttribute("filteredByCartTypeProducts");
 
         ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        productsArrayList =(ArrayList<Product>) session.getAttribute("ArrayOfFilteredProducts");
+
+        productsArrayList = (ArrayList<Product>) session.getAttribute("ArrayOfFilteredProducts");
+
+
 
         Product product = new Product();
+
         if (partType != null){
             if (carType != null) {
                 productsArrayList = product.getAllProductsFilterBy(partType, Product.getCarType(carType));
@@ -46,7 +54,13 @@ public class LoadProductServlet extends HttpServlet {
                 productsArrayList = Product.getAllProductsFilterBy(partType);
             }
         } else if (carType != null) {
-            productsArrayList = product.getAllProductsFilterBy(Product.getCarType(carType));
+            if (productsArrayList.isEmpty() != true){
+
+                ArrayList<Product> typeFilteredProductsArrayList = new ArrayList<Product>();
+
+                typeFilteredProductsArrayList = Product.filterArrayListByCarType(productsArrayList, carType);
+                session.setAttribute("filteredByCartTypeProducts", typeFilteredProductsArrayList);
+            }
         }
 
         session.setAttribute("ArrayOfFilteredProducts", productsArrayList);

@@ -14,6 +14,7 @@
         <li><a href="index.jsp">Home</a></li>
         <li><a href="productCategories.jsp">Products</a></li>
         <li><a href="help.jsp">FAQ</a></li>
+        <li><a href="trackOrder.jsp">Track Order</a></li>
 
         <li>
             <form action="searchbar-servlet" method="get">

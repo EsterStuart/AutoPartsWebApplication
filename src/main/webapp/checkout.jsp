@@ -81,20 +81,20 @@
         <h2>Contact Information</h2>
         <fieldset>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" class="text--input" value="<%= customerFName %>"  placeholder="Enter First Name"><br>
+            <input type="text" id="fname" name="fname" class="text--input" value="<%= customerFName %>"  placeholder="Enter First Name" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name"><br>
+            <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name" required><br>
             <label for="phoneNumber">Phone Number:</label><br>
-            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number"><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number" required><br>
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address"><br>
+            <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address" required><br>
             <label for="Street">Street:</label><br>
-            <input type="text" id="Street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address"/><br>
+            <input type="text" id="Street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address" required/><br>
             <label for="city">City:</label><br>
-            <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City"><br>
+            <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City" required><br>
 
             <label for="state">State:</label><br>
-            <select name="state" id="state">
+            <select name="state" id="state" required>
                 <option disabled="" selected="">Select a State</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -149,7 +149,7 @@
             </select><br><br>
 
             <label for="zip">Zip:</label><br>
-            <input type="text" id="zip" name="zip" class="text--input" value="<%= customerZip%>" placeholder="Enter Zip Code"><br>
+            <input type="text" id="zip" name="zip" class="text--input" value="<%= customerZip%>" placeholder="Enter Zip Code" required><br>
             <input type="submit" id="submit" value="Submit">
         </fieldset>
     </form>

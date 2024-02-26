@@ -1,6 +1,14 @@
 .productImage {
     width: 200px;
     height: 200px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-number-text{
+    color: grey;
 }
 body {
     font-family: Arial, sans-serif;
@@ -16,10 +24,11 @@ body {
 }
 
 .grid-container {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
+    width: 50%;
+    vertical-align: top;
 }
 
 .grid-item {
@@ -29,8 +38,75 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.main-area{
+    height: 2000px;
+}
 label {
     margin-right: 5px;
+}
+
+.filter-area{
+    display: inline-block;
+    width: 25%;
+    padding-right: 20px;
+    height: auto;
+}
+.filter-option {
+    color: black;
+    text-decoration: none;
+}
+
+.filter-row {
+    margin-left: 40%;
+    align-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(102, 102, 102, 0.25);
+    background-color: #fff;
+    padding: 12px;
+}
+
+.filter-drop-down {
+    height: 35px;
+    width: 95px;
+    margin-right: 30px;
+
+}
+
+.filter-input {
+    height: 35px;
+    width: 220px;
+    margin-right: 30px;
+}
+
+.filter-submit {
+    height: 35px;
+    width: 75px;
+
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.car-type-selection-area{
+    border: 1px solid rgba(102, 102, 102, 0.25);
+    background-color: white;
+    margin-left: 26%;
+    height: 125px;
+    width: 47%;
+    margin-top: 50px;
+    margin-bottom : 25px;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 55px;
+}
+
+.car-select{
+    margin-top: 20px;
+}
+.car-select-label{
+    font-size: 19px;
 }
 
 .modal {
@@ -70,7 +146,7 @@ label {
     cursor: pointer;
 }
 
-input[type=submit] {
+.add-to-cart-btn {
 
     background-color: #000000;
     color: white;
@@ -85,6 +161,7 @@ input[type=submit]:hover {
     background-color:  #0056b3;
 }
 
-input[type=number] {
-    margin-right: 100px;
+.quantity-input {
+    width: 75px;
+    margin-right: 115px;
 }
