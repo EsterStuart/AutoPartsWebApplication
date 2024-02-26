@@ -1,3 +1,7 @@
+.productImage {
+    width: 20px;
+    height: 20px;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;

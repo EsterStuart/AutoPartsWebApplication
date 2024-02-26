@@ -72,8 +72,6 @@
 
 
 
-
-
 <div class="grid-container">
     <%
         ArrayList<Product> ProductsFilteredList = (ArrayList) session.getAttribute("ArrayOfFilteredProducts");
@@ -86,6 +84,7 @@
 
 
             out.print("<form id='addToCartForm' onSubmit='return addItemToCart()' action='add-product-to-cart-servlet'>");
+            out.print("<img src='Photos/placeHolder.png' alt='place holder icon' class='productImage'>");
 
             out.print("<input type='hidden' id='ProductID' name='ProductID' value='" + product.getProductID() + "'>");
 
