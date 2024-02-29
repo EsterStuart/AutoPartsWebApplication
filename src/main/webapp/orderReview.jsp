@@ -1,4 +1,7 @@
 <%@ page import="Business.Order" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="Business.PartOrder" %>
+<%@ page import="Business.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -21,6 +24,8 @@
     String state = order.address.getState();
     String zip = order.address.getZip();
 
+    ArrayList<PartOrder> partOrderArrayList = order.getOrderedPartsArrayList();
+
     int orderNumber = order.getOrderID(); //FIX does not retrieve OrderID
 
     double orderTotal = order.getOrderTotalCost();
@@ -34,9 +39,13 @@
         <p>Thank you for your purchase! Your order details:</p>
         <h3>Summary:</h3>
         <ul class="purchases">
-            <li>Product Name 1  </li>
-            <li>Product Name 2  </li>
-            <li>Product Name 3  </li>
+
+            <%
+                for (PartOrder partOrder : partOrderArrayList){
+                    Product product = partOrder.getPart();
+                    out.print("<li>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</li>");
+                }
+            %>
         </ul>
         <p>Total: <%=String.format("%,.2f", orderTotal)%></p>
         <a href="index.jsp">Continue Shopping</a>
@@ -59,5 +68,8 @@
         <!-- Add related products here -->
     </div>
 </div>
+
+<% session.removeAttribute("customerOrder");%>
+
 </body>
 </html>

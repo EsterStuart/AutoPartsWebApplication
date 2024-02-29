@@ -237,6 +237,11 @@ public class Order {
             s.setString(12, this.getEmail());
             s.setString(13,this.getPhoneNumber());
 
+
+            ResultSet resultSet = s.getGeneratedKeys();
+            resultSet.next();
+            setOrderID(resultSet.getInt(1));
+
             int h = s.executeUpdate();
             if(h==1){ System.out.println("Order Inserted");}
             else{System.out.println("Order could not be inserted");}

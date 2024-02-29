@@ -10,7 +10,7 @@
 
 <h1>Payment Information</h1>
 <div class="container">
-    <form action="orderReview.jsp" method="get">
+    <form action="payment-servlet" method="get">
         <h2>Card Information</h2>
         <fieldset>
             <label for="cardNumber">Card Number:</label><br>

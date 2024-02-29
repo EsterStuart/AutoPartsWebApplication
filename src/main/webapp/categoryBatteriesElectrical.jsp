@@ -16,17 +16,17 @@
 <div class="partType">
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Alternator"><img src="Photos/airFilters.jpg" alt="picture of air filter"></a>
+        <a href="load-product-servlet?ProductType=Alternator"><img src="product-images/Alternator/alternator.jpg" alt="picture of air filter"></a>
         <figcaption class="pic-text">Alternators</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Battery"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=Battery"><img src="product-images/CarBattery/car_battery.jpg" alt="picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">Car Batteries</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Starter"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=Starter"><img src="product-images/Starter/starter.jpg" alt="picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">Starters</figcaption>
     </figure>
 

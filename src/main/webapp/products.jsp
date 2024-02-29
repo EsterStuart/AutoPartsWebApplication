@@ -2,7 +2,14 @@
 
 <%@page import = "java.util.ArrayList"%>
 <%@page import = "Business.Product"%>
-
+<%@ page import="java.nio.file.Path" %>
+<%@ page import="java.util.stream.Stream" %>
+<%@ page import="java.nio.file.Files" %>
+<%@ page import="java.nio.file.Paths" %>
+<%@ page import="java.util.stream.Collectors" %>
+<%@ page import="java.io.File" %>
+<%@ page import="java.util.Random" %>
+<%@ page import="java.net.URL" %>
 
 
 <html>
@@ -98,27 +105,197 @@
                 ProductsFilteredList = (ArrayList) session.getAttribute("ArrayOfFilteredProducts");
             }
 
-
             if (ProductsFilteredList.isEmpty() != true){
-                for (Product product : ProductsFilteredList){
-                    out.print("<div class='grid-item'>");
+
+                File dir = new File("./product-images");
+                dir = new File("src/main/webapp/product-images");
+
+                String cononicalPath= dir.getCanonicalPath();
+                String imagesPath = cononicalPath.replace("\\apache-tomcat-10.1.18\\bin\\", "\\");
+
+                Random random = new Random();
+
+                for (int i=0; i<1; i++) {
+                    for (Product product : ProductsFilteredList) {
+
+                        String imageFolder = "AirFilter";
+
+                        switch (product.getProductType()){
+                            case("Air Filter"):
+                                imageFolder = "AirFilter";
+                                break;
+
+                            case("Antifreeze and Coolant"):
+                                imageFolder = "AntifreezeCoolant";
+                                break;
+
+                            case("Alternator"):
+                                imageFolder = "Alternator";
+                                break;
+
+                            case("Battery"):
+                                imageFolder = "CarBattery";
+                                break;
+
+                            case("Brake Caliper"):
+                                imageFolder = "BrakeCaliper";
+                                break;
+
+                            case("Ball Joint"):
+                                imageFolder = "BallJoint";
+                                break;
+
+                            case("Brake Cleaner"):
+                                imageFolder = "BrakeCleaner";
+                                break;
+
+                            case("Brake Fluid"):
+                                imageFolder = "BrakeFluid";
+                                break;
+
+                            case("Brake Rotor"):
+                                imageFolder = "BrakeRotor";
+                                break;
+
+                            case("Cabin Air Filter"):
+                                imageFolder = "CabinAirFilter";
+                                break;
+
+                            case("Belt"):
+                                imageFolder = "Belt";
+                                break;
+
+                            case("Catalytic Converter"):
+                                imageFolder = "CatalyticConverter";
+                                break;
+
+                            case("CV Axle"):
+                                imageFolder = "CVAxle";
+                                break;
+
+                            case("Differential"):
+                                imageFolder = "Differential";
+                                break;
+
+                            case("Exhaust Pipe"):
+                                imageFolder = "ExhaustPipe";
+                                break;
+
+                            case("Engine Oil"):
+                                imageFolder = "EngineOil";
+                                break;
+
+                            case("Front Brake Pads"):
+                                imageFolder = "BrakePad";
+                                break;
+
+                            case("Gasket"):
+                                imageFolder = "Gasket";
+                                break;
+
+                            case("Hub Assembly"):
+                                imageFolder = "HubAssembly";
+                                break;
+
+                            case("Headlight Bulb"):
+                                imageFolder = "HeadLightbulb";
+                                break;
+
+                            case("Ignition Coil"):
+                                imageFolder = "IgnitionCoil";
+                                break;
+
+                            case("Mini Bulb"):
+                                imageFolder = "Minibulb";
+                                break;
+
+                            case("Muffler"):
+                                imageFolder = "Muffler";
+                                break;
+
+                            case("Oil Filter"):
+                                imageFolder = "OilFilter";
+                                break;
+
+                            case("Radiator"):
+                                imageFolder = "Radiator";
+                                break;
+
+                            case("Rear Brake Pads"):
+                                imageFolder = "BrakePad";
+                                break;
+
+                            case("Shock Absorber"):
+                                imageFolder = "ShockAbsorber";
+                                break;
+
+                            case("Spark Plug"):
+                                imageFolder = "SparkPlug";
+                                break;
+
+                            case("Complete Strut Assembly"):
+                                imageFolder = "Strut";
+                                break;
+
+                            case("Starter"):
+                                imageFolder = "Starter";
+                                break;
+
+                            case("Transmission Fluid"):
+                                imageFolder = "TransmissionFluid";
+                                break;
+
+                            case("U-Joint"):
+                                imageFolder = "UJoint";
+                                break;
+
+                            case("Wiper"):
+                                imageFolder = "Wiper";
+                                break;
+
+                            case("Water Pump"):
+                                imageFolder = "WaterPump";
+                                break;
+
+                        }
+
+                        String completePath = imagesPath + "\\" + imageFolder;
+                        File adjustedDir = new File(completePath);
+                        File[] files = adjustedDir.listFiles();
+                        File file = files[random.nextInt(files.length)];
+
+                        String imagePath = "product-images/" + imageFolder + "/" + file.getName();
+
+
+                        out.print("<div class='grid-item'>");
                         out.print("<h2>" + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h2>");
-                        out.print("<img src='Photos/spark-plug-ex.jpg' alt='place holder icon' class='productImage'>");
+                        out.print("<img src='" + imagePath + "' alt='place holder icon' class='productImage'>");
 
 
-                         out.print("<h4>" + product.getDescription() + "</h4>");
-                         out.print("<h4>$" + product.getPrice() + "</h4>");
-                         out.print("<h4 class='product-number-text' >Product # " + product.getProductID() + "</h4>");
+                        out.print("<h4>" + product.getDescription() + "</h4>");
+                        out.print("<h4>$" + product.getPrice() + "</h4>");
+                        out.print("<h4 class='product-number-text' >Product # " + product.getProductID() + "</h4>");
+                        out.print("<h4> Stock: " + product.getStockQuantity() + "</h4>");
 
-
-                        out.print("<form id='addToCartForm' onSubmit='return addItemToCart()' action='add-product-to-cart-servlet'>");
+                        if (product.getStockQuantity() > 0) {
+                            out.print("<form id='addToCartForm' onSubmit='return addItemToCart()' action='add-product-to-cart-servlet'>");
                             out.print("<input type='hidden' id='ProductID' name='ProductID' value='" + product.getProductID() + "'>");
                             out.print("<hr>");
                             out.print("<label for='orderQuantity' id='orderQuantity'>Quantity</label>");
-                            out.print("<input type='number' class='quantity-input' id='OrderQuantity' name='OrderQuantity' value='1' min='1' max='100' />");
+                            out.print("<input type='number' class='quantity-input' id='OrderQuantity' name='OrderQuantity' value='1' min='1' max='" + product.getStockQuantity() + "'/>");
                             out.print("<input class='add-to-cart-btn' type='submit' value ='Add' />");
-                        out.print("</form>");
-                    out.print("</div>");
+                            out.print("</form>");
+
+                        } else {
+                            out.print("<form>");
+                            out.print("<hr>");
+                            out.print("<label for='orderQuantity' id='orderQuantity'>Quantity</label>");
+                            out.print("<input type='text' class='quantity-input' readonly value='Out of Stock'/>");
+                            out.print("<input class='out-of-stock-btn' type='button' value='Add' disabled/>");
+                            out.print("</form>");
+                        }
+                        out.print("</div>");
+                    }
                 }
             } else {
                 out.print("<h1> NO PRODUCTS FOUND </h1>");

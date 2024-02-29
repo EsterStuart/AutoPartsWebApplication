@@ -16,22 +16,22 @@
 <div class="partType">
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Brake Caliper"><img src="Photos/airFilters.jpg" alt="picture of air filter"></a>
+        <a href="load-product-servlet?ProductType=Brake Caliper"><img src="product-images/BrakeCaliper/brake_calipher.jpg" alt="picture of air filter"></a>
         <figcaption class="pic-text">Brake Calipers</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Front Brake Pads"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=Front Brake Pads"><img src="product-images/BrakePad/brake_pad.jpg" alt="picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">Front Brake Pads</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Rear Brake Pads"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=Rear Brake Pads"><img src="product-images/BrakePad/brake_pad2.jpg" alt="picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">Rear Brake Pads</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Brake Rotor"><img src="Photos/alternator.png" alt="picture of an alternator"></a>
+        <a href="load-product-servlet?ProductType=Brake Rotor"><img src="product-images/BrakeRotor/brake_rotor.jpg" alt="picture of an alternator"></a>
         <figcaption class="pic-text">Brake Rotors</figcaption>
     </figure>
 

@@ -75,7 +75,6 @@ public class CheckoutServlet extends HttpServlet {
 
         }
 
-
         order.setCustomerID(customerID);
 
 
@@ -91,8 +90,6 @@ public class CheckoutServlet extends HttpServlet {
         order.setCustomerLname(customerLname);
         order.setPhoneNumber(phoneNumber);
         order.setEmail(customerEmail);
-
-        order.insertDB();
 
         session.setAttribute("customerOrder", order);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/checkoutPayment.jsp");

@@ -16,17 +16,17 @@
 <div class="partType">
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=CV Axle"><img src="Photos/airFilters.jpg" alt="picture of air filter"></a>
+        <a href="load-product-servlet?ProductType=CV Axle"><img src="product-images/CVAxle/cv_axle.jpg" alt="picture of air filter"></a>
         <figcaption class="pic-text">CV Axles</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=Differential"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=Differential"><img src="product-images/Differential/differential.jpg"picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">Differentials</figcaption>
     </figure>
 
     <figure class="frame">
-        <a href="load-product-servlet?ProductType=U-Joint"><img src="Photos/antifreeze.jpg" alt="picture of antifreeze and coolant"></a>
+        <a href="load-product-servlet?ProductType=U-Joint"><img src="product-images/UJoint/u_joint.jpg" alt="picture of antifreeze and coolant"></a>
         <figcaption class="pic-text">U-Joints</figcaption>
     </figure>
 
