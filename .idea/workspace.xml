@@ -10,164 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="501d66ba-f0fb-4a44-a640-2cb9fc4ad0c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/paymentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AirFilter/air_filter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AirFilter/air_filter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AirFilter/air_filter3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AirFilter/air_filter4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Alternator/alternator9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AntifreezeCoolant/antifreeze.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AntifreezeCoolant/antifreeze2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AntifreezeCoolant/antifreeze3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/AntifreezeCoolant/antifreeze4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BallJoint/ball_joint7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Belt/belt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Belt/belt2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Belt/belt3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Belt/belt4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Belt/belt5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCaliper/brake_calipher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCaliper/brake_calipher2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCaliper/brake_calipher3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCaliper/brake_calipher4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCleaner/brake_cleaner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCleaner/brake_cleaner3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCleaner/brake_cleaner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeCleaner/brake_cleaner5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeFluid/brake_fluid5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakePad/brake_pad6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeRotor/brake_rotor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeRotor/brake_rotor2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/BrakeRotor/brake_rotor3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CVAxle/cv_axle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CVAxle/cv_axle2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CVAxle/cv_axle3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CabinAirFilter/cabin_air_filter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CabinAirFilter/cabin_air_filter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CabinAirFilter/cabin_air_filter3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CabinAirFilter/cabin_air_filter4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CabinAirFilter/cabin_air_filter5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CarBattery/car_battery.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CarBattery/car_battery2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CarBattery/car_battery3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CarBattery/car_battery4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CatalyticConverter/catalytic_converter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CatalyticConverter/catalytic_converter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/CatalyticConverter/catalytic_converter3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Differential/differential.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Differential/differential2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Differential/differential3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/EngineOil/motor_oil.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/EngineOil/motor_oil2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/EngineOil/motor_oil3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ExhaustPipe/exhaust.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ExhaustPipe/exhaust2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ExhaustPipe/exhaust3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Gasket/gasket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Gasket/gasket_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Gasket/gasket_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Gasket/gasket_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HeadLightbulb/head_lightbulb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HeadLightbulb/head_lightbulb2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HeadLightbulb/head_lightbulb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HubAssembly/hub_assembly.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HubAssembly/hub_assembly2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HubAssembly/hub_assembly3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/HubAssembly/hub_assembly4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/IgnitionCoil/ignition_coil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/IgnitionCoil/ignition_coil2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/IgnitionCoil/ignition_coil3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Minibulb/mini_bulb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Minibulb/mini_bulb2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Muffler/muffler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Muffler/muffler2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Muffler/muffler3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/OilFilter/oil_filter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/OilFilter/oil_filter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/OilFilter/oil_filter3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/OilFilter/oil_filter4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Radiator/radiator.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Radiator/radiator2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Radiator/radiator3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Radiator/radiator4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ShockAbsorber/shock_absorber.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ShockAbsorber/shock_absorber2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/ShockAbsorber/shock_absorber3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/SparkPlug/spark_plug.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/SparkPlug/spark_plug2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/SparkPlug/spark_plug3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Starter/starter6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Strut/strut.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Strut/strut2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Strut/strut3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Strut/strut4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/TransmissionFluid/transmission_fluid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/TransmissionFluid/transmission_fluid2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/TransmissionFluid/transmission_fluid3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/UJoint/u_joint.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/UJoint/u_joint2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/UJoint/u_joint3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/WaterPump/water_pump8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Wiper/windshield_wiper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-images/Wiper/windshield_wiper2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CheckoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CheckoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryEngineIgnitionFuel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryEngineIgnitionFuel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryExhaustEmissionControl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryExhaustEmissionControl.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryFilters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryFilters.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryHeatingCoolingAC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryHeatingCoolingAC.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkoutPayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkoutPayment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/productCategories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/productCategories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +45,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -210,7 +67,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;html&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/src/main/webapp&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -222,6 +80,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15155359&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -367,6 +226,8 @@
       <workItem from="1709142792238" duration="986000" />
       <workItem from="1709155347171" duration="11136000" />
       <workItem from="1709214606349" duration="1146000" />
+      <workItem from="1709300013163" duration="11072000" />
+      <workItem from="1709311838558" duration="35000" />
     </task>
     <servers />
   </component>
