@@ -12,8 +12,43 @@
 <body>
 
 <script id="replace_with_navbar" src="nav.js"></script>
+  <div class="hero-section">
+    <img src="Photos/carPic.png" alt="Hero Image">
+    <div class="welcome--message">
+      <h1>Welcome to Car Parts Online</h1>
+    </div>
+  </div>
+<div class="introduction">
+  <p>Welcome to [Store Name], your premier destination for all your automotive part needs. Whether you're a do-it-yourself enthusiast or a professional mechanic, we offer a wide range of high-quality auto parts to keep your vehicle running smoothly.
 
-<h1>Welcome</h1>
+    Our extensive inventory covers everything from engine components and brakes to lighting and suspension. We source our products from trusted manufacturers, ensuring that you receive reliable, long-lasting parts at competitive prices.
+
+    At [Store Name], customer satisfaction is our top priority. Our knowledgeable staff is here to assist you in finding the right parts for your vehicle and provide expert advice on installation and maintenance.
+
+    Browse our online catalog or visit our store today to find the perfect parts for your automotive needs. Thank you for choosing [Store Name] – your trusted partner in auto parts.</p>
+</div>
+<div class="topCat-container">
+<h2>Top Categories</h2>
+<div class="top--cat">
+  <figure class="frame">
+    <a href="categoryBrakes.jsp"><img src="product-images/BrakePad/brake_pad.jpg" alt="picture of air filter"></a>
+    <figcaption class="pic-text">Brakes</figcaption>
+  </figure>
+  <figure class="frame">
+    <a href="categoryHeatingCoolingAC.jsp"><img src="product-images/Radiator/radiator.jpg" alt="picture of antifreeze and coolant"></a>
+    <figcaption class="pic-text">Heating, Cooling, & AC</figcaption>
+  </figure>
+  <figure class="frame">
+    <a href="categoryDrivetrain.jsp"><img src="product-images/CVAxle/cv_axle.jpg" alt="picture of an alternator"></a>
+    <figcaption class="pic-text">Drivetrain</figcaption>
+  </figure>
+</div>
+</div>
+
+  <div class="quick-links">
+    <h2>Deals</h2>
+
+  </div>
 <div class="button--container">
   <a href="productCategories.jsp">Search Parts</a>
   <a href="login.jsp">Login</a>
