@@ -7,10 +7,9 @@ import java.sql.DriverManager;
 public class DatabaseConnection {
     public static Connection getDatabaseConnection(){
         try{
-//DATA BASE FIX THE PATH
-
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
             File databaseFile = new File("./database/eCommerceDB.accdb");
+            System.out.println(databaseFile.getCanonicalPath());
 
             String cononicalPath = databaseFile.getCanonicalPath();
             String databasePath = cononicalPath.replace("\\apache-tomcat-10.1.18\\bin\\", "\\");

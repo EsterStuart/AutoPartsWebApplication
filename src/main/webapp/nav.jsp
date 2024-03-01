@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
 
 </head>
