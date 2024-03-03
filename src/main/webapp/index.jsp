@@ -4,7 +4,7 @@
 <head>
 
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index2.css">
 
 
   <title>Home</title>
@@ -12,8 +12,8 @@
 <body>
 <div class="deal-banner">
   <div class="banner-info">
-    <span class="info">Save for Easter with 30% off on Orders more than $75+ with code ChattParts</span>
-    <span class="fine-print">*Restrictions apply. Ends 3/31</span>
+    <span class="info"><strong>Save for Easter with 30% off on orders $75+ with code ChattParts</strong></span>
+    <span class="fine-print"><em>*Restrictions apply. Ends 3/31</em></span>
 </div>
   </div>
 <script id="replace_with_navbar" src="nav.js"></script>
