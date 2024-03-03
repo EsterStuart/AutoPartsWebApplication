@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="501d66ba-f0fb-4a44-a640-2cb9fc4ad0c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/deals-wiperblades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_1_17_PM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,11 +87,11 @@
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\Categories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\TransmissionFluid" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\MotorOil" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\BrakeFluid" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\BrakeCleaner" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\AntifreezeCoolant" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.team.autopartswebapplication" />
@@ -226,6 +226,9 @@
       <workItem from="1709300013163" duration="11072000" />
       <workItem from="1709311838558" duration="35000" />
       <workItem from="1709312207629" duration="7406000" />
+      <workItem from="1709325771071" duration="6106000" />
+      <workItem from="1709504209570" duration="1745000" />
+      <workItem from="1709505996867" duration="59000" />
     </task>
     <servers />
   </component>
