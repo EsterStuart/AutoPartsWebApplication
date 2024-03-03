@@ -32,3 +32,34 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+
+
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.divider-span {
+  background:#fff;
+  padding:0 10px;
+}
+
+.create-account-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 86%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+#title{
+  text-align: center;
+}

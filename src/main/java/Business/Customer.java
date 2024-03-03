@@ -199,7 +199,9 @@ public class Customer extends  Person{
 
     public static void main(String[] args){
 
-
+        Customer customer = new Customer();
+        customer.selectDB(3);
+        customer.display();
 
 
     }

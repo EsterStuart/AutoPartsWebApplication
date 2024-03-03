@@ -17,30 +17,32 @@
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
 
-<Form action="CustomerLoginServlet" method="get">
 
-
-<div class ="Split"><h1> Customer Login</h1>
-  <h2><a href="createAccount.jsp"> Sign Up</a></h2>
-</div>
-
+<h1 id="title"> Customer Login </h1>
 <div class="container">
+  <Form action="CustomerLoginServlet" method="get">
   <label for=""><b>Email</b></label>
   <input type="text" placeholder="Enter Email" name="email" required>
 
   <label for=""><b>Password</b></label>
   <input type="password" placeholder="Enter Password" name="psw" required>
-
+  <button type="submit">Login</button>
+  </Form>
 <% String message = (String) request.getAttribute("message");
 if(message != null){
 %><p>Incorrect Username or Password. Please Try Again.</p>
 <%}%>
 
-  <button type="submit">Login</button>
+
+  <p class="divider"><span class="divider-span">Don't Have an Account?</span></p>
+  <a href="createAccount.jsp" class="create-account-btn"> Create an account </a>
+
+
+
 </div>
 
 
-</Form>
+
 
 </body>
 

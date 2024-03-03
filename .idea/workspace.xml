@@ -9,25 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="501d66ba-f0fb-4a44-a640-2cb9fc4ad0c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/deals-wiperblades.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_1_17_PM_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="CSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,67 +41,54 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="usePluginRegistry" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2crPZLbJxYNvSGrMLhZ3YjUCBWz" />
+  <component name="ProjectId" id="2d6Wd87ZHQUQ39mhPsvfzTS4mAd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.products.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;html&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/src/main/webapp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15155359&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Customer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 10.1.18.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15245664",
+    "project.structure.side.proportion": "0.23274337",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\Categories" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\Photos" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\TransmissionFluid" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\MotorOil" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\BrakeFluid" />
-      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\product-images\BrakeCleaner" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.team.autopartswebapplication" />
+      <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\Photos" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
-    <configuration name="products.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/AutoPartsWebApplication_war_exploded/products.jsp">
-      <method v="2" />
+    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.Customer" />
+      <module name="AutoPartsWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -111,7 +100,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="5a57b632-2f03-4237-9982-58d61810b208" />
+        <option name="BASE_DIRECTORY_NAME" value="6abafef5-1e9b-4ac0-9a79-c18f62bc426b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -119,7 +108,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51311" />
+        <option name="DEBUG_PORT" value="50979" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -188,9 +177,13 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Customer" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.products.jsp" />
+        <item itemvalue="Application.Customer" />
       </list>
     </recent_temporary>
   </component>
@@ -204,35 +197,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="501d66ba-f0fb-4a44-a640-2cb9fc4ad0c1" name="Changes" comment="" />
-      <created>1708865553321</created>
+      <changelist id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="" />
+      <created>1709329095328</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708865553321</updated>
-      <workItem from="1708865555349" duration="1215000" />
-      <workItem from="1708866783598" duration="29000" />
-      <workItem from="1708869059993" duration="310000" />
-      <workItem from="1708952940755" duration="1752000" />
-      <workItem from="1708955578455" duration="742000" />
-      <workItem from="1708958922474" duration="23178000" />
-      <workItem from="1708991707084" duration="899000" />
-      <workItem from="1709039696343" duration="2528000" />
-      <workItem from="1709065477642" duration="5772000" />
-      <workItem from="1709135987580" duration="4503000" />
-      <workItem from="1709142667732" duration="47000" />
-      <workItem from="1709142792238" duration="986000" />
-      <workItem from="1709155347171" duration="11136000" />
-      <workItem from="1709214606349" duration="1146000" />
-      <workItem from="1709300013163" duration="11072000" />
-      <workItem from="1709311838558" duration="35000" />
-      <workItem from="1709312207629" duration="7406000" />
-      <workItem from="1709325771071" duration="6106000" />
-      <workItem from="1709504209570" duration="1745000" />
-      <workItem from="1709505996867" duration="59000" />
+      <updated>1709329095328</updated>
+      <workItem from="1709329095991" duration="293000" />
+      <workItem from="1709329398404" duration="5796000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
