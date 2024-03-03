@@ -1,3 +1,31 @@
+/* page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* deal banner styles */
+
+.deal-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0056b3;
+    height: 40px;
+}
+
+.banner-info {
+    background-color: #0056b3;
+    text-align: center;
+}
+
+.info {
+
+}
+
+
+/* Hero styles */
 
 .hero-section {
     display: flex;
@@ -10,6 +38,7 @@
     max-height: calc(100vh - 100px);
 }
 
+/* Welcome Banner and intro styles */
 .welcome--message {
     width: 100%;
     background-color: black;
@@ -33,18 +62,19 @@
     text-align: justify;
 }
 
-.top--cat {
-    display: grid;
-    grid-template-columns: auto auto auto;
+/* top category styles */
+
+.topCat-container {
+    display: block;
     width: 75%;
-    margin: 0 auto;
+    margin: 30px auto;
+
     margin-bottom: 50px;
 }
 
 .topCat-container h2 {
-    margin: 30px auto;
     position: relative;
-    width: 75%;
+    margin-bottom: 40px;
 }
 
 .topCat-container h2::after {
@@ -57,6 +87,11 @@
     bottom: -5px;
     left: 0;
 
+}
+
+.top--cat {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .frame {
@@ -80,7 +115,6 @@
     height: 90%;
     display: block;
     margin: auto;
-
 }
 
 .pic-text {
@@ -97,13 +131,21 @@
     overflow: hidden;
 }
 
-.quick-links h2 {
-    margin: 30px auto;
-    position: relative;
+/* deal container styles */
+
+.deal-container {
+    display: block;
     width: 75%;
+    margin: 30px auto;
 }
 
-.quick-links h2::after {
+.deal-container h2 {
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.deal-container h2::after {
     content: "";
     position: absolute;
     display: block;
@@ -114,40 +156,29 @@
     left: 0;
 }
 
-.quick-links ul {
-    list-style: none;
+.deal-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-.quick-links ul li {
-    margin-bottom: 10px;
-}
-
-.quick-links ul li a {
-    text-decoration: none;
-    color: #333;
-    background-color: #eee;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.quick-links ul li a:hover {
-    background-color: #ddd;
-}
-
-/* style for login and search button */
-.button--container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.deal-info {
     position: relative;
-    top: 30%;
+    width: 350px;
+    height: 250px;
+    margin: 2% auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
-.button--container a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #000;
-    border-radius: 10px;
-    color: #ffffff;
+.deal-info:hover {
+    transform: scale(1.1);
+}
+
+.deal-info img {
+    width: 350px;
+    height: 250px;
+    display: block;
 }

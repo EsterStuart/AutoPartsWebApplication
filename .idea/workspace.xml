@@ -10,26 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,10 +52,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "html",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
