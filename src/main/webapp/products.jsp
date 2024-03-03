@@ -289,9 +289,7 @@
                             randomNumber = random.nextInt(files.length);
                         }
                         previousNumber = randomNumber;
-                        System.out.println(randomNumber);
-
-
+                  
                         File file = files[randomNumber];
 
                         String imagePath = "product-images/" + imageFolder + "/" + file.getName();

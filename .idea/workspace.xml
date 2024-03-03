@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "html",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
@@ -202,6 +201,7 @@
       <workItem from="1709329095991" duration="293000" />
       <workItem from="1709329398404" duration="5796000" />
       <workItem from="1709507615715" duration="1683000" />
+      <workItem from="1709510035106" duration="61000" />
     </task>
     <servers />
   </component>
