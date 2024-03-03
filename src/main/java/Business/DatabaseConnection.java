@@ -9,7 +9,6 @@ public class DatabaseConnection {
         try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
             File databaseFile = new File("./database/eCommerceDB.accdb");
-            System.out.println(databaseFile.getCanonicalPath());
 
             String cononicalPath = databaseFile.getCanonicalPath();
             String databasePath = cononicalPath.replace("\\apache-tomcat-10.1.18\\bin\\", "\\");

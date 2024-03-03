@@ -10,26 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Photos/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/ClearCarTypeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/ClearPriceFilterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trackOrder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,30 +50,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Customer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.18.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15245664",
-    "project.structure.side.proportion": "0.23274337",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Customer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15245664&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\Photos" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.team.autopartswebapplication" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
@@ -204,6 +207,10 @@
       <updated>1709329095328</updated>
       <workItem from="1709329095991" duration="293000" />
       <workItem from="1709329398404" duration="5796000" />
+      <workItem from="1709336705887" duration="604000" />
+      <workItem from="1709418302286" duration="6412000" />
+      <workItem from="1709465542240" duration="2558000" />
+      <workItem from="1709507822305" duration="1949000" />
     </task>
     <servers />
   </component>
