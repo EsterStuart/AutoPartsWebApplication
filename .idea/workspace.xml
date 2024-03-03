@@ -10,14 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da634602-0733-4964-9a31-6ef8e5550efc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/ClearCarTypeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/ClearPriceFilterServlet.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+
+        <option value="CSS File" />
+
       </list>
     </option>
   </component>
@@ -50,25 +50,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Customer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15245664&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Customer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 10.1.18.executor": "Run",
+    "git-widget-placeholder": "html",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15245664",
+    "project.structure.side.proportion": "0.23274337",
+    "vue.rearranger.settings.migration": "true"
+
   }
 }</component>
   <component name="RecentsManager">
