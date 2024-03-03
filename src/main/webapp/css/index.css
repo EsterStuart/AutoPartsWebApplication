@@ -1,4 +1,3 @@
-
 /* page reset */
 * {
     margin: 0;
@@ -6,22 +5,27 @@
     box-sizing: border-box;
 }
 
-
-
 /* deal banner styles */
+
 .deal-banner {
-    background-color: #0056b3;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0056b3;
     height: 40px;
 }
 
-.deal-info {
+.banner-info {
     background-color: #0056b3;
+    text-align: center;
 }
 
-/* Hero styles */ 
+.info {
+
+}
+
+
+/* Hero styles */
 
 .hero-section {
     display: flex;
@@ -34,7 +38,7 @@
     max-height: calc(100vh - 100px);
 }
 
-/* Welcome Banner and intro styles */ 
+/* Welcome Banner and intro styles */
 .welcome--message {
     width: 100%;
     background-color: black;
@@ -58,7 +62,7 @@
     text-align: justify;
 }
 
-/* top category styles */ 
+/* top category styles */
 
 .topCat-container {
     display: block;
@@ -127,7 +131,7 @@
     overflow: hidden;
 }
 
-/* deal container styles */ 
+/* deal container styles */
 
 .deal-container {
     display: block;
@@ -178,4 +182,3 @@
     height: 250px;
     display: block;
 }
-
