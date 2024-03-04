@@ -16,12 +16,12 @@ public class CustomerLoginServlet extends HttpServlet {
         RequestDispatcher rd;
         HttpSession hs = request.getSession();
 
-        id = Integer.parseInt(request.getParameter("uname"));
+        String email = request.getParameter("email");
         pass = request.getParameter("psw");
         PrintWriter out = response.getWriter();
 
         Customer c1 = new Customer();
-        c1.selectDB(id);
+        c1.selectDB(email);
 /**
    Leads to Customer Dashboard and saves Customer Information if password is correct or displays error message if incorrect
  */
@@ -37,8 +37,6 @@ public class CustomerLoginServlet extends HttpServlet {
             rd.forward(request,response);
 
 }
-
-
 
 
     }

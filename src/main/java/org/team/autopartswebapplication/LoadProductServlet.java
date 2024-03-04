@@ -20,6 +20,7 @@ import java.sql.*;
 
 
 import Business.Product;
+import org.hsqldb.Session;
 
 import javax.sound.midi.SysexMessage;
 
@@ -33,23 +34,92 @@ public class LoadProductServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         String partType = request.getParameter("ProductType");
+        String carType = request.getParameter("type");
+        String maxPrice = request.getParameter("maxPrice");
+        String minPrice = request.getParameter("minPrice");
 
-        String carType = request.getParameter("CarType");
+
+        if (carType != null){
+            session.setAttribute("carType", carType);
+        } else {
+            carType = (String) session.getAttribute("carType");
+        }
+
+        if (maxPrice != null){
+            session.setAttribute("maxPrice", maxPrice);
+        } else {
+            maxPrice = (String) session.getAttribute("maxPrice");
+        }
+
+        if (minPrice != null){
+            session.setAttribute("minPrice", minPrice);
+        } else {
+            minPrice = (String) session.getAttribute("minPrice");
+        }
+
+
+
+
+
+        session.removeAttribute("filteredByCartTypeProducts");
 
         ArrayList<Product> productsArrayList = new ArrayList<Product>();
 
-        Product product = new Product();
+        ArrayList<Product> carTypeFilteredList = new ArrayList<>();
+
+
+        productsArrayList =(ArrayList<Product>) session.getAttribute("ArrayOfFilteredProducts");
+
         if (partType != null){
-            if (carType != null) {
-                productsArrayList = product.getAllProductsFilterBy(partType, Product.getCarType(carType));
-            } else {
-                productsArrayList = Product.getAllProductsFilterBy(partType);
-            }
-        } else if (carType != null) {
-            productsArrayList = product.getAllProductsFilterBy(Product.getCarType(carType));
+            productsArrayList = Product.getAllProductsFilterBy(partType);
+
         }
 
+
+
+
+        double minPriceNum = 0.0;
+        double maxPriceNum = 0.0;
+
+        if (minPrice != null && maxPrice!= null){
+            minPriceNum = Double.parseDouble(minPrice);
+            maxPriceNum = Double.parseDouble(maxPrice);
+        }
+
+        if (partType != null){
+            session.removeAttribute("minPrice");
+            session.removeAttribute("maxPrice");
+            session.removeAttribute("carType");
+
+            carType = null;
+            minPriceNum = 0.0;
+            maxPriceNum = 0.0;
+        }
+
+
+        boolean filterSearchUsed = false;
+
+        ArrayList<Product> filteredList = new ArrayList<Product>();
+        filteredList = productsArrayList;
+
+        if (carType != null) {
+            filteredList = Product.filterArrayListByCarType(productsArrayList, carType);
+            filterSearchUsed = true;
+        }
+        if (maxPriceNum != 0){
+            ArrayList<Product> temporaryList = Product.filterListByPrice(filteredList, minPriceNum, maxPriceNum);
+            filteredList = temporaryList;
+
+            filterSearchUsed = true;
+
+
+        }
+
+
+        session.setAttribute("filterSearchUsed", filterSearchUsed);
         session.setAttribute("ArrayOfFilteredProducts", productsArrayList);
+        session.setAttribute("FilteredProductList", filteredList);
+
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/products.jsp");
         requestDispatcher.forward(request, response);
     }

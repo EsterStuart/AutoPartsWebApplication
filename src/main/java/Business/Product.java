@@ -1,10 +1,14 @@
 package Business;
 
+import org.w3c.dom.ranges.Range;
+
 import java.io.File;
 import java.io.Serializable;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
 
 public class Product implements Serializable {
     private String productID;
@@ -246,6 +250,88 @@ public class Product implements Serializable {
     //<editor-fold desc="Get Product By Filter Methods">
 
 
+    public static ArrayList<Product> filterArrayListByCarType(ArrayList<Product> arrayList, String carType) {
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        carType = carType.toLowerCase();
+        for (Product product : arrayList) {
+            switch (carType) {
+                case "suv":
+                    if (product.fitsSUV) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "sedan":
+                    if (product.fitsSedan) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "truck":
+                    if (product.fitsTruck) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "coupe":
+                    if (product.fitsCoupe) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+                case "sport":
+                    if (product.fitsSport) {
+                        productsArrayList.add(product);
+                    }
+                    break;
+
+            }
+        }
+        return productsArrayList;
+    }
+
+    /************************************************************************************************************************
+     *   The following method takes in only the searchQuery and returns a ArrayList<Product> ArrayList filtered by all database columns
+     ***********************************************************************************************************************/
+    public static ArrayList<Product> getProductsBySearch(String searchQuery){
+        ArrayList<Product> productsArrayList = new ArrayList<Product>();
+        try {
+
+            String adjustedSearchQuery = "%" + searchQuery + "%";
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+
+            PreparedStatement statement1  = connection.prepareStatement("SELECT ProductID FROM Products WHERE ProductID LIKE ?");
+            statement1.setString(1, adjustedSearchQuery);
+            PreparedStatement statement2  = connection.prepareStatement("SELECT ProductID FROM Products WHERE ProductType LIKE ?");
+            statement2.setString(1, adjustedSearchQuery);
+            PreparedStatement statement3  = connection.prepareStatement("SELECT ProductID FROM Products WHERE Brand LIKE ?");
+            statement3.setString(1, adjustedSearchQuery);
+            PreparedStatement statement4  = connection.prepareStatement("SELECT ProductID FROM Products WHERE ProductName LIKE ?");
+            statement4.setString(1, adjustedSearchQuery);
+            PreparedStatement statement5  = connection.prepareStatement("SELECT ProductID FROM Products WHERE Description LIKE ?");
+            statement5.setString(1, adjustedSearchQuery);
+
+            ArrayList<PreparedStatement> preparedStatements = new ArrayList<>();
+            preparedStatements.add(statement1);
+            preparedStatements.add(statement2);
+            preparedStatements.add(statement3);
+            preparedStatements.add(statement4);
+            preparedStatements.add(statement5);
+
+            for (PreparedStatement preparedStatement : preparedStatements){
+                ResultSet resultSet;
+                resultSet = preparedStatement.executeQuery();
+
+                while(resultSet.next()){
+                    Product product = new Product();
+                    product.selectDB(resultSet.getString("ProductID"));
+                    productsArrayList.add(product);
+                }
+            }
+            connection.close();
+
+        } catch (Exception ex) {ex.printStackTrace();}
+
+
+        return productsArrayList;
+    }
+
     /************************************************************************************************************************
      *   The following method takes in only the productType and returns a ArrayList<Product> ArrayList filtered by product type
      ***********************************************************************************************************************/
@@ -408,8 +494,6 @@ public class Product implements Serializable {
             ResultSet resultSet = statement.executeQuery();
             resultSet.next();
 
-            System.out.println(resultSet.getInt("Stock"));
-
             int currentStock = resultSet.getInt("Stock");
             int newStock = currentStock - decreaseAmount;
             connection.close();
@@ -423,6 +507,18 @@ public class Product implements Serializable {
     //</editor-fold>
 
 
+
+    public static ArrayList<Product> filterListByPrice(ArrayList<Product> productArrayList, double minPrice, double maxPrice){
+        ArrayList<Product> outputArrayList = new ArrayList<Product>();
+
+        for (Product product : productArrayList){
+
+            if (minPrice <= product.getPrice() && product.getPrice() <= maxPrice){
+                outputArrayList.add(product);
+            }
+        }
+        return outputArrayList;
+    }
     public static CarType getCarType(String carTypeName) {
         String lowerCaseCarTypeName = carTypeName.toLowerCase();
 
@@ -470,21 +566,12 @@ public class Product implements Serializable {
 
     public static void main(String[] args){
 
-
-        Product p1 = new Product();
-        p1.selectDB("AF108");
-        p1.display();
-
-        p1.decreaseProductStock("AF108", 2);
-
-        p1.selectDB("AF108");
-        p1.display();
-
-
-
-        ArrayList<Product> productsArraylist = p1.getAllProductsFilterBy("Spark Plug");
+        //ArrayList<Product> productsArraylist = p1.getAllProductsFilterBy("Spark Plug");
         //ArrayList<Product> productsArraylist = getAllProductsFilterBy(CarType.Truck);
         //ArrayList<Product> productsArraylist = getAllProductsFilterBy("Battery", CarType.Truck);
+
+        ArrayList<Product> productsArraylist = getProductsBySearch("NeoTec");
+
         for (Product product : productsArraylist){
             System.out.println(product.name);
         }

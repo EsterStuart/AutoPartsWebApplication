@@ -1,40 +1,184 @@
+/* page reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    height: 100vh;
-    overflow: hidden;
-    background-image: /*linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),*/ url("../Photos/carPic.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-h1 {
-    position: relative;
+/* deal banner styles */
+
+.deal-banner {
     display: flex;
     justify-content: center;
-    top: 10%;
     align-items: center;
-    color: #ffffff;
+    background-color: #0056b3;
+    height: 40px;
 }
 
-/* style for login and search button */
-.button--container {
+.banner-info {
+    background-color: #0056b3;
+    text-align: center;
+}
+
+.info {
+
+}
+
+
+/* Hero styles */
+
+.hero-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    position: relative;
-    top: 30%;
 }
 
-.button--container a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #000;
+.hero-section img {
+    width: 20%;
+    max-height: calc(100vh - 100px);
+}
+
+/* Welcome Banner and intro styles */
+.welcome--message {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.introduction {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
     border-radius: 10px;
-    color: #ffffff;
+}
+
+.introduction p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+/* top category styles */
+
+.topCat-container {
+    display: block;
+    width: 75%;
+    margin: 30px auto;
+
+    margin-bottom: 50px;
+}
+
+.topCat-container h2 {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.topCat-container h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+
+}
+
+.top--cat {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.frame {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin: 2% auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.frame:hover {
+    transform: scale(1.1);
+}
+
+.frame img {
+    max-width: 100%;
+    height: 90%;
+    display: block;
+    margin: auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* deal container styles */
+
+.deal-container {
+    display: block;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.deal-container h2 {
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.deal-container h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+}
+
+.deal-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.deal-info {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin: 2% auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.deal-info:hover {
+    transform: scale(1.1);
+}
+
+.deal-info img {
+    width: 350px;
+    height: 250px;
+    display: block;
 }

@@ -7,8 +7,6 @@ import java.sql.DriverManager;
 public class DatabaseConnection {
     public static Connection getDatabaseConnection(){
         try{
-//DATA BASE FIX THE PATH
-
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
             File databaseFile = new File("./database/eCommerceDB.accdb");
 

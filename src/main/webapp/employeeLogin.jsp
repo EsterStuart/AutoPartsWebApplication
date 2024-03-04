@@ -13,7 +13,11 @@
 
 
 
+<<<<<<< HEAD
 <h1 class="Split"> Employee Login</h1>
+=======
+<h1 id="title"> Employee Login</h1>
+>>>>>>> 1664355036b5735a7678710ea769245023c29f5c
 
 <div class="container">
   <form action="load-all-orders-servlet">

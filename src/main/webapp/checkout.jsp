@@ -14,7 +14,7 @@
 
 
 <%
-
+String phone = (String) request.getAttribute("phone"); String email = (String) request.getAttribute("email"); String zip = (String) request.getAttribute("zip");
     Cart cart;
     cart = (Cart) session.getAttribute("userCart");
 
@@ -25,11 +25,20 @@
     String customerFName = "";
     String customerLName = "";
     String customerEmail = "";
+    String customerStreet = "";
+    String customerCity = "";
+    String customerState = null;
+    String customerZip = "";
+
 
     if (customer != null){
         customerFName = customer.getFirstName();
         customerLName = customer.getLastName();
         customerEmail = customer.getEmail();
+        customerStreet = customer.completeAddress.getStreet();
+        customerCity = customer.completeAddress.getCity();
+        customerState = customer.completeAddress.getState();
+        customerZip = customer.completeAddress.getZip();
     }
 
     int index = 0;
@@ -68,21 +77,28 @@
 
 <h1>Checkout</h1>
 <div class="container">
-    <form action="orderReview.jsp">
+    <form action="checkout-servlet" method="get">
         <h2>Contact Information</h2>
         <fieldset>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" class="text--input" value="<%= customerFName %>"  placeholder="Enter First Name"><br>
+            <input type="text" id="fname" name="fname" class="text--input" value="<%= customerFName %>"  placeholder="Enter First Name" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name"><br>
+            <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name" required><br>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number" required><br>
+            <% if(phone !=null && phone.equals("phone")){
+            %>      <p> Phone Number is Invalid.</p><%}%>
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address"><br>
+            <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address" required><br>
+            <% if(email !=null && email.equals("email")){
+            %>      <p> Email is Invalid.</p><%}%>
             <label for="Street">Street:</label><br>
-            <input type="text" id="Street" name="Street" class="text--input" placeholder="Enter Street Address"/><br>
+            <input type="text" id="Street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address" required/><br>
             <label for="city">City:</label><br>
-            <input type="text" id="city" name="city" class="text--input"  placeholder="Enter City"><br>
+            <input type="text" id="city" name="city" class="text--input" value="<%= customerCity%>"  placeholder="Enter City" required><br>
+
             <label for="state">State:</label><br>
-            <select name="state" id="state">
+            <select name="state" id="state" required>
                 <option disabled="" selected="">Select a State</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -135,8 +151,11 @@
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
             </select><br><br>
+
             <label for="zip">Zip:</label><br>
-            <input type="text" id="zip" name="zip" class="text--input"  placeholder="Enter Zip Code"><br>
+            <input type="text" id="zip" name="zip" class="text--input" value="<%= customerZip%>" placeholder="Enter Zip Code" required><br>
+            <% if(zip !=null && zip.equals("zip")){
+            %>      <p> Zip Code is Invalid.</p><%}%>
             <input type="submit" id="submit" value="Submit">
         </fieldset>
     </form>
@@ -144,19 +163,19 @@
     <div class="total-section">
         <div class="total-item">
             <span class="total-label">Subtotal: </span>
-            <span class="subtotal-price"> $<%= totalCost %> </span>
+            <span class="subtotal-price"> $<%=String.format("%,.2f", totalCost) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Taxes:</span>
-            <span class="taxes"> $<%= tax %> </span>
+            <span class="taxes"> $<%= String.format("%,.2f", tax) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Shipping:</span>
-            <span class="shipping"> $<%= shipping %> </span>
+            <span class="shipping"> $<%= String.format("%,.2f", shipping) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Total:</span>
-            <span class="total-price"> $<%= totalCalculatedCost %> </span>
+            <span class="total-price"> $<%= String.format("%,.2f", totalCalculatedCost) %> </span>
         </div>
     </div>
 </div>
