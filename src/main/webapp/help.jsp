@@ -3,8 +3,9 @@
 <head>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/Help.css">
+    <link rel="stylesheet" href="css/padfoot.css">
 
-    <title>Title</title>
+    <title>Help</title>
 </head>
 
 <body>
@@ -47,6 +48,6 @@
     </div>
 </div>
 
-
+<script id="add_the_feet" src="Padfeet.js"> </script>
 </body>
 </html>

@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="css/padfoot.css">
 
   <meta charset="UTF-8">
-  <title>Emp</title>
+  <title>Employee Login</title>
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
 
 
 
-<h1> Employee Login</h1>
+<h1 class="Split"> Employee Login</h1>
 
 <div class="container">
   <form action="load-all-orders-servlet">

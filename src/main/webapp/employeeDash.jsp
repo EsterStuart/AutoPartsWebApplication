@@ -8,13 +8,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/EmpDash.css">
+    <link rel="stylesheet" href="css/padfoot.css">
 
-    <title>Title</title>
+    <title> Employee Dash</title>
 </head>
 <body>
-<script id="replace_with_navbar" src="nav.js"></script>
+
+<script class="header" id="replace_with_navbar" src="nav.js"></script>
+<header class="sidebar">Order Dashboard</header>
 
 <main class="main">
 
@@ -55,6 +57,6 @@
 
 
 
-
+<script id="add_the_feet" src="Padfeet.js"> </script>
 </body>
 </html>

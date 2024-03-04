@@ -3,9 +3,9 @@
 <head>
 
 
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/login.css">
-
+ <link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/padfoot.css">
 
 
   <meta charset="UTF-8">
@@ -38,7 +38,7 @@ if(message != null){
   <button type="submit">Login</button>
 </div>
 
-
+  <script id="add_the_feet" src="Padfeet.js"> </script>
 </Form>
 
 </body>

@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/padfoot.css">
 
   
     <title>Title</title>
@@ -106,6 +107,6 @@
 </div>
 
 <a href="checkout.jsp"> CHECKOUT </a>
-
+<script id="add_the_feet" src="Padfeet.js"> </script>
 </body>
 </html>

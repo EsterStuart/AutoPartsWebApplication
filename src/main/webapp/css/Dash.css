@@ -4,14 +4,13 @@ body{
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 60px 1fr;
-  grid-template-areas:
-  "side header "
-  "side main    ";
 
 }
 .header{
+  background-image: url("../Photos/Custback2.jpg");
   background-color: white;
-  grid-area: header;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
   font-size: larger;
   font-weight: bold;
 
@@ -19,14 +18,21 @@ body{
 }
 
 .sidebar{
-  background-color: #cccccc;
-  grid-area: side;
+  background-image: url("../Photos/Custback2.jpg");
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: bolder;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 
 }
 
 .main{
+  background-image: url("../Photos/CustBack.jpg");
+  background-size: cover;
   background-color: #222222;
-  grid-area: main;
+  grid-column:  2 / 3;
+  grid-row:  2 / 3;
   display: grid;
   padding: 25px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,7 +44,7 @@ body{
 
 }
 .card{
-  background-color: #ffb884;
+  background-color: ghostwhite;
   border-radius: 10px;
 
 }

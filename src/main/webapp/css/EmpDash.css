@@ -1,18 +1,17 @@
 body{
   height: 100vh;
-
+  background-image: url("../Photos/klmdasdh.jpg");
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 60px 1fr;
-  grid-template-areas:
-  "side header "
-  "side main    ";
+
 
 }
 .header{
-  background-image: url("/Photos/klmdasdh.jpg");
+  background-image: url("../Photos/klmdasdh.jpg");
   background-color: white;
-  grid-area: header;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
   font-size: larger;
   font-weight: bold;
   color: white;
@@ -21,16 +20,18 @@ body{
 }
 
 .sidebar{
-  background-image: url("/Photos/klmdasdh.jpg");
+  background-image: url("../Photos/klmdasdh.jpg");
   background-color: #cccccc;
-  grid-area: side;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 
 }
 
 .main{
   background-color: cornflowerblue;
-  background-image: url("/Photos/headlight.jpg");
-  grid-area: main;
+  background-image: url("../Photos/headlight.jpg");
+  grid-column:  2 / 3;
+  grid-row:  2 / 3;
   display: grid;
   padding: 25px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +44,7 @@ body{
 }
 .card{
   background-color: #d0b868;
-  background-image: url("/Photos/klmdasdh.jpg");
+  background-image: url("../Photos/klmdasdh.jpg");
   border-radius: 25px;
   color: white;
 
@@ -59,49 +60,8 @@ h1{
   background-color: burlywood;
 }
 
-.navbar {
-  background-color: #333;
-  position: relative;
-  z-index: 999;
-}
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: black;
-}
 
-.navbar li {
-  display: inline-block;
-}
-
-.navbar li a {
-  color: white;
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* Style the dropdown menu */
-.navbar ul ul {
-  position: absolute;
-  top: 100%;
-  display: none;
-}
-
-.navbar ul ul li {
-  display: block;
-}
-
-.navbar li:hover ul {
-  display: block;
-}
-
-/* Change the background color of dropdown links on hover */
-.navbar ul ul li a:hover {
-  background-color: #555;
-}
 h{
   font-size: larger;
   font-weight: bold;
