@@ -16,8 +16,7 @@ import jakarta.servlet.annotation.*;
 @WebServlet(name = "UpdateCustomerInfo", value = "/update-customer-info-servlet")
 
 public class UpdateCustomerInfo extends HttpServlet {
-    private String message;
-    private String fname,lname,email,password, street, city, state, zip;
+
     private HttpServletRequest request;
 
 
@@ -35,7 +34,7 @@ public class UpdateCustomerInfo extends HttpServlet {
         boolean b = validateinput(c1);
 
         if (b) {
-            isempty(request,c1);
+            isempty(c1);
             c1.updateDB();
             request.setAttribute("correct", "correct");
             requestDispatcher = request.getRequestDispatcher("customerDash.jsp");
@@ -47,7 +46,7 @@ public class UpdateCustomerInfo extends HttpServlet {
 
 
     private boolean validateinput(Customer c1){
-        Boolean b = true;
+        boolean b = true;
         String fname = request.getParameter("Fname");
         String lname = request.getParameter("Lname");
         String email = request.getParameter("email");
@@ -72,7 +71,7 @@ public class UpdateCustomerInfo extends HttpServlet {
             request.setAttribute("city","city");
             b = false;
         }
-        if(state.matches(c1.completeAddress.getState())){
+        if(state != null && state.matches(c1.completeAddress.getState())){
             request.setAttribute("state","state");
             b = false;
         }
@@ -99,7 +98,7 @@ public class UpdateCustomerInfo extends HttpServlet {
         }
         return b;
     }
-    private void isempty(HttpServletRequest hr, Customer c1) {
+    private void isempty(Customer c1) {
         String fname = request.getParameter("Fname");
         String lname = request.getParameter("Lname");
         String email = request.getParameter("email");

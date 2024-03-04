@@ -14,7 +14,7 @@
 
 
 <%
-
+String phone = (String) request.getAttribute("phone"); String email = (String) request.getAttribute("email"); String zip = (String) request.getAttribute("zip");
     Cart cart;
     cart = (Cart) session.getAttribute("userCart");
 
@@ -27,7 +27,7 @@
     String customerEmail = "";
     String customerStreet = "";
     String customerCity = "";
-    String customerState = "";
+    String customerState = null;
     String customerZip = "";
 
 
@@ -86,8 +86,12 @@
             <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name" required><br>
             <label for="phoneNumber">Phone Number:</label><br>
             <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number" required><br>
+            <% if(phone !=null && phone.equals("phone")){
+            %>      <p> Phone Number is Invalid.</p><%}%>
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" class="text--input" value="<%= customerEmail%>" placeholder="Enter your email address" required><br>
+            <% if(email !=null && email.equals("email")){
+            %>      <p> Email is Invalid.</p><%}%>
             <label for="Street">Street:</label><br>
             <input type="text" id="Street" name="street" class="text--input" value ="<%= customerStreet%>" placeholder="Enter Street Address" required/><br>
             <label for="city">City:</label><br>
@@ -150,6 +154,8 @@
 
             <label for="zip">Zip:</label><br>
             <input type="text" id="zip" name="zip" class="text--input" value="<%= customerZip%>" placeholder="Enter Zip Code" required><br>
+            <% if(zip !=null && zip.equals("zip")){
+            %>      <p> Zip Code is Invalid.</p><%}%>
             <input type="submit" id="submit" value="Submit">
         </fieldset>
     </form>
