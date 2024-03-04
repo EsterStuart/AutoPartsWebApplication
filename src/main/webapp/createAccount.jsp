@@ -6,8 +6,11 @@
     <title>SignUp</title>
 <body>
   <script id="replace_with_navbar" src="nav.js"></script>
-
-  <form action="create-customer-servlet" style="border: 1px solid #ccc">
+<% String name = (String) request.getAttribute("name"); String invalid = (String) request.getAttribute("invalid");
+   String pass = (String) request.getAttribute("pass"); String zip = (String) request.getAttribute("zip");
+   String email = (String) request.getAttribute("email");
+%>
+  <form action="create-customer-servlet" method="get" style="border: 1px solid #ccc">
     <div class="container">
       <h>Create Your Account </h>
       <p>Please fill out this form to complete account creation</p>
@@ -17,13 +20,14 @@
 
       <label for ="Lname"><b> Last Name</b></label>
       <input type="text" placeholder="Enter Last Name" name="Lname" id="Lname" required>
+      <% if(name != null && name.equals("name")){%><p>Please Enter A Valid Name.</p><%}%>
 
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-      <label for="psw"><b>Password</b></label>
+      <% if(email != null && email.equals("email")){%><p>Please Enter A Valid Email.</p><%}%>
+      <label for="psw"><b>Password (Must Include at least 6 characters with 1 Uppercase and Lowercase character, and 1 number)</b></label>
       <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
+      <% if(pass != null && pass.equals("pass")){%><p>Please Enter A Valid Password.</p><%}%>
       <label for="street"><b>Street</b></label>
       <input type="text" placeholder="Enter Street" name="street" id="street" required>
 
@@ -32,7 +36,7 @@
 
       <label for="zip"><b>Zip</b></label>
       <input type="text" placeholder="Enter Zip" name="zip" id="zip" required>
-
+      <% if(zip != null && zip.equals("zip")){%><p> Zip Code is Invalid.</p><%}%>
       <label for="state"><b>State</b></label>
       <select name="state" id="state">
         <option disabled="" selected="">Select a State</option>

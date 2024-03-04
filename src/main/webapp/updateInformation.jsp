@@ -29,15 +29,15 @@
             <label for ="Lname"><b> Last Name</b></label>
             <input type="text" placeholder="Enter Last Name" name="Lname" id="Lname" >
 
-            <% if(name != null && email == "name"){
+            <% if(name != null && email.equals("name")){
             %>       <p> You are already using this name.</p><%}%>
 
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" id="email" >
 
-            <% if(email != null && email == "email"){
+            <% if(email != null && email.equals("email")){
             %>       <p> You are already using this email.</p><%}%>
-            <% if(emails != null && emails == "emails"){
+            <% if(emails != null && emails.equals("emails")){
             %>       <p> You must enter a valid email.</p><%}%>
 
             <label for="psw"><b>Password (Must Include at least 6 characters with 1 Uppercase and Lowercase character, and 1 number)</b></label>
@@ -111,10 +111,10 @@
                 <option value="Wyoming">Wyoming</option>
             </select>
 
-            <%if(street != null && street == "street"){%><p> You are already using this street address.</p><%}%>
-            <%if(city != null && city == "city"){%><p> You are already using this city address.</p><%}%>
-            <%if(state != null && state == "state"){%><p> You are already using this state address.</p><%}%>
-            <%if(zip != null && zip == "zip"){%><p> You are already using this zip address.</p><%}%>
+            <%if(street != null && street.equals("street")){%><p> You are already using this street address.</p><%}%>
+            <%if(city != null && city.equals("city")){%><p> You are already using this city address.</p><%}%>
+            <%if(state != null && state.equals("state")){%><p> You are already using this state address.</p><%}%>
+            <%if(zip != null && zip.equals("zip")){%><p> You are already using this zip address.</p><%}%>
 
 
 
@@ -124,7 +124,7 @@
             <br>
             <br>
 
-            <% if(message != null && message == "Null"){ %><p> You must provide a value to at least one of the fields.</p><%}%>
+            <% if(message != null && message.equals("Null")){ %><p> You must provide a value to at least one of the fields.</p><%}%>
 
             <div class="clearfix">
                 <button type="reset" >Clear</button>

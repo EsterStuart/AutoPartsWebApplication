@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="Business.Product" %>
 <%@ page import="Business.PartOrder" %>
+<%@ page import="java.io.PrintWriter" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -38,28 +39,29 @@
         <h1>Order Details </h1>
         <div>
             <% Order order = (Order) session.getAttribute("trackOrder");
+                PrintWriter pw = response.getWriter();
                 if(order != null){
 
-                    out.print("<h2> Order Status: <h2>");
-                    out.print("<h3 class='text-offset'>" + order.getOrderStatus() + "</h3>");
+                    pw.print("<h2> Order Status: <h2>");
+                    pw.print("<h3 class='text-offset'>" + order.getOrderStatus() + "</h3>");
 
-                    out.print("<div>");
-                        out.print("<h2> Products </h2>");
+                    pw.print("<div>");
+                        pw.print("<h2> Products </h2>");
 
                         ArrayList<PartOrder> partOrderArrayList = order.getOrderedPartsArrayList();
                         for(PartOrder partOrder : partOrderArrayList){
                             Product product = partOrder.getPart();
-                            out.print("<div>");
-                                out.print("<h3 class='text-offset'>" + partOrder.getQuantity() + "x " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
+                            pw.print("<div>");
+                                pw.print("<h3 class='text-offset'>" + partOrder.getQuantity() + "x " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
 
-                            out.print("</div>");
+                            pw.print("</div>");
                         }
 
-                    out.print("</div>");
+                    pw.print("</div>");
 
 
                 } else {
-                    out.print("<h2> No Order Found Please Complete Form </h2>");
+                    pw.print("<h2> No Order Found Please Complete Form </h2>");
                 }
                 session.removeAttribute("trackOrder");
 
