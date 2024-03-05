@@ -10,9 +10,7 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/padfoot.css">
 
-  
     <title>Title</title>
 </head>
 <body>
@@ -111,8 +109,6 @@
 
     %>
 
-
-<<<<<<< HEAD
     <table>
       <tr>
         <td>Subtotal</td>
@@ -130,9 +126,6 @@
   </div>
 </div>
 
-<a href="checkout.jsp"> CHECKOUT </a>
-<script id="add_the_feet" src="Padfeet.js"> </script>
-=======
 <%
     if(isCartEmtpy == true){
         out.print("<h1> Please Add Items To Your Cart </h1>");
@@ -141,6 +134,5 @@
     }
 %>
 
->>>>>>> 1664355036b5735a7678710ea769245023c29f5c
 </body>
 </html>

@@ -4,7 +4,6 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/productCategories.css">
-    <link rel="stylesheet" href="css/padfoot.css">
 
     <title>Part Categories</title>
 </head>
@@ -57,6 +56,6 @@
         <figcaption class="pic-text">Oil & Fluids </figcaption>
     </figure>
 </div>
-<script id="add_the_feet" src="Padfeet.js"> </script>
+
 </body>
 </html>

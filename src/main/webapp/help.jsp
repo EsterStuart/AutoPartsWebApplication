@@ -48,6 +48,6 @@
     </div>
 </div>
 
-<script id="add_the_feet" src="Padfeet.js"> </script>
+
 </body>
 </html>

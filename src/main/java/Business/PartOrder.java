@@ -3,6 +3,7 @@ package Business;
 import java.io.Serializable;
 
 public class PartOrder implements Serializable {
+    private static final long serialVersionUID = 6529685098267757690L;
     private Product part;
     private int quantity;
     private double totalOrderPrice;

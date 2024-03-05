@@ -59,3 +59,10 @@ input[type="submit"]:hover {
 .return-link a:hover {
     background-color: #0056b3;
 }
+
+.order-card {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+}

@@ -11,7 +11,6 @@
 <head>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/orderView.css">
-    <link rel="stylesheet" href="css/navbar.css">
     <title>Title</title>
 </head>
 <body>
@@ -50,7 +49,7 @@
             for (PartOrder partOrder : partsOrderedArrayList){
                 product = partOrder.getPart();
 
-                out.print("<div>");
+                out.print("<div class = order-card>");
                 out.print("<p> ID: " + product.getProductID() + "</p>");
                 out.print("<p> Name: " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</p>");
                 out.print("<p> Quantity : " + partOrder.getQuantity() + "</p>");
@@ -78,4 +77,5 @@
     </div>
 </div>
 </body>
+
 </html>

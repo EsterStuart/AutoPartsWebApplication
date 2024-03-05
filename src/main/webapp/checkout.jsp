@@ -85,7 +85,7 @@ String phone = (String) request.getAttribute("phone"); String email = (String) r
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" class="text--input" value="<%= customerLName%>" placeholder="Enter Last Name" required><br>
             <label for="phoneNumber">Phone Number:</label><br>
-            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= customerFName %>"  placeholder="Enter a phone number" required><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="text--input" value="<%= phone %>"  placeholder="Enter a phone number" required><br>
             <% if(phone !=null && phone.equals("phone")){
             %>      <p> Phone Number is Invalid.</p><%}%>
             <label for="email">Email:</label><br>
@@ -179,5 +179,6 @@ String phone = (String) request.getAttribute("phone"); String email = (String) r
         </div>
     </div>
 </div>
+
 </body>
 </html>

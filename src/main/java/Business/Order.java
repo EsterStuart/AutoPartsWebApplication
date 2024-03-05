@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.stream.StreamSupport;
 
 public class Order {
+    private static final long serialVersionUID = 6529685098267757690L;
     private int orderID;
     private int CustomerID;
     private double orderTotalCost;
@@ -59,6 +60,37 @@ public class Order {
     private void addPartOrder(PartOrder partOrder) {
         orderedPartsArrayList.add(partOrder);
     }
+
+
+    public static ArrayList<Order> getAllOrders(int customerID){
+        ArrayList<Order> allOrdersArrayList =  new ArrayList<Order>();
+
+        try{
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+            String sql = "SELECT OrderID FROM Orders WHERE CustomerID = ?";
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            preparedStatement.setInt(1, customerID);
+
+            ResultSet resultSet;
+            resultSet = preparedStatement.executeQuery();
+
+
+            while (resultSet.next()){
+                Order order = new Order();
+                int orderID = resultSet.getInt("OrderID");
+
+                order.selectDB(orderID);
+                allOrdersArrayList.add(order);
+            }
+
+        }catch (Exception ex) {ex.printStackTrace();}
+
+        return allOrdersArrayList;
+    }
+
+
 
     private double calculateTotalPrice(){
         double totalPrice = 0.0;
@@ -237,12 +269,13 @@ public class Order {
             s.setString(12, this.getEmail());
             s.setString(13,this.getPhoneNumber());
 
+            int h = s.executeUpdate();
 
             ResultSet resultSet = s.getGeneratedKeys();
             resultSet.next();
             setOrderID(resultSet.getInt(1));
 
-            int h = s.executeUpdate();
+
             if(h==1){ System.out.println("Order Inserted");}
             else{System.out.println("Order could not be inserted");}
             connection.close();

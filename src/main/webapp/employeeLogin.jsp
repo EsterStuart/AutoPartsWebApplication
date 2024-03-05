@@ -3,7 +3,6 @@
 
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/padfoot.css">
 
   <meta charset="UTF-8">
   <title>Employee Login</title>
@@ -13,13 +12,11 @@
 
 
 
-<<<<<<< HEAD
 <h1 class="Split"> Employee Login</h1>
-=======
 <h1 id="title"> Employee Login</h1>
->>>>>>> 1664355036b5735a7678710ea769245023c29f5c
 
-<div class="container">
+
+<div class="login-area">
   <form action="load-all-orders-servlet">
 
   <label for=""><b>Username</b></label>
@@ -32,6 +29,7 @@
 
   </form>
 </div>
-<script id="add_the_feet" src="Padfeet.js"> </script>
+
+
 </body>
 </html>

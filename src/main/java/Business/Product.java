@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 
 public class Product implements Serializable {
+    private static final long serialVersionUID = 6529685098267757690L;
     private String productID;
     private String productType;
     private String brand;
