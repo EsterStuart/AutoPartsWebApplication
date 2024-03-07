@@ -10,21 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cc8f10-eeb9-4d47-8740-4aaf8ca62277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/eCommerceDB.laccdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CustomerLoadOrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customerOrderView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/customerOrderView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-airFilters.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-daycoBelt.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-motorOil.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-motorOil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-wiperblades.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CreateCustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/CreateCustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Dash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Dash.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +50,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
-    "git-widget-placeholder": "master",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "html",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/src/main/webapp",
+    "last_opened_file_path": "C:/Users/Tygeo/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/dealPhotos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,8 +67,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\dealPhotos" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp" />
       <recent name="C:\Users\mriea\Documents\SCHOOOL_WORK\Year6\CIST2931\project_main\AutoPartsWebApplication\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\dealPhotos" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.team.autopartswebapplication" />
@@ -83,7 +80,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="AutoPartsWebApplication:war exploded">
@@ -193,6 +190,7 @@
       <workItem from="1709761937611" duration="5560000" />
       <workItem from="1709767898364" duration="44000" />
       <workItem from="1709816894449" duration="4357000" />
+      <workItem from="1709832634908" duration="4266000" />
     </task>
     <servers />
   </component>

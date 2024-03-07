@@ -61,10 +61,19 @@
     <h2>Deals</h2>
     <div class="deal-links">
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="Photos/deals-wiperblades.png" alt="picture of an alternator"></a>
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-wiperblades.jpeg" alt="picture of wiper blades"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="Photos/deals-wiperblades.png" alt="picture of an alternator"></a>
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-motorOil.jpg" alt="picture of motor oil"></a>
+      </figure>
+      <figure class="deal-info">
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-daycoBelt.jpeg" alt="picture of a serpentine belt"></a>
+      </figure>
+      <figure class="deal-info">
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-airFilters.jpeg" alt="picture of an air filter"></a>
+      </figure>
+      <figure class="deal-info">
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-motorOil.jpeg" alt="picture of an alternator"></a>
       </figure>
       <figure class="deal-info">
         <a href="load-product-servlet?ProductType=Wiper"><img src="Photos/deals-wiperblades.png" alt="picture of an alternator"></a>
