@@ -3,8 +3,9 @@
 <head>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/Help.css">
+    <link rel="stylesheet" href="css/padfoot.css">
 
-    <title>Title</title>
+    <title>Help</title>
 </head>
 
 <body>

@@ -135,6 +135,7 @@ public class Customer extends  Person{
             resultSet.next();
             setCustomerID(resultSet.getInt(1));
             connection.close();
+            System.out.println("All Worked =============================");
 
             return true;
         } catch (Exception ex) {ex.printStackTrace(); return false;}

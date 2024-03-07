@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
 
-  
     <title>Title</title>
 </head>
 <body>
@@ -110,6 +109,22 @@
 
     %>
 
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td> $<%=String.format("%,.2f", totalCost)%> </td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>$<%=String.format("%,.2f", tax)%></td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>$<%=String.format("%,.2f", totalCostPlusTax)%></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 <%
     if(isCartEmtpy == true){

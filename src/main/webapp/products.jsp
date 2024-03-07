@@ -2,14 +2,9 @@
 
 <%@page import = "java.util.ArrayList"%>
 <%@page import = "Business.Product"%>
-<%@ page import="java.nio.file.Path" %>
-<%@ page import="java.util.stream.Stream" %>
-<%@ page import="java.nio.file.Files" %>
-<%@ page import="java.nio.file.Paths" %>
-<%@ page import="java.util.stream.Collectors" %>
 <%@ page import="java.io.File" %>
 <%@ page import="java.util.Random" %>
-<%@ page import="java.net.URL" %>
+<%@ page import="org.hsqldb.Session" %>
 
 
 <html>
@@ -33,6 +28,26 @@
 
 <script id="replace_with_navbar" src="nav.js"></script>
 
+<%
+    ArrayList<Product> productsFilteredList = (ArrayList) session.getAttribute("ArrayOfFilteredProducts");
+    ArrayList<Product> filteredArrayList = (ArrayList<Product>) session.getAttribute("FilteredProductList");
+    boolean filterSearchUsed = (boolean) session.getAttribute("filterSearchUsed");
+
+    String minPrice = (String) session.getAttribute("minPrice");
+    String maxPrice = (String) session.getAttribute("maxPrice");
+    String carType = carType = (String) session.getAttribute("carType");
+
+    if (minPrice == null){
+        minPrice = "";
+    }
+    if (maxPrice == null){
+        maxPrice = "";
+    }
+    if (carType == null){
+        carType = "";
+    }
+%>
+
 <h1 class="title">Products</h1>
 
 <div class="main-area">
@@ -53,8 +68,6 @@
 
                 </select>
 
-
-
                 <label for="year" class="car-select-label"> Year </label>
                 <input class="filter-input" type="number" id="year" name="year" min="1960" max="2025" step="1" required/>
 
@@ -72,6 +85,7 @@
                 </select>
 
                 <input class="filter-submit" type="submit" value="Apply">
+                <a href="clear-car-type-filter-servlet">Clear Filter [x] </a>
 
             </form>
         </div>
@@ -79,34 +93,35 @@
     </div>
     <div class="filter-area">
         <div class="filter-row">
-            <h3>Car Type</h3>
-            <br>
-            <a href="" class="filter-option"> SUV </a>
-            <br>
-            <a href="" class="filter-option"> SEDAN </a>
-            <br>
-            <a href="" class="filter-option"> TRUCK </a>
-            <br>
-            <a href="" class="filter-option"> SUV </a>
-            <br>
-            <a href="" class="filter-option"> SPORT </a>
+            <form action="load-product-servlet">
+                <h3>Price</h3>
+
+                <label for="minPrice">Min</label>
+                <input type="number" name="minPrice" id="minPrice" value="<%= minPrice%>" required>
+                <br>
+
+                <label for="maxPrice">Max</label>
+                <input type="number" name="maxPrice" id="maxPrice" value="<%=maxPrice%>" required>
+                <br>
+
+                <input type="submit" value="Apply Filter">
+                <a href="clear-price-filter-servlet">Clear Filter [x] </a>
+            </form>
+
         </div>
     </div>
 
     <div class="grid-container">
         <%
-            ArrayList<Product> ProductsFilteredList = new ArrayList<Product>();
-            ArrayList<Product> carTypeFilteredList = (ArrayList<Product>) session.getAttribute("filteredByCartTypeProducts");
 
-
-            if (carTypeFilteredList != null){
-                ProductsFilteredList = carTypeFilteredList;
-            } else {
-                ProductsFilteredList = (ArrayList) session.getAttribute("ArrayOfFilteredProducts");
+            if (filterSearchUsed == true){
+                //IF THE FILTERS DONT FIT IN THE RANGE OF ANY PRODUCT THIS WILL BE SKIPPED BECAUSE THE ARRAY WAS EMPTY. FIND A FIX PLS
+                productsFilteredList = filteredArrayList;
             }
+            System.out.println(productsFilteredList);
+            System.out.println(filteredArrayList);
 
-            if (ProductsFilteredList.isEmpty() != true){
-
+            if (productsFilteredList.isEmpty() != true){
                 File dir = new File("./product-images");
                 dir = new File("src/main/webapp/product-images");
 
@@ -114,9 +129,13 @@
                 String imagesPath = cononicalPath.replace("\\apache-tomcat-10.1.18\\bin\\", "\\");
 
                 Random random = new Random();
+                random.setSeed(42);
+
+                int randomNumber = 0;
+                int previousNumber = 0;
 
                 for (int i=0; i<1; i++) {
-                    for (Product product : ProductsFilteredList) {
+                    for (Product product : productsFilteredList) {
 
                         String imageFolder = "AirFilter";
 
@@ -259,10 +278,19 @@
 
                         }
 
+
                         String completePath = imagesPath + "\\" + imageFolder;
                         File adjustedDir = new File(completePath);
                         File[] files = adjustedDir.listFiles();
-                        File file = files[random.nextInt(files.length)];
+
+                        randomNumber = random.nextInt(files.length);
+
+                        while(randomNumber == previousNumber){
+                            randomNumber = random.nextInt(files.length);
+                        }
+                        previousNumber = randomNumber;
+                  
+                        File file = files[randomNumber];
 
                         String imagePath = "product-images/" + imageFolder + "/" + file.getName();
 
@@ -300,7 +328,8 @@
             } else {
                 out.print("<h1> NO PRODUCTS FOUND </h1>");
             }
-            session.removeAttribute("filteredByCartTypeProducts ");
+
+            session.removeAttribute("FilteredProductList");
         %>
     </div>
 </div>
@@ -344,5 +373,7 @@
         }
     }
 </script>
+
+
 </body>
 </html>

@@ -11,22 +11,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0056b3;
+    background-color: #e79b0d;
     height: 40px;
 }
 
 .banner-info {
-    background-color: #0056b3;
     text-align: center;
 }
 
 .banner-info .info {
     font-size: 1rem;
-    color: #6c757d;
 }
 
 .banner-info .fine-print {
-    color: #6c757d;
 }
 
 

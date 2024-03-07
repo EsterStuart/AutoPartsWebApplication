@@ -31,12 +31,13 @@
                 out.print("</li>");
 
             } else {
-                out.print("<li>");
-                out.print("<a href='logout-servlet'> Logout </a>");
-                out.print("</li>");
 
                 out.print("<li>");
                 out.print("<a href='customerDash.jsp'> Dash </a>");
+                out.print("</li>");
+
+                out.print("<li>");
+                out.print("<a href='logout-servlet'> Logout </a>");
                 out.print("</li>");
             }
         %>

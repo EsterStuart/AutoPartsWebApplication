@@ -1,59 +1,28 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
-#xontain{
-  min-height: 100%;
-}
-#main{
-  overflow: auto;
-  padding-bottom: 100px;
-
-}
-footer{
-  background-image: url("../Photos/gears.jpg");
-  background-size: cover;
-  position: relative;
-  height: 110px;
-  margin-top: -100px;
-
-}
-
-.Split{
-  display: flex;
-  justify-content: space-between;
-  color: antiquewhite;
-  background-color: black;
-  border-radius: 4px;
-  font-family: Monaco;
-}
-.Split a{
-  color: antiquewhite;
-}
 
 
-.footnav{
-  margin: 30px 0;
-}
-.footnav ul{
-  display: flex;
-  justify-content: center;
-}
-
-.footnav ul li a{
-  color: antiquewhite;
-  margin: 20px;
-  font-size: 1.3em;
-}
-.footbottom{
-  background-color: #222222;
-  padding: 20px;
+.footer-container{
+  display: grid;
   text-align: center;
-}
-.footbottom p{
+  padding: 20px;
+  width: 100%;
+
+  margin-top: auto;
+  position: relative;
+  bottom: 0px;
+  background-color: black;
   color: white;
 }
+
+.footer-link{
+  color: white;
+}
+
+
+
+.footer-top{
+}
+
+.footer-bottom {
+}
+
+

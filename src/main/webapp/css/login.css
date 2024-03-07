@@ -1,5 +1,8 @@
+body{
+  min-height: 100%;
+}
 
-.container {
+.login-area {
   width: 300px;
   padding: 16px;
   background-color: white;
@@ -8,6 +11,9 @@
   border: 1px solid black;
   border-radius: 4px;
 }
+.container {
+}
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -31,20 +37,6 @@ button:hover {
 .Split {
   display: flex;
   justify-content: space-between;
-}
-
-
-.divider {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #000;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
-}
-
-.divider-span {
-  background:#fff;
-  padding:0 10px;
 }
 
 .create-account-btn {

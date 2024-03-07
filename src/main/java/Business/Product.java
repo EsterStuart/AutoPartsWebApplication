@@ -1,5 +1,7 @@
 package Business;
 
+import org.w3c.dom.ranges.Range;
+
 import java.io.File;
 import java.io.Serializable;
 import java.net.URL;
@@ -9,6 +11,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 
 public class Product implements Serializable {
+    private static final long serialVersionUID = 6529685098267757690L;
     private String productID;
     private String productType;
     private String brand;
@@ -492,8 +495,6 @@ public class Product implements Serializable {
             ResultSet resultSet = statement.executeQuery();
             resultSet.next();
 
-            System.out.println(resultSet.getInt("Stock"));
-
             int currentStock = resultSet.getInt("Stock");
             int newStock = currentStock - decreaseAmount;
             connection.close();
@@ -507,6 +508,18 @@ public class Product implements Serializable {
     //</editor-fold>
 
 
+
+    public static ArrayList<Product> filterListByPrice(ArrayList<Product> productArrayList, double minPrice, double maxPrice){
+        ArrayList<Product> outputArrayList = new ArrayList<Product>();
+
+        for (Product product : productArrayList){
+
+            if (minPrice <= product.getPrice() && product.getPrice() <= maxPrice){
+                outputArrayList.add(product);
+            }
+        }
+        return outputArrayList;
+    }
     public static CarType getCarType(String carTypeName) {
         String lowerCaseCarTypeName = carTypeName.toLowerCase();
 

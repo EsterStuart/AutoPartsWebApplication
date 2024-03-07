@@ -39,30 +39,22 @@
         <div>
             <% Order order = (Order) session.getAttribute("trackOrder");
                 if(order != null){
-
                     out.print("<h2> Order Status: <h2>");
                     out.print("<h3 class='text-offset'>" + order.getOrderStatus() + "</h3>");
-
                     out.print("<div>");
-                        out.print("<h2> Products </h2>");
-
-                        ArrayList<PartOrder> partOrderArrayList = order.getOrderedPartsArrayList();
-                        for(PartOrder partOrder : partOrderArrayList){
-                            Product product = partOrder.getPart();
-                            out.print("<div>");
-                                out.print("<h3 class='text-offset'>" + partOrder.getQuantity() + "x " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
-
-                            out.print("</div>");
-                        }
-
+                    out.print("<h2> Products </h2>");
+                    ArrayList<PartOrder> partOrderArrayList = order.getOrderedPartsArrayList();
+                    for(PartOrder partOrder : partOrderArrayList){
+                        Product product = partOrder.getPart();
+                        out.print("<div>");
+                        out.print("<h3 class='text-offset'>" + partOrder.getQuantity() + "x " + product.getBrand() + " " + product.getName() + " " + product.getProductType() + "</h3>");
+                        out.print("</div>");
+                    }
                     out.print("</div>");
-
-
                 } else {
                     out.print("<h2> No Order Found Please Complete Form </h2>");
                 }
                 session.removeAttribute("trackOrder");
-
             %>
         </div>
     </div>
