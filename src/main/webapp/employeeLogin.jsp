@@ -12,7 +12,6 @@
 
 
 
-<h1 class="Split"> Employee Login</h1>
 <h1 id="title"> Employee Login</h1>
 
 

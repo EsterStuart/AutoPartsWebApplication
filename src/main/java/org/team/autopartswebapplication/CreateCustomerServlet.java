@@ -32,6 +32,9 @@ private HttpServletRequest hs;
         String state = hs.getParameter("state");
         String zip = hs.getParameter("zip");
 
+        System.out.println(zip);
+        System.out.println(zip.matches("[0-9]+{5}"));
+
 
         boolean b = validate(customer);
          if(b) {
@@ -76,7 +79,7 @@ private HttpServletRequest hs;
         hs.setAttribute("email","email");
         b=false;
     }
-    if(!zip.matches("[0-9].{5}")){
+    if(!zip.matches("[0-9]+{5}")){
         hs.setAttribute("zip","zip");
         b=false;
     }
