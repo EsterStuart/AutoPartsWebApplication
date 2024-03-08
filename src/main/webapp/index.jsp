@@ -73,10 +73,10 @@
         <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-airFilters.jpeg" alt="picture of an air filter"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-motorOil.jpeg" alt="picture of an alternator"></a>
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-antifreeze.jpeg" alt="picture of an antifreeze"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="Photos/deals-wiperblades.png" alt="picture of an alternator"></a>
+        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-headlightbulb.jpeg" alt="picture of headlight bulbs"></a>
       </figure>
     </div>
   </div>

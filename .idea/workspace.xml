@@ -10,12 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cc8f10-eeb9-4d47-8740-4aaf8ca62277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-airFilters.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-daycoBelt.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-motorOil.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-motorOil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-wiperblades.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dealPhotos/deals-antifreeze.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/DatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,13 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -51,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "html",
+    "git-widget-placeholder": "indexUpgrade",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Tygeo/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/dealPhotos",
     "node.js.detected.package.eslint": "true",
@@ -62,6 +67,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.23274337",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -191,6 +197,7 @@
       <workItem from="1709767898364" duration="44000" />
       <workItem from="1709816894449" duration="4357000" />
       <workItem from="1709832634908" duration="4266000" />
+      <workItem from="1709921753145" duration="2858000" />
     </task>
     <servers />
   </component>
