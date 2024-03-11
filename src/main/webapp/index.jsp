@@ -6,8 +6,6 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index2.css">
 
-
-
   <title>Home</title>
 </head>
 <body>
@@ -19,6 +17,7 @@
     </div>
   </div>
 
+  <div class="content-container">
   <script id="replace_with_navbar" src="nav.js"></script>
 
   <div class="hero-section">
@@ -81,7 +80,40 @@
     </div>
   </div>
 
+  <div class="carousel-container">
+    <h2>Best Selling Brands</h2>
+  <div class="carousel">
+    <button id="prev-btn" class="prev-btn"></button>
+        <div id="item-list" class="item-list">
+          <img class="item" src="brandLogos/logo-valvoline.jpg" alt="picture of valvoline logo"/>
+          <img class="item" src="brandLogos/logo-prestone.jpg" alt="picture of prestone logo"/>
+          <img class="item" src="brandLogos/logo-moog.jpg" alt="picture of moog logo"/>
+          <img class="item" src="brandLogos/logo-KandN.jpg" alt="picture of K&N logo"/>
+          <img class="item" src="brandLogos/logo-fram.jpg" alt="picture of fram logo"/>
+          <img class="item" src="brandLogos/logo-dorman.jpg" alt="picture of dorman logo"/>
+          <img class="item" src="brandLogos/logo-dayco.jpg" alt="picture of dayco logo"/>
+          <img class="item" src="brandLogos/logo-carquest.jpg" alt="picture of carquest logo"/>
+        </div>
+
+
+        <button id="next-btn" class="next-btn"></button>
+      </div>
+    </div>
+
+  <!-- scroll button -->
+  <a href="#" class="scrollTop" title="scroll"></a>
+
+<div class="signup-container">
+  <div class="signup">
+    <p>Want more great deals?<br>Sign up today to receive special deals exclusively for members.</p>
+    <a href="createAccount.jsp">Sign Up</a>
+  </div>
+</div>
+  </div>
+
   <script id="replace_with_footer" src="Padfeet.js"> </script>
+  <script src="indexScript.js"></script>
+
 
 </body>
 
