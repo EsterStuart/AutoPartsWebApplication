@@ -18,8 +18,29 @@
 
 
 <div class="container">
-    <h2> ORDERS </h2>
+    <h2 class="title"> ORDERS </h2>
     <div class="order-area">
+        <div class="filter-area">
+            <form action="load-filtered-orders-servlet">
+
+                <h3> Filter </h3>
+                <label class="filter-label" for="OrderID"> OrderID </label>
+                <input class="filter-input" type="text" id="OrderID" name="OrderID">
+
+                <span class="divider-span"> OR </span>
+
+                <label class="filter-label" for="FirstName"> First Name </label>
+                <input class="filter-input" type="text" id="FirstName" name="FirstName">
+
+                <label class="filter-label" for="LastName"> Last Name </label>
+                <input class="filter-input" type="text" id="LastName" name="LastName">
+
+                <input type="submit">
+
+            </form>
+            <a href="load-all-orders-servlet"> [x] Clear Filters </a>
+        </div>
+
             <%
                 ArrayList<Order> allOrdersArrayList = (ArrayList<Order>) session.getAttribute("allOrdersArrayList");
 

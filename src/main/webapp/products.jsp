@@ -93,15 +93,16 @@
     </div>
     <div class="filter-area">
         <div class="filter-row">
-            <form action="load-product-servlet">
+            <form class="price-filter-area" action="load-product-servlet">
                 <h3>Price</h3>
 
-                <label for="minPrice">Min</label>
-                <input type="number" name="minPrice" id="minPrice" value="<%= minPrice%>" required>
+                <label for="minPrice">Min </label>
+                <input class="price-filter-input" type="number" name="minPrice" id="minPrice" value="<%= minPrice%>" required>
                 <br>
 
+
                 <label for="maxPrice">Max</label>
-                <input type="number" name="maxPrice" id="maxPrice" value="<%=maxPrice%>" required>
+                <input class="price-filter-input" type="number" name="maxPrice" id="maxPrice" value="<%=maxPrice%>" required>
                 <br>
 
                 <input type="submit" value="Apply Filter">
@@ -115,7 +116,6 @@
         <%
 
             if (filterSearchUsed == true){
-                //IF THE FILTERS DONT FIT IN THE RANGE OF ANY PRODUCT THIS WILL BE SKIPPED BECAUSE THE ARRAY WAS EMPTY. FIND A FIX PLS
                 productsFilteredList = filteredArrayList;
             }
             System.out.println(productsFilteredList);

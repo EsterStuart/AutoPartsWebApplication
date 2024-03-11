@@ -56,6 +56,36 @@ public class Order {
 
     }
 
+    public static ArrayList<Order> getAllOrders(String firstName, String lastName){
+        ArrayList<Order> allOrdersArrayList =  new ArrayList<Order>();
+
+        try{
+            Connection connection = DatabaseConnection.getDatabaseConnection();
+            String sql = "SELECT OrderID FROM Orders WHERE FirstName = ? AND LastName = ?";
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+
+            preparedStatement.setString(1, firstName);
+            preparedStatement.setString(2, lastName);
+
+            ResultSet resultSet;
+            resultSet = preparedStatement.executeQuery();
+
+
+            while (resultSet.next()){
+                Order order = new Order();
+                int orderID = resultSet.getInt("OrderID");
+
+                order.selectDB(orderID);
+                allOrdersArrayList.add(order);
+            }
+
+        }catch (Exception ex) {ex.printStackTrace();}
+
+        return allOrdersArrayList;
+    }
+
 
     private void addPartOrder(PartOrder partOrder) {
         orderedPartsArrayList.add(partOrder);

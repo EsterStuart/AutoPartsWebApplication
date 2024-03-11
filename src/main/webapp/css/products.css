@@ -5,6 +5,7 @@
     margin: auto;
 }
 
+
 .product-number-text{
     color: grey;
 }
@@ -173,4 +174,16 @@ input[type=submit]:hover {
 .quantity-input {
     width: 85px;
     margin-right: 90px;
+}
+
+.price-filter-area{
+
+}
+
+.price-filter-label{
+
+}
+
+.price-filter-input{
+    margin-bottom: 10px;
 }
