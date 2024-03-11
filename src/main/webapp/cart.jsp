@@ -18,7 +18,8 @@
 <script id="replace_with_navbar" src="nav.js"></script>
 
 <%
-    Cart cart = (Cart) session.getAttribute("userCart");
+    Cart cart = new Cart();
+    cart = (Cart) session.getAttribute("userCart");
 
     int index = 0;
     double totalCost = 0.0;
@@ -40,8 +41,11 @@
         boolean isCartEmtpy = true;
 
         if (cart.getPartOrdersInCartArrayList().isEmpty()){
-            out.print("<h1> CART IS EMPTY </h1>");
 
+            out.print("<div class='cart-is-empty'>");
+                out.print("<h1> CART IS EMPTY </h1>");
+                out.print("<h2> Please Add Items To Your Cart </h1>");
+            out.print("</div>");
         } else {
             out.print("<div class='small-container'>");
             out.print("<table>");
@@ -86,54 +90,30 @@
 
 
             out.print("</table>");
-            out.print("<div class='total-price'>");
-            out.print("<table>");
-            out.print("<tr>");
-            out.print("<td>Subtotal</td>");
-            out.print("<td>" + String.format("%,.2f", totalCost) + "</td>");
-            out.print("</tr>");
-            out.print("<tr>");
-            out.print("<td>Tax</td>");
-            out.print("<td>" + String.format("%,.2f", tax) + "</td>");
-            out.print("</tr>");
-            out.print("<tr>");
-            out.print("<td>Total</td>");
-            out.print("<td>" + String.format("%,.2f", totalCostPlusTax) + "</td>");
-            out.print("</tr>");
-            out.print("</table>");
+                out.print("<div class='total-price'>");
+                    out.print("<table>");
+                    out.print("<tr>");
+                    out.print("<td>Subtotal</td>");
+                    out.print("<td>" + String.format("%,.2f", totalCost) + "</td>");
+                    out.print("</tr>");
+                    out.print("<tr>");
+                    out.print("<td>Tax</td>");
+                    out.print("<td>" + String.format("%,.2f", tax) + "</td>");
+                    out.print("</tr>");
+                    out.print("<tr>");
+                    out.print("<td>Total</td>");
+                    out.print("<td>" + String.format("%,.2f", totalCostPlusTax) + "</td>");
+                    out.print("</tr>");
+                    out.print("</table>");
+                out.print("</div>");
             out.print("</div>");
-            out.print("</div>");
+
+            out.print("<a class='checkout-button' href='checkout.jsp'> Checkout </a>");
 
         }
 
 
     %>
-<div>
-    <div>
-    <table>
-      <tr>
-        <td>Subtotal</td>
-        <td> $<%=String.format("%,.2f", totalCost)%> </td>
-      </tr>
-      <tr>
-        <td>Tax</td>
-        <td>$<%=String.format("%,.2f", tax)%></td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td>$<%=String.format("%,.2f", totalCostPlusTax)%></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<%
-    if(isCartEmtpy == true){
-        out.print("<h1> Please Add Items To Your Cart </h1>");
-    } else {
-        out.print("<a href='checkout.jsp'> Checkout </a>");
-    }
-%>
 
 </body>
 </html>

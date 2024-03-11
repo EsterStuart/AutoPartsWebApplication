@@ -100,3 +100,21 @@ a.checkout-link {
 a.checkout-link:hover {
     background-color: #ffcc00;
 }
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 29%;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cart-is-empty{
+    text-align: center;
+    margin-top: 100px;
+}
