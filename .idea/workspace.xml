@@ -10,36 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cc8f10-eeb9-4d47-8740-4aaf8ca62277" name="Changes" comment="">
-<<<<<<< Updated upstream
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/leftarrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-KandN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-carquest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-dayco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-dorman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-fram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-moog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-prestone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/logo-valvoline.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/rightarrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/brandLogos/upArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/indexScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/database/eCommerceDB.laccdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/team/autopartswebapplication/LoadFilteredOrdersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/EmpDash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/EmpDash.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +35,6 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="usePluginRegistry" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -82,50 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "indexUpgrade2",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Tygeo/OneDrive/Documents/GitHub/AutoPartsWebApplication/src/main/webapp/brandLogos",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.23274337",
-    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mriea/Documents/SCHOOOL_WORK/Year6/CIST2931/project_main/AutoPartsWebApplication/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
->>>>>>> Stashed changes
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\brandLogos" />
@@ -143,7 +74,6 @@
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.18">
     <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="AutoPartsWebApplication:war exploded">
@@ -269,6 +199,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
+      <item itemvalue="Tomcat Server.cart.jsp" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Tomcat Server.cart.jsp" />
@@ -297,13 +231,6 @@
       <workItem from="1709761937611" duration="5560000" />
       <workItem from="1709767898364" duration="44000" />
       <workItem from="1709816894449" duration="4357000" />
-<<<<<<< Updated upstream
-      <workItem from="1709832634908" duration="4266000" />
-      <workItem from="1709921753145" duration="2858000" />
-      <workItem from="1710103219351" duration="16338000" />
-=======
-      <workItem from="1709989472999" duration="4832000" />
->>>>>>> Stashed changes
     </task>
     <servers />
   </component>
