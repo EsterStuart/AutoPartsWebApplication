@@ -12,9 +12,9 @@
 
 <%   String email = (String) request.getAttribute("email"); String emails = (String) request.getAttribute("emails");
      String pass = (String) request.getAttribute("psw"); String psw = (String) request.getAttribute("pass");
-    String address = (String) request.getAttribute("address");String message = (String) request.getAttribute("Null");
+    String message = (String) request.getAttribute("Null");
     String name = (String) request.getAttribute("name"); String street = (String) request.getAttribute("street"); String city = (String) request.getAttribute("city");
-    String state = (String) request.getAttribute("state"); String zip = (String) request.getAttribute("zip");
+    String state = (String) request.getAttribute("state"); String zip = (String) request.getAttribute("zip"); String zips = (String) request.getAttribute("zips");
 %>
 
 
@@ -115,7 +115,7 @@
             <%if(city != null && city.equals("city")){%><p> You are already using this city address.</p><%}%>
             <%if(state != null && state.equals("state")){%><p> You are already using this state address.</p><%}%>
             <%if(zip != null && zip.equals("zip")){%><p> You are already using this zip address.</p><%}%>
-
+            <%if(zips != null && zips.equals("zips")){%><p> Zip Code is Invalid.</p><%}%>
 
 
 

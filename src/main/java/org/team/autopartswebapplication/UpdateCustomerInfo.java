@@ -8,7 +8,6 @@ import Business.Customer;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -18,10 +17,6 @@ import jakarta.servlet.annotation.*;
 public class UpdateCustomerInfo extends HttpServlet {
 
     private HttpServletRequest request;
-
-
-    public void init() {
-    }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
@@ -77,6 +72,10 @@ public class UpdateCustomerInfo extends HttpServlet {
         }
         if(zip.matches(c1.completeAddress.getZip())){
             request.setAttribute("zip","zip");
+            b = false;
+        }
+        if(zip.matches("[0-9]{5}")){
+            request.setAttribute("zips","zips");
             b = false;
         }
         if(email.matches(c1.getEmail())){

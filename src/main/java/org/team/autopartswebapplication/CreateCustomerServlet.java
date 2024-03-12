@@ -8,10 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
 import java.io.IOException;
-import java.util.Objects;
-import java.util.stream.Stream;
 
 @WebServlet(name = "CreateCustomerServlet", value = "/create-customer-servlet")
 public class CreateCustomerServlet extends HttpServlet {
@@ -33,10 +30,10 @@ private HttpServletRequest hs;
         String zip = hs.getParameter("zip");
 
         System.out.println(zip);
-        System.out.println(zip.matches("[0-9]+{5}"));
+        System.out.println(zip.matches("[0-9]{5}"));
 
 
-        boolean b = validate(customer);
+        boolean b = validate();
          if(b) {
              customer.setFirstName(fname);
              customer.setLastName(lname);
@@ -59,7 +56,7 @@ private HttpServletRequest hs;
         }}
 
 
-    private boolean validate(Customer c1){
+    private boolean validate(){
         boolean b = true;
         String fname = hs.getParameter("Fname");
         String lname = hs.getParameter("Lname");
@@ -79,7 +76,7 @@ private HttpServletRequest hs;
         hs.setAttribute("email","email");
         b=false;
     }
-    if(!zip.matches("[0-9]+{5}")){
+    if(!zip.matches("[0-9]{5}")){
         hs.setAttribute("zip","zip");
         b=false;
     }
