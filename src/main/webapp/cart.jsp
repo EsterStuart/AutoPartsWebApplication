@@ -4,14 +4,14 @@
 <%@page import = "Business.Product"%>
 <%@page import = "Business.Cart"%>
 <%@page import = "Business.PartOrder"%>
-
+<!DOCTYPE html>
 <html>
 <head>
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cart.css">
 
-    <title>Title</title>
+    <title>Cart</title>
 </head>
 <body>
 
@@ -107,8 +107,9 @@
                     out.print("</table>");
                 out.print("</div>");
             out.print("</div>");
-
-            out.print("<a class='checkout-button' href='checkout.jsp'> Checkout </a>");
+            out.print("<div class='checkout-button'>");
+            out.print("<a  href='checkout.jsp'> Checkout </a>");
+            out.print("</div>");
 
         }
 

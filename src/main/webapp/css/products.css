@@ -28,6 +28,7 @@ body {
     gap: 20px;
     width: 50%;
     vertical-align: top;
+    margin-left: 13%;
 }
 
 .grid-item {
@@ -40,9 +41,11 @@ body {
 
 .main-area{
     height: 2000px;
+    padding: 15px;
 }
 label {
     margin-right: 5px;
+    font-weight: bold;
 }
 
 .filter-area{
@@ -57,57 +60,64 @@ label {
 }
 
 .filter-row {
-    margin-left: 40%;
+    margin-left: 42%;
     align-content: center;
-    border-radius: 4px;
+    border-radius: 10px;
     border: 1px solid rgba(102, 102, 102, 0.25);
-    background-color: #fff;
     padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
-.filter-drop-down {
-    height: 35px;
-    width: 95px;
-    margin-right: 30px;
-
+.car-type-selection-area {
+    border: 1px solid rgba(102, 102, 102, 0.25);
+    background-color: #f9f9f9;
+    margin: 30px auto;
+    height: auto;
+    width: 75%;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.car-type-selection-area h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.car-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.car-select-label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-drop-down,
 .filter-input {
-    height: 45px;
-    width: 220px;
-    margin-right: 30px;
+    width: 180px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .filter-submit {
-    height: 35px;
-    width: 75px;
-
-    background-color: #000000;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.car-type-selection-area{
-    border: 1px solid rgba(102, 102, 102, 0.25);
-    background-color: white;
-    margin-left: 26%;
-    height: 125px;
-    width: 47%;
-    margin-top: 50px;
-    margin-bottom : 25px;
+    height: 30px;
+    margin: 20px;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #e79b0d;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    padding: 15px;
-    padding-left: 55px;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.car-select{
-    margin-top: 20px;
-}
-.car-select-label{
-    font-size: 19px;
-}
 
 .modal {
     display: none; /* Hidden by default */
@@ -168,7 +178,7 @@ label {
 }
 
 input[type=submit]:hover {
-    background-color:  #0056b3;
+    background-color: #ffcc00;
 }
 
 .quantity-input {
@@ -177,13 +187,39 @@ input[type=submit]:hover {
 }
 
 .price-filter-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
 
+.price-filter-area h3 {
+    text-align: center;
+    margin: 0;
 }
 
 .price-filter-label{
 
 }
 
-.price-filter-input{
-    margin-bottom: 10px;
+.filter-area input[type='submit'] {
+    height: 30px;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #e79b0d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
 }
+
+.filter-area input[type='submit']:hover {
+    background-color: #ffcc00;
+}
+
+
+
+
+

@@ -96,12 +96,12 @@
             <form class="price-filter-area" action="load-product-servlet">
                 <h3>Price</h3>
 
-                <label for="minPrice">Min </label>
+                <label class=".price-filter-label" for="minPrice">Min </label>
                 <input class="price-filter-input" type="number" name="minPrice" id="minPrice" value="<%= minPrice%>" required>
                 <br>
 
 
-                <label for="maxPrice">Max</label>
+                <label class=".price-filter-label" for="maxPrice">Max</label>
                 <input class="price-filter-input" type="number" name="maxPrice" id="maxPrice" value="<%=maxPrice%>" required>
                 <br>
 
