@@ -1,7 +1,6 @@
 body{
-    margin : 0px;
-    padding : 0px;
-
+    margin : 0;
+    padding : 0;
 }
 
 .navbar {
@@ -86,6 +85,8 @@ body{
     background-color: #0056b3;
 }
 
+
+
 /* Submenu styles */
 .navbar ul ul {
     display: none;
@@ -112,6 +113,23 @@ body{
     color: #6c757d;
 }
 
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.hero-section img {
+    width: 20%;
+    max-height: calc(100vh - 100px);
+}
 
+/* Welcome Banner and intro styles */
+.welcome--message {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 

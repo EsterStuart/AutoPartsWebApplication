@@ -1,20 +1,23 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%@ page import="Business.Cart" %>
 <%@ page import="Business.Customer" %>
-<%@ page import="Business.Product" %>
 <%@ page import="Business.PartOrder" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="Business.Product" %>
+
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/checkout.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/checkout2.css">
+    <title>Checkout</title>
 </head>
 <body>
+
 <script id="replace_with_navbar" src="nav.js"></script>
 
 
 <%
-String phone = (String) request.getAttribute("phone"); String email = (String) request.getAttribute("email"); String zip = (String) request.getAttribute("zip");
+    String phone = (String) request.getAttribute("phone"); String email = (String) request.getAttribute("email"); String zip = (String) request.getAttribute("zip");
     Cart cart;
     cart = (Cart) session.getAttribute("userCart");
 
@@ -181,4 +184,5 @@ String phone = (String) request.getAttribute("phone"); String email = (String) r
 </div>
 
 </body>
+
 </html>

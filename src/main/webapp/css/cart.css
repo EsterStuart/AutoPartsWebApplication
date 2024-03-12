@@ -102,16 +102,27 @@ a.checkout-link:hover {
 }
 
 .checkout-button {
-    background-color: #4CAF50;
+    background-color: #e79b0d;
     color: white;
     padding: 14px 20px;
-    margin-left: 29%;
+    margin: 15px auto;
     border: none;
     cursor: pointer;
     width: 40%;
     display: block;
     text-decoration: none;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.checkout-button:hover {
+    background-color: #ffcc00;
 }
 
 .cart-is-empty{

@@ -1,10 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="Business.Customer" %>
-<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="css/nav.css">
-
+    <title></title>
 </head>
 <body>
 
@@ -53,6 +52,11 @@
         <li><a href="load-cart-servlet">Cart</a></li>
     </ul>
 </nav>
+<div class="hero-section">
+    <div class="welcome--message">
+        <img src="Photos/logo.png" class="logo-image" alt="logo">
+    </div>
+</div>
 </body>
 </html>
 
