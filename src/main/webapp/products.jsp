@@ -343,7 +343,7 @@
     <div class="modal-content">
         <h1>Item Added to Cart!</h1>
         <span class="close">&times;</span>
-        <a href="load-cart-servlet"> Got To Checkout </a>
+        <a href="load-cart-servlet"> Go To Checkout </a>
     </div>
 
 </div>
