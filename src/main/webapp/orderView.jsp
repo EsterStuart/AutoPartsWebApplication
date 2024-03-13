@@ -77,5 +77,5 @@
     </div>
 </div>
 </body>
-
+<script id="replace_with_footer" src="Padfeet.js"> </script>
 </html>

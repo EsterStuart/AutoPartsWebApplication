@@ -1,11 +1,44 @@
+<%@ page import="Business.Product" %>
+<%@ page import="Business.PartOrder" %>
+<%@ page import="Business.Cart" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Payment</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/checkoutPayment.css">
+    <link rel="stylesheet" href="css/paymentCheckout.css">
 </head>
 <body>
+<%
+    Cart cart;
+    cart = (Cart) session.getAttribute("userCart");
+
+    int index = 0;
+    double totalCost = 0.0;
+    double tax = 0.0;
+    double taxRate = .04;
+
+    double shipping = 9.99;
+
+    double totalCalculatedCost = 0.0;
+
+    if (cart.getPartOrdersInCartArrayList().isEmpty()){
+
+} else {
+
+    for (PartOrder partOrder : cart.getPartOrdersInCartArrayList()) {
+        Product product = partOrder.getPart();
+
+        totalCost += partOrder.getTotalOrderPrice();
+        index += 1;
+    }
+
+    tax = totalCost * taxRate;
+    totalCalculatedCost = totalCost + tax + shipping;
+
+
+}
+%>
 <script id="replace_with_navbar" src="nav.js"></script>
 
 <h1>Payment Information</h1>
@@ -28,19 +61,19 @@
     <div class="total-section">
         <div class="total-item">
             <span class="total-label">Subtotal: </span>
-            <span class="subtotal-price"> $ </span>
+            <span class="subtotal-price"> $<%=String.format("%,.2f", totalCost) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Taxes:</span>
-            <span class="taxes"> $ </span>
+            <span class="taxes"> $<%= String.format("%,.2f", tax) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Shipping:</span>
-            <span class="shipping"> $ </span>
+            <span class="shipping"> $<%= String.format("%,.2f", shipping) %> </span>
         </div>
         <div class="total-item">
             <span class="total-label">Total:</span>
-            <span class="total-price"> $</span>
+            <span class="total-price"> $<%= String.format("%,.2f", totalCalculatedCost) %> </span>
         </div>
     </div>
 </div>

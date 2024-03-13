@@ -1,14 +1,17 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .footer-container{
   display: grid;
   text-align: center;
   padding: 20px;
-  width: 100%;
-
+  overflow: hidden;
   margin-top: auto;
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   background-color: black;
   color: white;
 }
@@ -20,9 +23,11 @@
 
 
 .footer-top{
+  overflow: hidden;
 }
 
 .footer-bottom {
+  overflow: hidden;
 }
 
 

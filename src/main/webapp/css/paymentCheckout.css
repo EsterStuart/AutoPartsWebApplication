@@ -12,10 +12,11 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 15px auto;
+    width: 75%;
 }
 
-form {
+.container form {
     width: 50%;
     padding: 20px;
     background-color: #f9f9f9;
@@ -49,8 +50,7 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-select {
+.container input[type="text"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -58,19 +58,10 @@ select {
     border: 1px solid #ccc;
 }
 
-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 25px;
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-}
-
-input[type="submit"] {
+.container input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #000000;
+    background-color: #e79b0d;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -78,8 +69,8 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+.container input[type="submit"]:hover {
+    background-color: #ffcc00;
 }
 
 .total-item {

@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<script id="replace_with_navbar" src="nav.js"></script>
+
 
 
 <%
@@ -77,7 +77,7 @@
 
 %>
 
-
+<script id="replace_with_navbar" src="nav.js"></script>
 <h1>Checkout</h1>
 <div class="container">
     <form action="checkout-servlet" method="get">

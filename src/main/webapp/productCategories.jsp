@@ -57,5 +57,7 @@
     </figure>
 </div>
 
+<script id="replace_with_footer" src="Padfeet.js"> </script>
+
 </body>
 </html>
