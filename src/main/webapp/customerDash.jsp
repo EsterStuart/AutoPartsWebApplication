@@ -24,7 +24,7 @@
                 <h2 class="inner-title">Customer Information  </h2>
 
                 <% String message = (String) request.getAttribute("correct");
-                    if(message != null && message == "correct") {
+                    if(message != null && message.equals("correct")) {
                         out.print("<h2> Information Updated! </h2>");
                     }
                 %>

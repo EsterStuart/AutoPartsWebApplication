@@ -74,7 +74,7 @@ public class UpdateCustomerInfo extends HttpServlet {
             request.setAttribute("zip","zip");
             b = false;
         }
-        if(zip.matches("[0-9]{5}")){
+        if(!zip.matches("[0-9]{5}")){
             request.setAttribute("zips","zips");
             b = false;
         }
