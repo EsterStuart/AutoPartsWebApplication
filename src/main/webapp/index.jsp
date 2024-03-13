@@ -20,11 +20,7 @@
   <div class="content-container">
   <script id="replace_with_navbar" src="nav.js"></script>
 
- <!-- <div class="hero-section">
-    <div class="welcome--message">
-      <img src="Photos/logo.png" class="logo-image" alt="logo">
-    </div>
-  </div>-->
+
 
   <div class="introduction">
   <h1>Welcome</h1>

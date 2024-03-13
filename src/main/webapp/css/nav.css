@@ -71,18 +71,17 @@ body{
     border: 1px solid #ccc;
 }
 
-.navbar input[type="submit"] {
-
+.nav-right input[type="submit"] {
     padding: 0.5rem 1rem;
-    background-color: #000000;
+    background-color: #e79b0d;
     border: none;
     color: #fff;
     cursor: pointer;
     border-radius: 0.25rem;
 }
 
-.navbar input[type="submit"]:hover {
-    background-color: #0056b3;
+.nav-right input[type="submit"]:hover {
+    background-color: #ffcc00;
 }
 
 

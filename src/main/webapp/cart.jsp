@@ -17,6 +17,8 @@
 
 <script id="replace_with_navbar" src="nav.js"></script>
 
+<h1>Cart</h1>
+
 <%
     Cart cart = new Cart();
     cart = (Cart) session.getAttribute("userCart");

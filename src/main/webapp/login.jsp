@@ -32,6 +32,6 @@
         <a href="createAccount.jsp" class="create-account-btn"> Create an account </a>
       </div>
 
-
+    <script id="replace_with_footer" src="Padfeet.js"> </script>
   </body>
 </html>

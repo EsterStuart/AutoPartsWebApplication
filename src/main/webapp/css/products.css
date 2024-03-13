@@ -5,6 +5,10 @@
     margin: auto;
 }
 
+.root {
+    scroll-behavior: smooth;
+}
+
 
 .product-number-text{
     color: grey;
@@ -135,16 +139,33 @@ label {
 
 /* Modal Content */
 .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
+    height: 50%;
+}
+
+.modal-content a {
+    display: inline-block;
+
+    padding: 10px 20px;
+    background-color: #e79b0d;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
 }
 
 .close {
     color: #aaaaaa;
-    float: right;
+    position: absolute;
+    right: 26%;
+    top: 15%;
     font-size: 28px;
     font-weight: bold;
 }
@@ -217,6 +238,37 @@ input[type=submit]:hover {
 
 .filter-area input[type='submit']:hover {
     background-color: #ffcc00;
+}
+
+/* style for scroll to top button */
+.scrollTop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url("../brandLogos/upArrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  #e79b0d;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 9999999;
+    scroll-behavior: smooth;
+}
+
+.scrollTop:hover {
+    opacity: 0.8;
+}
+
+.scrollTop:focus {
+    opacity: 0.9;
+}
+
+.scrollTop:active {
+    opacity: 1;
 }
 
 

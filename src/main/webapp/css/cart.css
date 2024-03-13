@@ -1,4 +1,10 @@
 /* Container styles */
+
+h1 {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
 .small-container {
     max-width: 960px;
     margin: 0 auto;
@@ -105,7 +111,7 @@ a.checkout-link:hover {
     background-color: #e79b0d;
     color: white;
     padding: 14px 20px;
-    margin: 15px auto;
+    margin: 15px auto 30px auto;
     border: none;
     cursor: pointer;
     width: 40%;

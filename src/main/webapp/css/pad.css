@@ -1,0 +1,31 @@
+body {
+    overflow: hidden;
+}
+
+.footer-container{
+    display: grid;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+.footer-link{
+    color: white;
+}
+
+
+
+.footer-top{
+    overflow: hidden;
+}
+
+.footer-bottom {
+    overflow: hidden;
+}
+
+
