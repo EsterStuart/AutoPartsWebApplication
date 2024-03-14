@@ -6,7 +6,7 @@
 <head>
     <title>Payment</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/paymentCheckout.css">
+    <link rel="stylesheet" href="css/paymentCheckout2.css">
 </head>
 <body>
 <%
@@ -77,6 +77,8 @@
         </div>
     </div>
 </div>
+
+<script id="replace_with_footer" src="Padfeet.js"> </script>
 
 </body>
 </html>

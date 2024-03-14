@@ -13,7 +13,7 @@
 
 
 
-<h>Having Trouble? Let's do something about that.</h>
+<h2>Having Trouble? Let's do something about that.</h2>
 
 <div class="faq-header">Frequently Asked Questions</div>
 

@@ -8,7 +8,7 @@
 <head>
     <title>Track Order</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/trackOrder.css">
+    <link rel="stylesheet" href="css/trackOrder2.css">
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>

@@ -10,7 +10,7 @@
   padding: 15px;
   overflow: hidden;
   margin-top: auto;
-  position: relative;
+  position: sticky;
   bottom: 0;
   background-color: black;
   color: white;

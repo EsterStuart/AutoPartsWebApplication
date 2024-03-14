@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,12 +7,13 @@ body {
 
 h1 {
     text-align: center;
+    margin: 30px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 50px auto 100px auto;
     width: 75%;
 }
 
