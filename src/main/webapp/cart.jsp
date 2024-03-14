@@ -9,7 +9,7 @@
 <head>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/carts.css">
 
     <title>Cart</title>
 </head>
@@ -113,10 +113,13 @@
             out.print("<a  href='checkout.jsp'> Checkout </a>");
             out.print("</div>");
 
+
         }
 
 
     %>
+
+<script id="replace_with_footer" src="Padfeet.js"> </script>
 
 </body>
 </html>

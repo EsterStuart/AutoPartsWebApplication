@@ -1,0 +1,61 @@
+.track-label {
+    font-size: 25px;
+}
+
+.track-input {
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+
+}
+
+.input-area{
+    display: inline-block;
+    vertical-align: top;
+    margin: 62px;
+    height: 67%;
+}
+
+.input-area h1 {
+    margin: 25px 25px 25px 0;
+}
+.order-details-area {
+    display: inline-block;
+    margin-right: 82px;
+    border: 1px solid rgba(102, 102, 102, 0.25);
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: top;
+
+}
+
+.text-offset {
+    margin-left: 30px;
+}
+
+.main-area {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-area form input[type='submit'] {
+    height: 30px;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #e79b0d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.input-area input[type='submit']:hover {
+    background-color: #ffcc00;
+}
+
+

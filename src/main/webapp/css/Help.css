@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   color: #333;
   background: #fcfcfc;
@@ -5,19 +10,20 @@ body {
   overflow-x: hidden;
 }
 
-h{
-  font-weight: bolder;
-  font-size: larger;
+
+h2 {
+  margin: 32px 26px;
 }
 
 .faq-header{
   font-size: 42px;
   border-bottom: 1px dotted #ccc;
-  padding: 24px;
+  padding: 24px  24px 0 24px;
 }
 
 .faq-content {
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
+  border: 1px black dotted;
 }
 
 .faq-question {
@@ -37,7 +43,7 @@ h{
 
 .panel-content {
   font-size: 20px;
-  padding: 0px 14px;
+  padding: 0 14px;
   margin: 0 40px;
   height: 0;
   overflow: hidden;

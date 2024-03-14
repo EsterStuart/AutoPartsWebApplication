@@ -1,10 +1,17 @@
 /* Container styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 h1 {
     width: 50%;
     text-align: center;
     margin: 20px auto;
 }
+
 .small-container {
     max-width: 960px;
     margin: 0 auto;
@@ -111,7 +118,7 @@ a.checkout-link:hover {
     background-color: #e79b0d;
     color: white;
     padding: 14px 20px;
-    margin: 15px auto 30px auto;
+    margin: 15px auto 100px auto;
     border: none;
     cursor: pointer;
     width: 40%;
@@ -134,4 +141,5 @@ a.checkout-link:hover {
 .cart-is-empty{
     text-align: center;
     margin-top: 100px;
+    height: 344px;
 }

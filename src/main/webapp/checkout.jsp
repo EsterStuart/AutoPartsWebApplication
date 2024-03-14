@@ -8,7 +8,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/checkout2.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <title>Checkout</title>
 </head>
 <body>
@@ -183,6 +183,7 @@
     </div>
 </div>
 
+<script id="replace_with_footer" src="Padfeet.js"> </script>
 </body>
 
 </html>

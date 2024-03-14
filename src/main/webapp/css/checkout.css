@@ -16,7 +16,7 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 50px auto 100px auto;
     width: 75%;
 }
 

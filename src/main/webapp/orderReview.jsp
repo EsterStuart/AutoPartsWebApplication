@@ -6,8 +6,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/orderReview.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/orderReview2.css">
+    <title>Review Order Details</title>
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
