@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/productCategories.css">
+    <link rel="stylesheet" href="css/productCat.css">
 
     <title>Brakes</title>
 </head>

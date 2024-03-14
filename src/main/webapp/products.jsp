@@ -11,7 +11,7 @@
 <head>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/product.css">
 
 
 
@@ -377,6 +377,6 @@
     }
 </script>
 
-
+<script id="replace_with_footer" src="Padfeet.js"> </script>
 </body>
 </html>

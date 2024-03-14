@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cc8f10-eeb9-4d47-8740-4aaf8ca62277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/pad.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" afterDir="false" />
@@ -24,33 +21,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkoutPayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkoutPayment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkout2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkout2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkoutPayment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/paymentCheckout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/pad.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/padfoot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/padfoot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerOrderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerOrderView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/help.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/help.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/productCategories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/productCat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-images/TransmissionFluid/transmission_fluid3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-images/TransmissionFluid/transmission_fluid3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productCategories.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/trackOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/trackOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="styleUpdates" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -87,27 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.18.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;styleUpdates&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tygeo/Desktop/CapStone/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23274337&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 10.1.18.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "moreUpdates",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Tygeo/Desktop/CapStone/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.23274337",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tygeo\OneDrive\Documents\GitHub\AutoPartsWebApplication\src\main\webapp\brandLogos" />
@@ -239,12 +223,24 @@
       <workItem from="1709767898364" duration="44000" />
       <workItem from="1709816894449" duration="4357000" />
       <workItem from="1710256015137" duration="16725000" />
-      <workItem from="1710276783727" duration="11889000" />
+      <workItem from="1710276783727" duration="12128000" />
+      <workItem from="1710426809178" duration="17167000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
