@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@ body {
 .footer-container{
   display: grid;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   overflow: hidden;
   margin-top: auto;
   position: relative;
@@ -18,12 +18,12 @@ body {
 
 .footer-link{
   color: white;
+  padding: 10px;
+
 }
-
-
-
 .footer-top{
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .footer-bottom {

@@ -1,17 +1,26 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #title {
     text-align: center;
+    padding: 30px;
 }
     /* grid layout */
 .partType {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10%;
 }
+
+/*#partType {
+    height: 1200px;
+}*/
 
 .frame {
     position: relative;

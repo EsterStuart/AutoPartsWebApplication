@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/productCategories.css">
+    <link rel="stylesheet" href="css/productCat.css">
 
     <title>Part Categories</title>
 </head>
@@ -13,7 +13,7 @@
 
 <h1 id="title">Part Categories</h1>
 
-<div class="partType">
+<div class="partType" id="partType">
     <figure class="frame">
         <a href="categoryBrakes.jsp"><img src="product-images/BrakePad/brake_pad.jpg" alt="picture of air filter"></a>
         <figcaption class="pic-text">Brakes</figcaption>
