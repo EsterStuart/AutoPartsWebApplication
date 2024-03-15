@@ -1,6 +1,16 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+
+.form--container {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.08);
+}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -15,17 +25,12 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-h{
+
+h, p {
   font-weight: bolder;
-  font-family: "Times New Roman";
   font-style: italic;
   font-size: large;
-}
-p{
-  font-weight: bolder;
-  font-family: "Times New Roman";
-  font-style: italic;
-  font-size: large;
+  padding: 5px;
 }
 
 hr {
@@ -33,32 +38,42 @@ hr {
   margin-bottom: 25px;
 }
 
+.clearfix {
+  width: 75%;
+  margin: 0 auto;
+}
+
 
 button {
-  background-color: cornflowerblue;
+  background-color: #e79b0d;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px auto;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  border-radius: 5px;
 }
 
 button:hover {
-  opacity:1;
+  background-color: #ffcc00;
 }
-
-
 
 .updatebtn {
   float: left;
   width: 50%;
 }
 
-
 .container {
   padding: 16px;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+.container form {
+  padding: 20px;
 }
 
 

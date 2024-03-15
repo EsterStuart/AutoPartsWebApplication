@@ -83,7 +83,7 @@ body {
 }
 
 .add-to-cart-btn {
-    background-color: #000000;
+    background-color: #e79b0d;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -93,7 +93,7 @@ body {
 }
 
 .add-to-cart-btn:hover {
-    background-color: #333333;
+    opacity: 1;
 }
 
 .out-of-stock-btn {
@@ -225,7 +225,7 @@ label {
 
 .modal-content a {
     display: inline-block;
-
+    margin: 50px;
     padding: 10px 20px;
     background-color: #e79b0d;
     text-decoration: none;
@@ -322,6 +322,25 @@ input[type=submit]:hover {
 .scrollTop:active {
     opacity: 1;
 }
+
+a[href="clear-car-type-filter-servlet"] {
+    color: #333;
+    text-decoration: none;
+}
+
+a[href="clear-car-type-filter-servlet"]:hover {
+    text-decoration: underline;
+}
+
+a[href="clear-price-filter-servlet"] {
+    color: #333;
+    text-decoration: none;
+}
+
+a[href="clear-price-filter-servlet"]:hover {
+    text-decoration: underline;
+}
+
 
 
 

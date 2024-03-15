@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/Updat.css">
+    <link rel="stylesheet" href="css/Update.css">
     <title>Title</title>
 </head>
 <body>
@@ -17,12 +17,12 @@
     String state = (String) request.getAttribute("state"); String zip = (String) request.getAttribute("zip"); String zips = (String) request.getAttribute("zips");
 %>
 
+<div class="container">
+    <form action="update-customer-info-servlet" method="get">
 
-    <form action="update-customer-info-servlet" method="get" style="border: 1px solid #ccc">
-        <div class="container">
             <h>Update Your Account </h>
             <p>Fill out the Fields that need to be Updated.</p>
-
+<div class="form--container">
             <label for="Fname"><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="Fname" id="Fname" >
 
@@ -130,8 +130,10 @@
                 <button type="reset" >Clear</button>
                 <button type="submit" >Update Information</button>
             </div>
-        </div>
+            </div>
+
     </form>
+</div>
 <script id="replace_with_footer" src="Padfeet.js"> </script>
 </body>
 </html>

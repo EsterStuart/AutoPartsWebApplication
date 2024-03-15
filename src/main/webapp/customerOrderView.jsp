@@ -10,7 +10,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/orderView.css">
+    <link rel="stylesheet" href="css/orderView2.css">
     <title>Title</title>
 </head>
 <body>

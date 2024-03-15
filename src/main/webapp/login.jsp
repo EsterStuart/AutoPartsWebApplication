@@ -3,7 +3,7 @@
 <head>
 
 <link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/login2.css">
 
 
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <body>
 
     <script id="replace_with_navbar" src="nav.js"></script>
-
+    <div class="container">
     <h1 id="title"> Customer Login </h1>
       <div class="login-area">
         <Form action="CustomerLoginServlet" method="get">
@@ -31,6 +31,7 @@
         <p class="divider"><span class="divider-span">Don't Have an Account?</span></p>
         <a href="createAccount.jsp" class="create-account-btn"> Create an account </a>
       </div>
+    </div>
 
     <script id="replace_with_footer" src="Padfeet.js"> </script>
   </body>
