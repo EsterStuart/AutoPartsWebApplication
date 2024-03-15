@@ -5,8 +5,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/Dash.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/customerDash.css">
+    <title>Customer Dash</title>
 </head>
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>

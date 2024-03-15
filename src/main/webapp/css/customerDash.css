@@ -1,6 +1,5 @@
 .main{
-    margin: 200px;
-    margin-top: 90px;
+    margin: 90px 200px 200px 200px;
 }
 
 body{
@@ -8,7 +7,8 @@ body{
 }
 
 #title{
-    font-size: 56px;
+    font-size: 55px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -37,30 +37,30 @@ body{
     margin-left: 25px;
     margin-right: 25px;
     height: 100%;
-
-    padding: 50px;
-    padding-top: 10px;
-
+    padding: 10px 50px 10px;
     border-radius: 10px;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #e79b0d;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 0 55px 0;
     border: none;
     cursor: pointer;
     width: 160px;
     border-radius: 5px;
-    margin-left: 55px;
+
+}
+
+.button:hover {
+    background-color: #ffcc00;
 }
 
 .order-card{
-    border-bottom: solid;
-    border-color: gray;
+    border-bottom: solid 1px grey;
+
 }
 
 

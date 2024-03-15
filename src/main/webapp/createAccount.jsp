@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/Signup.css">
+  <link rel="stylesheet" href="css/createAccount.css">
     <title>SignUp</title>
 <body>
   <script id="replace_with_navbar" src="nav.js"></script>
@@ -10,9 +10,11 @@
    String pass = (String) request.getAttribute("pass"); String zip = (String) request.getAttribute("zip");
    String email = (String) request.getAttribute("email");
 %>
-  <form action="create-customer-servlet" method="get" style="border: 1px solid #ccc">
-    <div class="container">
-      <h>Create Your Account </h>
+
+
+      <h1>Create Your Account </h1>
+      <div class="container">
+      <form action="create-customer-servlet" method="get">
       <p>Please fill out this form to complete account creation</p>
 
       <label for="Fname"><b>First Name</b></label>

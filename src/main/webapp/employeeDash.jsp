@@ -8,7 +8,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/EmpDash.css">
+    <link rel="stylesheet" href="css/EmpDas.css">
 
     <title> Employee Dash</title>
 </head>
@@ -20,10 +20,9 @@
 <div class="container">
     <h2 class="title"> ORDERS </h2>
     <div class="order-area">
+        <h3> Filter </h3>
         <div class="filter-area">
             <form action="load-filtered-orders-servlet">
-
-                <h3> Filter </h3>
                 <label class="filter-label" for="OrderID"> OrderID </label>
                 <input class="filter-input" type="text" id="OrderID" name="OrderID">
 

@@ -11,7 +11,7 @@
 <head>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/products.css">
 
 
 
