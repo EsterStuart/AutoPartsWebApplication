@@ -59,19 +59,19 @@
         <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-wiperblades.jpeg" alt="picture of wiper blades"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-motorOil.jpg" alt="picture of motor oil"></a>
+        <a href="load-product-servlet?ProductType=Engine Oil"><img src="dealPhotos/deals-motorOil.jpg" alt="picture of motor oil"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-daycoBelt.jpeg" alt="picture of a serpentine belt"></a>
+        <a href="load-product-servlet?ProductType=Belt"><img src="dealPhotos/deals-daycoBelt.jpeg" alt="picture of a serpentine belt"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-airFilters.jpeg" alt="picture of an air filter"></a>
+        <a href="load-product-servlet?ProductType=Air Filter"><img src="dealPhotos/deals-airFilters.jpeg" alt="picture of an air filter"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-antifreeze.jpeg" alt="picture of an antifreeze"></a>
+        <a href="load-product-servlet?ProductType=Antifreeze and Coolant"><img src="dealPhotos/deals-antifreeze.jpeg" alt="picture of an antifreeze"></a>
       </figure>
       <figure class="deal-info">
-        <a href="load-product-servlet?ProductType=Wiper"><img src="dealPhotos/deals-headlightbulb.jpeg" alt="picture of headlight bulbs"></a>
+        <a href="load-product-servlet?ProductType=Headlight Bulb"><img src="dealPhotos/deals-headlightbulb.jpeg" alt="picture of headlight bulbs"></a>
       </figure>
     </div>
   </div>

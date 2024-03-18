@@ -11,24 +11,26 @@
 <script id="replace_with_navbar" src="nav.js"></script>
 
 
+
 <div class="container">
 <h1 id="title"> Employee Login</h1>
 
 
-<div class="login-area">
-  <form action="load-all-orders-servlet">
+  <div class="login-area">
+    <form action="load-all-orders-servlet">
 
-  <label for=""><b>Username</b></label>
-  <input type="text" placeholder="Enter Username" id="username" required>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
 
-  <label for=""><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" id="password" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password" required>
 
-  <button type="submit">Login</button>
+    <button type="submit">Login</button>
 
-  </form>
+    </form>
+  </div>
 </div>
-</div>
+
 
 <script id="replace_with_footer" src="Padfeet.js"> </script>
 </body>

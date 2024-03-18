@@ -8,6 +8,10 @@ body{
   background-color: black;
 }
 
+#main-container{
+  min-height: 92%;
+}
+
 .login-area {
   width: 300px;
   padding: 16px;
@@ -17,9 +21,11 @@ body{
   border-radius: 4px;
 
 }
+
 .container {
   height: 77%;
 }
+
 
 input[type=text], input[type=password] {
   width: 100%;

@@ -10,25 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cc8f10-eeb9-4d47-8740-4aaf8ca62277" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/eCommerceDB.accdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.accdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" afterPath="$PROJECT_DIR$/database/eCommerceDB.laccdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Dash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/customerDash.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/EmpDash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/EmpDas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/createAccount.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Updat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Update.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderView2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerDash.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/eCommerceDB.laccdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBatteriesElectrical.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryBrakes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryDrivetrain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryEngineIgnitionFuel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryEngineIgnitionFuel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryExhaustEmissionControl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryExhaustEmissionControl.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryFilters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryFilters.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryHeatingCoolingAC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryHeatingCoolingAC.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorySteeringSuspension.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categoryVisibility.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catergoryOilFluids.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/productCat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/productCat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/customerOrderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerOrderView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeDash.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/help.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/help.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderReview.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orderView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/trackOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/trackOrder.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "updatesCss",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Tygeo/Desktop/CapStone/AutoPartsWebApplication/.lib/ucanaccess-4.0.0.jar",
     "list.type.of.created.stylesheet": "CSS",

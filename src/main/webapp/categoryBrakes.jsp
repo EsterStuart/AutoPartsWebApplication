@@ -10,31 +10,32 @@
 
 <body>
 <script id="replace_with_navbar" src="nav.js"></script>
+<div id="main-container">
+    <h1 id="title">Brakes</h1>
 
-<h1 id="title">Brakes</h1>
+    <div class="partType">
 
-<div class="partType">
+        <figure class="frame">
+            <a href="load-product-servlet?ProductType=Brake Caliper"><img src="product-images/BrakeCaliper/brake_calipher.jpg" alt="picture of air filter"></a>
+            <figcaption class="pic-text">Brake Calipers</figcaption>
+        </figure>
 
-    <figure class="frame">
-        <a href="load-product-servlet?ProductType=Brake Caliper"><img src="product-images/BrakeCaliper/brake_calipher.jpg" alt="picture of air filter"></a>
-        <figcaption class="pic-text">Brake Calipers</figcaption>
-    </figure>
+        <figure class="frame">
+            <a href="load-product-servlet?ProductType=Front Brake Pads"><img src="product-images/BrakePad/brake_pad.jpg" alt="picture of antifreeze and coolant"></a>
+            <figcaption class="pic-text">Front Brake Pads</figcaption>
+        </figure>
 
-    <figure class="frame">
-        <a href="load-product-servlet?ProductType=Front Brake Pads"><img src="product-images/BrakePad/brake_pad.jpg" alt="picture of antifreeze and coolant"></a>
-        <figcaption class="pic-text">Front Brake Pads</figcaption>
-    </figure>
+        <figure class="frame">
+            <a href="load-product-servlet?ProductType=Rear Brake Pads"><img src="product-images/BrakePad/brake_pad2.jpg" alt="picture of antifreeze and coolant"></a>
+            <figcaption class="pic-text">Rear Brake Pads</figcaption>
+        </figure>
 
-    <figure class="frame">
-        <a href="load-product-servlet?ProductType=Rear Brake Pads"><img src="product-images/BrakePad/brake_pad2.jpg" alt="picture of antifreeze and coolant"></a>
-        <figcaption class="pic-text">Rear Brake Pads</figcaption>
-    </figure>
+        <figure class="frame">
+            <a href="load-product-servlet?ProductType=Brake Rotor"><img src="product-images/BrakeRotor/brake_rotor.jpg" alt="picture of an alternator"></a>
+            <figcaption class="pic-text">Brake Rotors</figcaption>
+        </figure>
 
-    <figure class="frame">
-        <a href="load-product-servlet?ProductType=Brake Rotor"><img src="product-images/BrakeRotor/brake_rotor.jpg" alt="picture of an alternator"></a>
-        <figcaption class="pic-text">Brake Rotors</figcaption>
-    </figure>
-
+    </div>
 </div>
 
 <script id="replace_with_footer" src="Padfeet.js"> </script>

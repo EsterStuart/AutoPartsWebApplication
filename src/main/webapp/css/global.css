@@ -8,3 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background: #fcfcfc;
 }
+
+#main-container{
+    min-height: 92%;
+}
